@@ -41,8 +41,10 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
           echo
           '<li>
             <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
-            <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
-            ' . $text . '
+            <div>
+              <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+              ' . $text . '
+            </div>
           </li>';
         endwhile;
 
