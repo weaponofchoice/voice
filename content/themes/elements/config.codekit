@@ -67,19 +67,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/coffee\/init-slider.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/init-slider.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/coffee\/init-slider.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
 	"\/coffee\/init-waypoints.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
@@ -132,15 +119,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/content\/gridPri.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/gridPri.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/content\/gridSec.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -159,29 +137,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/content\/image.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/image.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/content\/parallax.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/parallax.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/content\/slider.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/content\/slider.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -406,17 +366,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/vendor\/slider.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/vendor\/slider.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/slider-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -799,22 +748,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/modules\/content\/_image.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/content\/_image.scss",
-		"outputAbbreviatedPath": "\/sass\/modules\/css\/_image.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/sass\/modules\/content\/_parallax.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -856,70 +789,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/modules\/content\/_text.scss",
 		"outputAbbreviatedPath": "\/sass\/modules\/css\/_text.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/modules\/slider\/_lightbox.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/slider\/_lightbox.scss",
-		"outputAbbreviatedPath": "\/sass\/modules\/css\/_lightbox.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/modules\/slider\/_slider-bullets.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/slider\/_slider-bullets.scss",
-		"outputAbbreviatedPath": "\/sass\/modules\/css\/_slider-bullets.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/modules\/slider\/_slider-controls.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/slider\/_slider-controls.scss",
-		"outputAbbreviatedPath": "\/sass\/modules\/css\/_slider-controls.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/modules\/slider\/_slider.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/slider\/_slider.scss",
-		"outputAbbreviatedPath": "\/sass\/modules\/css\/_slider.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1086,68 +955,56 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/slider.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.waypoints.min.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.waypoints.min.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.mobile.custom.min.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.mobile.custom.min.js",
-			"position": 7,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/pageload.coffee",
-			"position": 8,
+			"position": 7,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
-			"position": 9,
+			"position": 8,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
-			"position": 10,
+			"position": 9,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
-			"position": 11,
+			"position": 10,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/init-isotope.coffee",
-			"position": 12,
+			"position": 11,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
-			"position": 13,
+			"position": 12,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/init-waypoints.coffee",
-			"position": 14,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/init-slider.coffee",
-			"position": 15,
+			"position": 13,
 			"type": 1
 			}
 		]
