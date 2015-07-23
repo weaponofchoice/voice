@@ -1,5 +1,5 @@
 %base{
-  @include opensans;
+  @include gotham;
   font-size: 16px;
   font-weight: normal;
   text-rendering: geometricPrecision;
@@ -7,25 +7,34 @@
 
 h1{
   @extend %base;
-  font-size: 3em;
+  font-size: 80px;
 }
 
 h2{
   @extend h1;
-  font-size: 2em;
+  font-size: 30px;
+}
+
+h3{
+  @extend %base;
+  font-size: 18px;
 }
 
 p{
   @extend %base;
+
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 a{
   @extend %base;
-  
+  @extend p;
+
   color: black;
   text-decoration: underline;
   cursor: pointer;
-  
+
   &.link-h1,
   &.link-h2,
   &.link-h3,

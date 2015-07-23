@@ -28,6 +28,9 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css">
 
+  <!-- Fonts from Typography.com -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/680076/698228/css/fonts.css" />
+
   <!-- WP_HEAD() -->
   <?php wp_head(); ?>
 </head>
