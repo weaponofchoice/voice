@@ -27,6 +27,11 @@ section.grid{
   }
 }
 
+// Background color every other grid
+section.grid:nth-child(even){
+  background-color: $grey-light;
+}
+
 // Removing margin-bottom for last row
 @media #{$large-up}{
   @for $value from $block-grid-elements through 1{

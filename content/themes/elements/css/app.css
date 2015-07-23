@@ -1355,7 +1355,7 @@ header {
   padding-left: 3.75rem;
   padding-right: 3.75rem; }
 
-main,
+section,
 footer {
   padding-left: 3.75rem;
   padding-right: 3.75rem; }
@@ -1365,7 +1365,7 @@ footer {
     padding-left: 1.875rem;
     padding-right: 1.875rem; }
 
-  main,
+  section,
   footer {
     padding-left: 1.875rem;
     padding-right: 1.875rem; } }
@@ -1612,6 +1612,9 @@ section.grid ul {
       padding-left: 15px; }
       section.grid ul li div h3 {
         margin-bottom: 1em; }
+
+section.grid:nth-child(even) {
+  background-color: #f9f9f9; }
 
 @media only screen and (min-width: 62.563em) {
   .l-grid-4 li:nth-last-child(-n + 4) {
