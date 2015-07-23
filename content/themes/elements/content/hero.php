@@ -24,20 +24,24 @@ echo '<section class="hero has-no-pad">';
   if( $b_image || $b_title || $b_text ):
     echo '<div class="section-body">';
 
-      // Logo
-      if( $b_image ):
-        echo '<img src="' . $b_image['sizes']['medium'] . '" width="' . $b_image['width'] . '" height="' .   $b_image['height'] . '">';
-      endif;
+      echo '<div class="left">';
+        // Logo
+        if( $b_image ):
+          echo '<img src="' . $b_image['sizes']['medium'] . '" width="' . $b_image['width'] . '" height="' .   $b_image['height'] . '">';
+        endif;
+      echo '</div>';
 
-      // Title
-      if( $b_title ):
-        echo '<h2 class="is-bold is-' . $o_b_textColor . '">' . $b_title . '</h2>';
-      endif;
+      echo '<div class="right">';
+        // Title
+        if( $b_title ):
+          echo '<h2 class="is-bold is-' . $o_b_textColor . '">' . $b_title . '</h2>';
+        endif;
 
-      // Text
-      if( $b_text ):
-        echo $b_text;
-      endif;
+        // Text
+        if( $b_text ):
+          echo $b_text;
+        endif;
+      echo '</div>';
 
     echo '</div>';
   endif;
