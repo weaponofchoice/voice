@@ -1317,6 +1317,9 @@ ul {
 .margin-b100 {
   margin-bottom: 6.25rem !important; }
 
+@font-face {
+  font-family: trademarker;
+  src: url(../fonts/trademarker.otf); }
 h1, h2, h3, p, a {
   font-family: 'Gotham A', 'Gotham B';
   font-weight: 400;
@@ -1326,6 +1329,7 @@ h1, h2, h3, p, a {
   text-rendering: geometricPrecision; }
 
 h1, h2 {
+  font-family: trademarker;
   font-size: 80px; }
 
 h2 {

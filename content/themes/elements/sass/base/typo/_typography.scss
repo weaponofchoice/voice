@@ -7,16 +7,20 @@
 
 h1{
   @extend %base;
+  @include trademarker;
+
   font-size: 80px;
 }
 
 h2{
   @extend h1;
+
   font-size: 30px;
 }
 
 h3{
   @extend %base;
+
   font-size: 18px;
 }
 
