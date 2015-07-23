@@ -1,18 +1,51 @@
 section.hero{
   height: 90vh;
   overflow: hidden;
-  
+
   .hero-banner{
     position: fixed;
     overflow: hidden;
+
+    div{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
   }
-  
+
   .section-body{
+    @include transform( translate(-50%, -50%) );
+
     top: 50%;
     left: 50%;
-    margin: auto;
     position: absolute;
-    @include transform( translate(-50%, -50%) );
+    z-index: 999;
+
+    margin: auto;
+  }
+
+  &:after{
+    @include transform( rotate(-5deg) );
+
+    content: ' ';
+    bottom: 0px;
+    left: -50px;
+    position: absolute;
+
+    width: 300%;
+    height: 300px;
+
+    background-color: $white;
+  }
+}
+
+section.hero .section-body{
+  width: 80%;
+
+  .left,
+  .right{
+    width: 50%;
+    float: left;
   }
 }
 
@@ -27,7 +60,7 @@ section.hero{
   right: 0;
   margin: auto;
   z-index: $zIndex-arrow;
-  
+
   img{
     width: 30px;
     top: 20px;
@@ -37,7 +70,7 @@ section.hero{
     @include transition( .3s );
     @include transform( rotate(90deg) );
   }
-  
+
   &:hover{
     img{
       top: 25px;

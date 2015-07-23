@@ -1,4 +1,4 @@
-section.parallax .section-body,
+section.parallax .section-banner,
 .bcg{
   height: 0;
   padding-bottom: 50% !important;
@@ -15,4 +15,32 @@ section.parallax .section-body,
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
+}
+
+// Banner title
+section.parallax .section-banner h1{
+  @include transform( translateY(-50%) );
+
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: absolute;
+
+  margin: auto;
+
+  text-align: center;
+}
+// Data item
+section.parallax .section-body{
+  background-color: $grey-light;
+}
+
+section.parallax .section-body ul li{
+ text-align: center;
+
+ img,
+ p{
+   display: inline-block;
+   vertical-align: middle;
+ }
 }

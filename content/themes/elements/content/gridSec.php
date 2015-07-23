@@ -18,7 +18,7 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
   if( $h_title || $h_text ):
     echo
     '<div class="section-header row is-pos-' . $o_h_pos . '">
-      <h2 class="s-4 columns is-aligned-' . $o_h_align . '">' . $h_title . '</h2>
+      <h2 class="s-4 columns is-aligned-center">' . $h_title . '</h2>
       ' . $h_text . '
     </div>';
   endif;
@@ -28,9 +28,9 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
     echo '<div class="section-body">';
 
     if( $o_b_layout == 'masonry' ){
-      echo '<ul class="s-grid-1 m-grid-2 l-grid-4 row isotope isotope-masonry">';
+      echo '<ul class="s-grid-1 m-grid-3 row isotope isotope-masonry">';
     } else {
-      echo '<ul class="s-grid-1 m-grid-2 l-grid-4 row">';
+      echo '<ul class="s-grid-1 m-grid-3 row">';
     }
 
         while( have_rows('gridSec_b_item') ): the_row();
@@ -40,9 +40,13 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
 
           echo
           '<li>
-            <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
-            <h2 class="is-aligned-' . $o_h_align . '">' . $title . '</h2>
-            ' . $text . '
+            <a>
+              <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+              <div>
+                <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+                ' . $text . '
+              </div>
+            </a>
           </li>';
         endwhile;
 

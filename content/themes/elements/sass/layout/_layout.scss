@@ -9,7 +9,7 @@ header{
   padding-right: $side-margin;
 }
 
-main,
+section,
 footer{
   padding-left: $side-margin;
   padding-right: $side-margin;
@@ -21,7 +21,7 @@ footer{
     padding-right: $side-margin-small;
   }
 
-  main,
+  section,
   footer{
     padding-left: $side-margin-small;
     padding-right: $side-margin-small;

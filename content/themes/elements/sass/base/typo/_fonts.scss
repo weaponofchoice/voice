@@ -1,10 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@font-face{
+  font-family: trademarker;
+  src: url(../fonts/trademarker.otf);
+}
 
-@mixin opensans{
-  font-family: 'Open Sans', sans-serif;
+@mixin trademarker{
+  font-family: trademarker;
+}
+
+@mixin gotham{
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 400;
   font-style: normal;
-  
-  &.is_bold{
-    font-weight: 700;
-  }
 }
