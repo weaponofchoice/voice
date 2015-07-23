@@ -16,3 +16,16 @@ section.parallax .section-body,
   background-size: cover;
   width: 100%;
 }
+
+section.parallax .section-body h1{
+  @include transform( translateY(-50%) );
+
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: absolute;
+
+  margin: auto;
+  
+  text-align: center;
+}

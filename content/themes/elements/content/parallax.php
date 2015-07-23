@@ -2,6 +2,7 @@
 // Content (variables)
 $id = "parallax-" . $i_par;
 $b_image = get_sub_field( 'parallax_b_image' );
+$c_title = get_sub_field( 'parallax_c_title' );
 
 //Output
 if(! $detect->isMobile() ):
@@ -16,6 +17,7 @@ if(! $detect->isMobile() ):
         data-top-bottom="background-position: 50% -50px;"
         data-anchor-target="#' . $id . '">
       </div>
+      <h1 class="is-white">' . $c_title . '</h1>
     </div>
   </section>';
 

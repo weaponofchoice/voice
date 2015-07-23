@@ -1688,6 +1688,19 @@ section.parallax .section-body,
   background-size: cover;
   width: 100%; }
 
+section.parallax .section-body h1, section.parallax .section-body h2 {
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+  text-align: center; }
+
 /*
  * Show and Hide class functions
  */
