@@ -34,17 +34,26 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
     }
 
         while( have_rows('gridSec_b_item') ): the_row();
+          $thumb = get_sub_field( 'gridSec_b_item_thumb' );
           $image = get_sub_field( 'gridSec_b_item_image' );
           $title = get_sub_field( 'gridSec_b_item_title' );
           $text = preg_replace( '/<p>/', '<p class="is-aligned-' . $o_h_align . '">', get_sub_field( 'gridSec_b_item_text' ) );
 
           echo
           '<li>
-            <a>
-              <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+            <a class="trigger-modal">
+              <img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
               <div>
                 <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
                 ' . $text . '
+              </div>
+
+              <div class="modal">
+                <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+                <div>
+                  <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+                  ' . $text . '
+                </div>
               </div>
             </a>
           </li>';
@@ -53,6 +62,8 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
       echo '</ul>';
 
     echo '</div>';
+
+    echo '<div class="overlay"></div>';
   endif;
 
 echo '</section>';

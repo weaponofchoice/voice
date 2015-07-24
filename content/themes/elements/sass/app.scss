@@ -27,6 +27,8 @@
 
 // MODULE
 @import
+  "modules/_modal",
+  
   "modules/content/_section",
   "modules/content/_hero",
   "modules/content/_text",
@@ -40,4 +42,5 @@
   "states/_typography",
   "states/_stretch",
   "states/_resizing",
-  "states/_fullwidth";
+  "states/_fullwidth",
+  "states/_modal";

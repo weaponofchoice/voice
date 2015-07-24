@@ -1477,6 +1477,26 @@ nav ul {
 nav ul li.current {
   text-decoration: underline; }
 
+.modal {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  height: 90%;
+  margin: auto;
+  background-color: white; }
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 section {
   height: auto;
   overflow: hidden;
@@ -2038,3 +2058,35 @@ body.is-mobile.is-loading > * {
 
 .is-fullwidth {
   width: 100%; }
+
+.modal,
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .modal.is-active,
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.modal {
+  -moz-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px); }
+  .modal.is-active {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }

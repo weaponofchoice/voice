@@ -1,0 +1,16 @@
+.modal,
+.overlay{
+  @include hide( .5s );
+
+  &.is-active{
+    @include show( .5s );
+  }
+}
+
+.modal{
+  @include transform( translateX(-100px) );
+
+  &.is-active{
+    @include transform( translateX(0) );
+  }
+}
