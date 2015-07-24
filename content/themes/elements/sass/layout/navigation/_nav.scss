@@ -1,10 +1,10 @@
 nav ul{
   display: inline;
-  
+
   li{
     display: inline-block;
     padding-right: 1em;
-    
+
     a{
       text-decoration: none;
     }
@@ -12,8 +12,14 @@ nav ul{
 }
 
 // Current item
-nav ul{
-  li.current{
-    text-decoration: underline;
+// nav ul{
+//   li.current{
+//     text-decoration: underline;
+//   }
+// }
+
+@media #{$medium-down}{
+  nav{
+    display: none;
   }
 }

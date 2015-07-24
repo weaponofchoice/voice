@@ -1483,9 +1483,9 @@ nav ul {
     nav ul li a {
       text-decoration: none; }
 
-nav ul li.current {
-  text-decoration: underline; }
-
+@media only screen and (max-width: 62.5em) {
+  nav {
+    display: none; } }
 .modal {
   top: 0;
   bottom: 0;
