@@ -49,8 +49,11 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
               </div>
 
               <div class="modal">
-                <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
-                <div>
+                <div class="modal-image">
+                  <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+                </div>
+                
+                <div class="modal-info">
                   <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
                   ' . $text . '
                 </div>
