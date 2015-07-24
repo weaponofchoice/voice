@@ -1,10 +1,10 @@
 Pace.on 'done', ->
-  object = $('section.grid .section-body ul li')
+  object = $('section.grid .section-body ul li .trigger-modal')
+  closer = $('.modal-close i')
   overlay = $('.overlay')
 
   object.click ->
-    modal = $(this).find('.modal')
-    closer = $(this).find('.modal-close')
+    modal = $(this).parent().find('.modal')
 
     modal.addClass "is-active"
     overlay.addClass "is-active"
@@ -14,5 +14,6 @@ Pace.on 'done', ->
       overlay.removeClass "is-active"
 
     closer.click ->
+      console.log "clicked"
       modal.removeClass "is-active"
       overlay.removeClass "is-active"

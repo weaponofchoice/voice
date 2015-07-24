@@ -47,19 +47,19 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
                 <h3>' . $title . '</h3>
                 ' . $text . '
               </div>
-
-              <div class="modal">
-                <div class="modal-close"><i></i></div>
-                <div class="modal-image">
-                  <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
-                </div>
-
-                <div class="modal-info">
-                  <h3>' . $title . '</h3>
-                  ' . $text . '
-                </div>
-              </div>
             </a>
+
+            <div class="modal">
+              <div class="modal-close"><i></i></div>
+              <div class="modal-image">
+                <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+              </div>
+
+              <div class="modal-info">
+                <h3>' . $title . '</h3>
+                ' . $text . '
+              </div>
+            </div>
           </li>';
         endwhile;
 
