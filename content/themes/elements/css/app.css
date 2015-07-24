@@ -1678,7 +1678,7 @@ section.grid ul li {
     text-decoration: none !important; }
     section.grid ul li a.trigger-modal:hover {
       background-color: #f2f2f2; }
-    section.grid ul li a.trigger-modal img {
+    section.grid ul li a.trigger-modal > img {
       max-width: 120px;
       margin: 0 auto;
       display: block; }

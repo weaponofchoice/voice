@@ -44,7 +44,7 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
             <a class="trigger-modal">
               <img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
               <div>
-                <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+                <h3>' . $title . '</h3>
                 ' . $text . '
               </div>
 
