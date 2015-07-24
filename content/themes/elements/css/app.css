@@ -1511,6 +1511,8 @@ nav ul {
     padding-right: 3em; }
     nav ul li a {
       text-decoration: none; }
+      nav ul li a h3 {
+        color: white; }
 
 @media only screen and (max-width: 62.5em) {
   nav {
