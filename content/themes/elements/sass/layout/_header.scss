@@ -2,16 +2,21 @@ header{
   @include flex;
   @include align-items( center );
   @include justify-content( space-between );
-  
+
   left: 0;
   position: fixed;
   z-index: $zIndex-header;
-  
+
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   .link-logo{
     width: 50px;
+
+    img{
+      position: fixed;
+      width: 250px;
+    }
   }
 }

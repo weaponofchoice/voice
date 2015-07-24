@@ -1404,10 +1404,13 @@ header {
   position: fixed;
   z-index: 1100;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   header .link-logo {
     width: 50px; }
+    header .link-logo img {
+      position: fixed;
+      width: 250px; }
 
 footer {
   z-index: 1100;
@@ -1532,6 +1535,19 @@ section.hero {
       background-size: cover;
       background-position: center center; }
   section.hero .section-body {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flex;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

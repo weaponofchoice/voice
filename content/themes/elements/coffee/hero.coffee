@@ -24,7 +24,7 @@ $ ->
   hero_banner = $('.hero-banner')
 
   # Determine heights
-  hero_height = window.innerHeight - 50
+  hero_height = window.innerHeight
 
   # Apply heights
   hero.css "height", hero_height
@@ -81,7 +81,7 @@ $ ->
     hero_banner = $('.hero-banner')
 
     # Re-determine heights
-    hero_height = window.innerHeight - 50
+    hero_height = window.innerHeight
 
     # Re-Apply heights
     hero.css "height", hero_height
