@@ -6,10 +6,10 @@ body{
 
 body.is-loading{
   height: auto !important;
-  background: url('../img/logo.svg') center center no-repeat;
+  background: url('../img/logo.png') center center no-repeat;
   background-size: 200px;
   background-attachment: fixed;
-  
+
   > *{
     @include hide( 0s );
   }

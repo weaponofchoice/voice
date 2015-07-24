@@ -8,7 +8,7 @@ $c_title = get_sub_field( 'parallax_c_title' );
 if(! $detect->isMobile() ):
 
   echo
-  '<section class="parallax has-no-pad-sides is-fullwidth" id="' . $id . '">
+  '<section class="parallax has-no-pad-sides has-no-pad-top is-fullwidth" id="' . $id . '">
     <div class="section-banner">
       <div class="bcg"
         style="background-image: url(' . $b_image['sizes']['large'] . ')"

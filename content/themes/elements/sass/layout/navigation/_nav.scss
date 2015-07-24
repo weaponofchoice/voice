@@ -1,19 +1,33 @@
+nav{
+  width: 50%;
+}
+
 nav ul{
   display: inline;
-  
+
   li{
     display: inline-block;
-    padding-right: 1em;
-    
+    padding-right: 3em;
+
     a{
       text-decoration: none;
+
+      h3{
+        color: $white;
+      }
     }
   }
 }
 
 // Current item
-nav ul{
-  li.current{
-    text-decoration: underline;
+// nav ul{
+//   li.current{
+//     text-decoration: underline;
+//   }
+// }
+
+@media #{$medium-down}{
+  nav{
+    display: none;
   }
 }

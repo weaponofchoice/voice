@@ -1,0 +1,17 @@
+.fadeIn-up{
+  @include hide( 1s );
+
+  &.is-animated{
+    @include show( 1s );
+  }
+}
+
+.fadeIn-up{
+  @include hide( 1s );
+  @include transform( translateY(10%) );
+
+  &.is-animated{
+    @include show( 1s );
+    @include transform( translateY(0) );
+  }
+}

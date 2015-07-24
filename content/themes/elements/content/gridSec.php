@@ -28,31 +28,46 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
     echo '<div class="section-body">';
 
     if( $o_b_layout == 'masonry' ){
-      echo '<ul class="s-grid-1 m-grid-3 row isotope isotope-masonry">';
+      echo '<ul class="s-grid-1 l-grid-3 row isotope isotope-masonry">';
     } else {
-      echo '<ul class="s-grid-1 m-grid-3 row">';
+      echo '<ul class="s-grid-1 l-grid-3 row">';
     }
 
         while( have_rows('gridSec_b_item') ): the_row();
+          $thumb = get_sub_field( 'gridSec_b_item_thumb' );
           $image = get_sub_field( 'gridSec_b_item_image' );
           $title = get_sub_field( 'gridSec_b_item_title' );
-          $text = preg_replace( '/<p>/', '<p class="is-aligned-' . $o_h_align . '">', get_sub_field( 'gridSec_b_item_text' ) );
+          $text = preg_replace( '/<p>/', '<p>', get_sub_field( 'gridSec_b_item_text' ) );
 
           echo
           '<li>
-            <a>
-              <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+            <a class="trigger-modal">
+              <img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
               <div>
-                <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+                <h3>' . $title . '</h3>
                 ' . $text . '
               </div>
             </a>
+
+            <div class="modal">
+              <div class="modal-close"><i></i></div>
+              <div class="modal-image">
+                <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
+              </div>
+
+              <div class="modal-info">
+                <h3>' . $title . '</h3>
+                ' . $text . '
+              </div>
+            </div>
           </li>';
         endwhile;
 
       echo '</ul>';
 
     echo '</div>';
+
+    echo '<div class="overlay"></div>';
   endif;
 
 echo '</section>';

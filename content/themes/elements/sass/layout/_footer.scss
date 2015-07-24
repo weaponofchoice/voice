@@ -1,26 +1,44 @@
 footer{
+  @include flex;
+  @include align-items( flex-end );
+
   z-index: $zIndex-footer;
-  
+
   padding: 50px;
-  
+
   background: $black;
   text-align: center;
-  
-  > img{
+
+  img{
     max-width: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
-  
-  p{
-    margin-bottom: 1em;
-  }
-  
-  ul{
-    li{
-      width: 35px;
-      padding: 0 .5em;
-      display: inline-block;
+
+  div{
+    text-align: left;
+
+    h3{
+      margin-bottom: 1em;
+
+      color: $white;
+    }
+
+    p{
+      color: $white;
     }
   }
-  
+}
+
+@media #{$small-only}{
+  footer{
+    display: block;
+
+    div{
+      margin-bottom: 30px;
+
+      h3{
+        margin-bottom: 0;
+      }
+    }
+  }
 }

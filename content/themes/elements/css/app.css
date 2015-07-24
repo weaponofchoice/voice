@@ -1330,10 +1330,12 @@ h1, h2, h3, p, a {
 
 h1, h2 {
   font-family: trademarker;
-  font-size: 80px; }
+  font-size: 80px;
+  line-height: 0.7; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 1; }
 
 h3 {
   font-size: 18px; }
@@ -1349,6 +1351,15 @@ a {
   a.link-h1, a.link-h2, a.link-h3, a.link-p {
     text-decoration: none; }
 
+@media only screen and (max-width: 31.25em) {
+  h1, h2 {
+    font-size: 40px; }
+
+  h2 {
+    font-size: 24px; }
+
+  h3 {
+    font-size: 24px; } }
 html,
 body {
   height: 100% !important;
@@ -1378,8 +1389,7 @@ main {
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-  background: white;
-  z-index: 900; }
+  background: white; }
 
 header {
   display: -webkit-box;
@@ -1404,26 +1414,58 @@ header {
   position: fixed;
   z-index: 1100;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   header .link-logo {
     width: 50px; }
+    header .link-logo img {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      position: fixed;
+      width: 250px; }
 
+@media only screen and (max-width: 62.5em) {
+  header .link-logo img {
+    width: 180px; } }
 footer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flex;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   z-index: 1100;
   padding: 50px;
   background: black;
   text-align: center; }
-  footer > img {
+  footer img {
     max-width: 250px;
-    margin-bottom: 50px; }
-  footer p, footer a {
-    margin-bottom: 1em; }
-  footer ul li {
-    width: 35px;
-    padding: 0 .5em;
-    display: inline-block; }
+    margin-bottom: 30px; }
+  footer div {
+    text-align: left; }
+    footer div h3 {
+      margin-bottom: 1em;
+      color: white; }
+    footer div p, footer div a {
+      color: white; }
 
+@media only screen and (max-width: 31.25em) {
+  footer {
+    display: block; }
+    footer div {
+      margin-bottom: 30px; }
+      footer div h3 {
+        margin-bottom: 0; } }
 a.trigger-menu {
   width: 35px;
   height: 35px;
@@ -1466,17 +1508,79 @@ a.trigger-menu:hover i:after {
 a.trigger-menu:focus i:before {
   -webkit-animation: activebefore .4s linear; }
 
+nav {
+  width: 50%; }
+
 nav ul {
   display: inline; }
   nav ul li {
     display: inline-block;
-    padding-right: 1em; }
+    padding-right: 3em; }
     nav ul li a {
       text-decoration: none; }
+      nav ul li a h3 {
+        color: white; }
 
-nav ul li.current {
-  text-decoration: underline; }
+@media only screen and (max-width: 62.5em) {
+  nav {
+    display: none; } }
+.modal {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
+  height: 90%;
+  max-width: 90%;
+  margin: auto;
+  background-color: white; }
 
+.overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal-close {
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer; }
+  .modal-close i {
+    width: 100%;
+    height: 100%;
+    display: block; }
+    .modal-close i:before, .modal-close i:after {
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      content: ' ';
+      top: 50%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: black; }
+    .modal-close i:after {
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+
+@media only screen and (max-width: 31.25em) {
+  .modal,
+  .overlay {
+    display: none; } }
 section {
   height: auto;
   overflow: hidden;
@@ -1511,16 +1615,31 @@ section.hero {
       background-size: cover;
       background-position: center center; }
   section.hero .section-body {
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flex;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0;
     left: 50%;
     position: absolute;
-    z-index: 999;
+    z-index: 997;
     margin: auto; }
+    section.hero .section-body h1, section.hero .section-body h2 {
+      margin-bottom: .5em; }
   section.hero:after {
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
@@ -1542,43 +1661,37 @@ section.hero .section-body {
     width: 50%;
     float: left; }
 
-.arrow-scroll {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1100; }
-  .arrow-scroll img {
-    width: 30px;
-    top: 20px;
-    left: 15px;
-    position: absolute;
-    z-index: 1100;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  .arrow-scroll:hover img {
-    top: 25px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-
-body.is-mobile section.hero .hero-banner {
-  position: relative; }
-
+@media only screen and (max-width: 62.5em) {
+  section.hero {
+    position: relative;
+    height: auto !important; }
+    section.hero .section-body {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: 0s;
+      -moz-transition: 0s;
+      -ms-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s;
+      -moz-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      top: 0;
+      left: 0;
+      position: relative;
+      width: 80%;
+      display: block; }
+      section.hero .section-body .left,
+      section.hero .section-body .right {
+        width: 100%;
+        height: auto;
+        float: none; }
+      section.hero .section-body .right {
+        text-align: center; }
+        section.hero .section-body .right * {
+          color: black; } }
 section.text {
   text-align: center; }
   section.text .section-body {
@@ -1595,41 +1708,73 @@ section.grid ul {
 
 section.grid ul li {
   margin-bottom: 50px; }
-  section.grid ul li a {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flex;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+  section.grid ul li a.trigger-modal {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
     padding: 20px;
+    text-align: center;
     border-radius: 5px;
     text-decoration: none !important; }
-    section.grid ul li a:hover {
+    section.grid ul li a.trigger-modal:hover {
       background-color: #f2f2f2; }
-    section.grid ul li a img {
-      width: 30%;
-      float: left;
+    section.grid ul li a.trigger-modal > img {
+      max-width: 120px;
+      margin: 0 auto;
       display: block; }
-    section.grid ul li a div {
-      width: 70%;
-      float: left;
-      padding-left: 15px; }
-      section.grid ul li a div h3 {
-        margin-bottom: 1em; }
+    section.grid ul li a.trigger-modal div {
+      text-align: center; }
+  section.grid ul li h3 {
+    margin-bottom: 1em; }
 
+section.grid ul li .modal {
+  padding: 30px;
+  cursor: default; }
+  section.grid ul li .modal .modal-image {
+    width: 60%;
+    height: 100%; }
+    section.grid ul li .modal .modal-image img {
+      width: auto;
+      height: 100%;
+      min-width: 0;
+      display: block;
+      margin: auto; }
+  section.grid ul li .modal .modal-info {
+    right: 0;
+    bottom: 150px;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    text-align: left; }
+    section.grid ul li .modal .modal-info h3 {
+      max-width: 180px; }
+    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a {
+      padding-right: 60px; }
+
+@media all and (max-width: 1250px) {
+  section.grid ul li .modal .modal-image {
+    width: 100%;
+    height: 70%; }
+    section.grid ul li .modal .modal-image img {
+      float: none;
+      margin: 0 auto; }
+  section.grid ul li .modal .modal-info {
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    padding-top: 30px;
+    padding-left: 0; }
+    section.grid ul li .modal .modal-info h3,
+    section.grid ul li .modal .modal-info p,
+    section.grid ul li .modal .modal-info a {
+      margin: auto;
+      text-align: center; }
+    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a {
+      max-width: 300px;
+      padding-right: 0; } }
 section.grid:nth-child(even) {
   background-color: #f9f9f9; }
   section.grid:nth-child(even) a:hover {
@@ -1954,6 +2099,10 @@ section.has-extra-pad-bottom,
 .section-footer.has-extra-pad-bottom {
   padding-bottom: 7.5rem; }
 
+header.shrunk .link-logo img {
+  width: 80px;
+  top: 15px; }
+
 h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
   font-style: italic; }
 h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined {
@@ -2015,7 +2164,7 @@ body > * {
 
 body.is-loading {
   height: auto !important;
-  background: url("../img/logo.svg") center center no-repeat;
+  background: url("../img/logo.png") center center no-repeat;
   background-size: 200px;
   background-attachment: fixed; }
   body.is-loading > * {
@@ -2038,3 +2187,79 @@ body.is-mobile.is-loading > * {
 
 .is-fullwidth {
   width: 100%; }
+
+.modal,
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .modal.is-active,
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.modal {
+  -moz-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px); }
+  .modal.is-active {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+
+.fadeIn-up {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .fadeIn-up.is-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+
+.fadeIn-up {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -moz-transform: translateY(10%);
+  -o-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%); }
+  .fadeIn-up.is-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
