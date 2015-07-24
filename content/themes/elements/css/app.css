@@ -2219,3 +2219,47 @@ body.is-mobile.is-loading > * {
     -ms-transform: translateX(0);
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
+.fadeIn-up {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .fadeIn-up.is-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+
+.fadeIn-up {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -moz-transform: translateY(10%);
+  -o-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%); }
+  .fadeIn-up.is-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
