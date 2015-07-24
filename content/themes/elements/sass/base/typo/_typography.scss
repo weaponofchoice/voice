@@ -10,12 +10,14 @@ h1{
   @include trademarker;
 
   font-size: 80px;
+  line-height: 0.7;
 }
 
 h2{
   @extend h1;
 
   font-size: 30px;
+  line-height: 1;
 }
 
 h3{
@@ -45,4 +47,10 @@ a{
   &.link-p{
     text-decoration: none;
   }
+}
+
+@media #{$small-only}{
+  h1{ font-size: 40px; }
+  h2{ font-size: 24px; }
+  h3{ font-size: 24px; }
 }

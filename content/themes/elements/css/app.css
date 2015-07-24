@@ -1330,10 +1330,12 @@ h1, h2, h3, p, a {
 
 h1, h2 {
   font-family: trademarker;
-  font-size: 80px; }
+  font-size: 80px;
+  line-height: 0.7; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 1; }
 
 h3 {
   font-size: 18px; }
@@ -1349,6 +1351,15 @@ a {
   a.link-h1, a.link-h2, a.link-h3, a.link-p {
     text-decoration: none; }
 
+@media only screen and (max-width: 31.25em) {
+  h1, h2 {
+    font-size: 40px; }
+
+  h2 {
+    font-size: 24px; }
+
+  h3 {
+    font-size: 24px; } }
 html,
 body {
   height: 100% !important;
@@ -1570,6 +1581,8 @@ section.hero {
     position: absolute;
     z-index: 997;
     margin: auto; }
+    section.hero .section-body h1, section.hero .section-body h2 {
+      margin-bottom: .5em; }
   section.hero:after {
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);

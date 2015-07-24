@@ -25,6 +25,10 @@ section.hero{
     z-index: 997;
 
     margin: auto;
+
+    h1{
+      margin-bottom: .5em;
+    }
   }
 
   &:after{

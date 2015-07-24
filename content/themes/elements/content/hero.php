@@ -7,7 +7,7 @@ $banner = get_sub_field( 'hero_banner' );
 
 $b_image = get_sub_field( 'hero_b_image' );
 $b_title = get_sub_field( 'hero_b_title' );
-$b_text = preg_replace( '/<p>/', '<h2 class="is-' . $o_b_textColor . '">', get_sub_field( 'hero_b_text' ) );
+$b_text = preg_replace( '/<p>/', '<h2>', get_sub_field( 'hero_b_text' ) );
 
 // Output
 echo '<section class="hero has-no-pad">';
@@ -34,7 +34,7 @@ echo '<section class="hero has-no-pad">';
       echo '<div class="right">';
         // Title
         if( $b_title ):
-          echo '<h1 class="is-bold is-' . $o_b_textColor . '">' . $b_title . '</h1>';
+          echo '<h1 class="is-bold">' . $b_title . '</h1>';
         endif;
 
         // Text
