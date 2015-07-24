@@ -37,7 +37,7 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
           $thumb = get_sub_field( 'gridSec_b_item_thumb' );
           $image = get_sub_field( 'gridSec_b_item_image' );
           $title = get_sub_field( 'gridSec_b_item_title' );
-          $text = preg_replace( '/<p>/', '<p class="is-aligned-' . $o_h_align . '">', get_sub_field( 'gridSec_b_item_text' ) );
+          $text = preg_replace( '/<p>/', '<p>', get_sub_field( 'gridSec_b_item_text' ) );
 
           echo
           '<li>
@@ -49,12 +49,13 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
               </div>
 
               <div class="modal">
+                <div class="modal-close"><i></i></div>
                 <div class="modal-image">
                   <img src="' . $image['sizes']['medium'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">
                 </div>
 
                 <div class="modal-info">
-                  <h3 class="is-aligned-' . $o_h_align . '">' . $title . '</h3>
+                  <h3>' . $title . '</h3>
                   ' . $text . '
                 </div>
               </div>
