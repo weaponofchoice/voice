@@ -1409,6 +1409,11 @@ header {
   header .link-logo {
     width: 50px; }
     header .link-logo img {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       position: fixed;
       width: 250px; }
 
@@ -1556,7 +1561,7 @@ section.hero {
     top: 50%;
     left: 50%;
     position: absolute;
-    z-index: 999;
+    z-index: 997;
     margin: auto; }
   section.hero:after {
     -moz-transform: rotate(-5deg);
@@ -2035,6 +2040,10 @@ section.has-extra-pad-bottom,
 .section-body.has-extra-pad-bottom,
 .section-footer.has-extra-pad-bottom {
   padding-bottom: 7.5rem; }
+
+header.shrunk .link-logo img {
+  width: 80px;
+  top: 15px; }
 
 h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
   font-style: italic; }

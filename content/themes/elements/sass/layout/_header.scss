@@ -15,6 +15,8 @@ header{
     width: 50px;
 
     img{
+      @include transition( .3s );
+      
       position: fixed;
       width: 250px;
     }
