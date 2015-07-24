@@ -1417,6 +1417,9 @@ header {
       position: fixed;
       width: 250px; }
 
+@media only screen and (max-width: 62.5em) {
+  header .link-logo img {
+    width: 180px; } }
 footer {
   z-index: 1100;
   padding: 50px;
@@ -1585,43 +1588,37 @@ section.hero .section-body {
     width: 50%;
     float: left; }
 
-.arrow-scroll {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1100; }
-  .arrow-scroll img {
-    width: 30px;
-    top: 20px;
-    left: 15px;
-    position: absolute;
-    z-index: 1100;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  .arrow-scroll:hover img {
-    top: 25px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-
-body.is-mobile section.hero .hero-banner {
-  position: relative; }
-
+@media only screen and (max-width: 62.5em) {
+  section.hero {
+    position: relative;
+    height: auto !important; }
+    section.hero .section-body {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: 0s;
+      -moz-transition: 0s;
+      -ms-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s;
+      -moz-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      top: 0;
+      left: 0;
+      position: relative;
+      width: 80%;
+      display: block; }
+      section.hero .section-body .left,
+      section.hero .section-body .right {
+        width: 100%;
+        height: auto;
+        float: none; }
+      section.hero .section-body .right {
+        text-align: center; }
+        section.hero .section-body .right * {
+          color: black; } }
 section.text {
   text-align: center; }
   section.text .section-body {
