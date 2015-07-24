@@ -17,9 +17,9 @@ section.hero{
   .section-body{
     @include flex;
     @include align-items( center );
-    @include transform( translate(-50%, -50%) );
+    @include transform( translateX(-50%) );
 
-    top: 50%;
+    bottom: 0;
     left: 50%;
     position: absolute;
     z-index: 997;
