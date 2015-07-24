@@ -1459,6 +1459,13 @@ footer {
     footer div p, footer div a {
       color: white; }
 
+@media only screen and (max-width: 31.25em) {
+  footer {
+    display: block; }
+    footer div {
+      margin-bottom: 30px; }
+      footer div h3 {
+        margin-bottom: 0; } }
 a.trigger-menu {
   width: 35px;
   height: 35px;
