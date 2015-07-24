@@ -10,6 +10,7 @@
   ?>
   <footer id="footer" class="row">
     <div class="s-4 m-2 columns">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/logo-jtg.png">
       <p><?php echo $phone; ?></p>
       <p><?php echo $fax; ?></p>
       <p><?php echo $email; ?></p>

@@ -1432,13 +1432,26 @@ header {
   header .link-logo img {
     width: 180px; } }
 footer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flex;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   z-index: 1100;
   padding: 50px;
   background: black;
   text-align: center; }
-  footer > img {
+  footer img {
     max-width: 250px;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   footer div {
     text-align: left; }
     footer div h3 {
