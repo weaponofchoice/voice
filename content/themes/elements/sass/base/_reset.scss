@@ -2,6 +2,11 @@ html{
   box-sizing: border-box;
 }
 
+html,
+body{
+  overflow: auto !important;
+}
+
 *{
   margin: 0;
   padding: 0;
