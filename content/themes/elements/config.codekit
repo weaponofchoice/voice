@@ -135,7 +135,7 @@
 	"\/coffee\/resize.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/resize.coffee",
 		"minifyOutput": 1,
@@ -1073,38 +1073,32 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
 			"position": 5,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
 			"position": 6,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
 			"position": 7,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
 			"position": 8,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
-			"position": 9,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/init-waypoints.coffee",
-			"position": 10,
+			"position": 9,
 			"type": 1
 			}
 		]
