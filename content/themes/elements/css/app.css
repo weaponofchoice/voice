@@ -1610,7 +1610,8 @@ section.hero {
   overflow: hidden; }
   section.hero .hero-banner {
     position: fixed;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 0; }
     section.hero .hero-banner div {
       background-repeat: no-repeat;
       background-size: cover;

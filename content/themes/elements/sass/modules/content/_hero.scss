@@ -5,6 +5,7 @@ section.hero{
   .hero-banner{
     position: fixed;
     overflow: hidden;
+    z-index: 0;
 
     div{
       background-repeat: no-repeat;
