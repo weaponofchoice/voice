@@ -32,6 +32,7 @@ footer{
 @media #{$small-only}{
   footer{
     display: block;
+    padding: 50px 30px;
 
     div{
       margin-bottom: 30px;

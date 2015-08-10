@@ -1461,7 +1461,8 @@ footer {
 
 @media only screen and (max-width: 31.25em) {
   footer {
-    display: block; }
+    display: block;
+    padding: 50px 30px; }
     footer div {
       margin-bottom: 30px; }
       footer div h3 {
