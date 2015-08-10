@@ -1669,11 +1669,11 @@ section.hero .section-body {
     section.hero .section-body {
       opacity: 1;
       visibility: visible;
-      -webkit-transition: 0s;
-      -moz-transition: 0s;
-      -ms-transition: 0s;
-      -o-transition: 0s;
-      transition: 0s;
+      -webkit-transition: 0s !important;
+      -moz-transition: 0s !important;
+      -ms-transition: 0s !important;
+      -o-transition: 0s !important;
+      transition: 0s !important;
       -moz-transform: translate(0, 0);
       -o-transform: translate(0, 0);
       -ms-transform: translate(0, 0);

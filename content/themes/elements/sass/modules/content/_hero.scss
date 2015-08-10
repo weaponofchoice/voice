@@ -63,7 +63,7 @@ section.hero .section-body{
     height: auto !important;
 
     .section-body{
-      @include show( 0s );
+      @include show( 0s !important);
       @include transform( translate(0,0) );
 
       top: 0;
