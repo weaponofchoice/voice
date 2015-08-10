@@ -1667,6 +1667,8 @@ section.hero .section-body {
   section.hero {
     position: relative;
     height: auto !important; }
+    section.hero .hero-banner {
+      display: none; }
     section.hero .section-body {
       opacity: 1;
       visibility: visible;
@@ -1693,7 +1695,16 @@ section.hero .section-body {
       section.hero .section-body .right {
         text-align: center; }
         section.hero .section-body .right * {
-          color: black; } }
+          color: black; }
+
+  section.hero:after {
+    z-index: 2; }
+
+  main {
+    z-index: 1; }
+
+  .hero-banner {
+    z-index: 0; } }
 section.text {
   text-align: center; }
   section.text .section-body {
