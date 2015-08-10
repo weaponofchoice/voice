@@ -155,3 +155,16 @@ section.grid ul.isotope-masonry{
     }
   }
 }
+
+// Hide hover state when modal is hidden
+@media #{$small-only}{
+  section.grid ul li{
+    a.trigger-modal{
+      cursor: default;
+
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -699,10 +699,6 @@
 html {
   box-sizing: border-box; }
 
-html,
-body {
-  overflow: auto !important; }
-
 * {
   margin: 0;
   padding: 0;
@@ -1825,6 +1821,11 @@ section.grid ul.isotope-masonry li:nth-child(n) {
   section.grid ul.isotope-masonry li:nth-child(n) img {
     margin-bottom: 0; }
 
+@media only screen and (max-width: 31.25em) {
+  section.grid ul li a.trigger-modal {
+    cursor: default; }
+    section.grid ul li a.trigger-modal:hover {
+      background-color: transparent; } }
 section.parallax .section-banner,
 .bcg {
   height: 0;
