@@ -44,3 +44,9 @@ section.parallax .section-body ul li{
    vertical-align: middle;
  }
 }
+
+@media #{$medium-down}{
+  .bcg{
+    background-attachment: inherit;
+  }
+}

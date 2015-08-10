@@ -1867,6 +1867,9 @@ section.parallax .section-body ul li {
     display: inline-block;
     vertical-align: middle; }
 
+@media only screen and (max-width: 62.5em) {
+  .bcg {
+    background-attachment: inherit; } }
 /*
  * Show and Hide class functions
  */
