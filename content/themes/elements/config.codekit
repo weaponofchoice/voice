@@ -57,7 +57,7 @@
 	"\/coffee\/init-isotope.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/init-isotope.coffee",
 		"minifyOutput": 1,
@@ -70,7 +70,7 @@
 	"\/coffee\/init-skrollr.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
 		"minifyOutput": 1,
@@ -366,7 +366,7 @@
 		},
 	"\/js\/vendor\/imagesLoaded.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/imagesLoaded.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/imagesLoaded-min.js",
@@ -377,7 +377,7 @@
 		},
 	"\/js\/vendor\/isotope.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/isotope.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/isotope-min.js",
@@ -432,7 +432,7 @@
 		},
 	"\/js\/vendor\/skrollr.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-min.js",
@@ -1043,98 +1043,68 @@
 	"\/coffee\/app.coffee": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/pace.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/scroll.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/scroll.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/pace.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/imagesLoaded.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.mobile.custom.min.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/isotope.js",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.waypoints.min.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/skrollr.js",
-			"position": 4,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.waypoints.min.js",
-			"position": 5,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/jquery.mobile.custom.min.js",
-			"position": 6,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/pageload.coffee",
-			"position": 7,
+			"position": 4,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
-			"position": 8,
+			"position": 5,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
-			"position": 9,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
-			"position": 10,
+			"position": 6,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
-			"position": 11,
+			"position": 7,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/init-isotope.coffee",
-			"position": 12,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
-			"position": 13,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/init-waypoints.coffee",
-			"position": 14,
+			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
+			"position": 8,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
-			"position": 15,
+			"position": 9,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/init-waypoints.coffee",
+			"position": 10,
 			"type": 1
 			}
 		]
