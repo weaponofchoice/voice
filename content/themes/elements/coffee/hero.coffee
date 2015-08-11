@@ -62,16 +62,16 @@ $ ->
   ###
     Fade effect
   ###
-  hero_content = $('.hero .section-body')
-  hero_content.addClass "is-visible-0.7s"
-
-  waypoint = new Waypoint(
-    element: $('.hero .section-body')
-    handler: (direction) ->
-      hero_content.toggleClass "is-visible-0.7s"
-      hero_content.toggleClass "is-hidden-0.7s"
-      return
-    offset: '-10%')
+  # hero_content = $('.hero .section-body')
+  # hero_content.addClass "is-visible-0.7s"
+  #
+  # waypoint = new Waypoint(
+  #   element: $('.hero .section-body')
+  #   handler: (direction) ->
+  #     hero_content.toggleClass "is-visible-0.7s"
+  #     hero_content.toggleClass "is-hidden-0.7s"
+  #     return
+  #   offset: '-10%')
 
   ###
     Background shape calculations
