@@ -2125,6 +2125,10 @@ header.shrunk .link-logo img {
   width: 80px;
   top: 15px; }
 
+@media only screen and (max-width: 31.25em) {
+  header .link-logo img {
+    width: 80px;
+    top: 15px; } }
 h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
   font-style: italic; }
 h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined {
