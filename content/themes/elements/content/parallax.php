@@ -43,9 +43,29 @@ if(! $detect->isMobile() ):
 else:
 
   echo
-  '<section class="parallax pad-no is-fullwidth" id="' . $id . '">
-    <div class="section_body">
+  '<section class="parallax has-no-pad is-fullwidth" id="' . $id . '">
+    <div class="section-banner">
       <img src="' . $b_image['sizes']['large'] . '">
+      <h1 class="is-white">' . $c_title . '</h1>
+    </div>';
+
+    echo
+    '<div class="section-body">
+      <ul class="s-grid-1 m-grid-3">';
+      if( have_rows('parallax_c_data_items') ):
+        while( have_rows('parallax_c_data_items') ): the_row();
+          $icon = get_sub_field( 'item_icon' );
+          $title = get_sub_field( 'item_title' );
+
+          echo
+          '<li>
+            <img src="' . $icon['sizes']['medium'] . '">
+            <p>' . $title . '</p>
+          </li>';
+        endwhile;
+      endif;
+      echo
+      '</ul>
     </div>
   </section>';
 

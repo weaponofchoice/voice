@@ -5,6 +5,7 @@ section.hero{
   .hero-banner{
     position: fixed;
     overflow: hidden;
+    z-index: 0;
 
     div{
       background-repeat: no-repeat;
@@ -30,20 +31,6 @@ section.hero{
       margin-bottom: .5em;
     }
   }
-
-  &:after{
-    @include transform( rotate(-5deg) );
-
-    content: ' ';
-    bottom: 0px;
-    left: -50px;
-    position: absolute;
-
-    width: 300%;
-    height: 300px;
-
-    background-color: $white;
-  }
 }
 
 section.hero .section-body{
@@ -56,21 +43,51 @@ section.hero .section-body{
   }
 }
 
+// Hero shape
+section.hero .hero-shape{
+  bottom: 0;
+  position: absolute;
+
+  width: 100%;
+  height: 200px;
+
+  background-color: $white;
+
+  span{
+    // top: -7.9vh;
+    left: 0;
+    position: absolute;
+
+    border-bottom-color: $white;
+    border-bottom-style: solid;
+    border-left-color: transparent;
+    border-left-style: solid;
+
+    border-right: 0px solid transparent;
+
+    width: 100%;
+  }
+}
+
 @media #{$medium-down}{
   section.hero{
     position: relative;
 
     height: auto !important;
+    padding-bottom: 50px !important;
+
+    .hero-banner{
+      display: none;
+    }
 
     .section-body{
-      @include show( 0s );
+      @include show( 0s !important);
       @include transform( translate(0,0) );
 
-      top: 0;
+      right: 0;
       left: 0;
       position: relative;
 
-      width: 80%;
       display: block;
 
       .left,
@@ -88,5 +105,13 @@ section.hero .section-body{
         }
       }
     }
+  }
+
+  // Grey background
+  section.hero,
+  section.hero .hero-shape,
+  section.hero .hero-shape span{
+    background-color: $grey-light;
+    border-color: $grey-light;
   }
 }

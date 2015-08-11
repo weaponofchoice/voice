@@ -62,16 +62,28 @@ $ ->
   ###
     Fade effect
   ###
-  hero_content = $('.hero .section-body')
-  hero_content.addClass "is-visible-0.7s"
+  # hero_content = $('.hero .section-body')
+  # hero_content.addClass "is-visible-0.7s"
+  #
+  # waypoint = new Waypoint(
+  #   element: $('.hero .section-body')
+  #   handler: (direction) ->
+  #     hero_content.toggleClass "is-visible-0.7s"
+  #     hero_content.toggleClass "is-hidden-0.7s"
+  #     return
+  #   offset: '-10%')
 
-  waypoint = new Waypoint(
-    element: $('.hero .section-body')
-    handler: (direction) ->
-      hero_content.toggleClass "is-visible-0.7s"
-      hero_content.toggleClass "is-hidden-0.7s"
-      return
-    offset: '-10%')
+  ###
+    Background shape calculations
+  ###
+  shape = $('.hero-shape span')
+  shape_width = $(window).innerWidth()
+  shape_height = $(window).innerHeight() / 100 * 5
+
+  shape.css "top", -shape_height
+  shape.css "height", shape_height
+  shape.css "border-left-width", shape_width
+  shape.css "border-bottom-width", shape_height
 
   ###
     Recalculate when window is resized
@@ -103,3 +115,15 @@ $ ->
     else
       object.removeClass "is-stretched-high"
       object.addClass "is-stretched-wide"
+
+    ###
+      Background shape calculations
+    ###
+    shape = $('.hero-shape span')
+    shape_width = $(window).innerWidth()
+    shape_height = $(window).innerHeight() / 100 * 5
+
+    shape.css "top", -shape_height
+    shape.css "height", shape_height
+    shape.css "border-left-width", shape_width
+    shape.css "border-bottom-width", shape_height
