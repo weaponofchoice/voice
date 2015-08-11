@@ -115,17 +115,3 @@ section.hero .hero-shape{
     border-color: $grey-light;
   }
 }
-
-@media #{$small-only}{
-  section.hero{
-    .section-body{
-      h1{
-        font-size: 14vw;
-      }
-
-      h2{
-        font-size: 24px;
-      }
-    }
-  }
-}
