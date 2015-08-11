@@ -74,6 +74,18 @@ $ ->
     offset: '-10%')
 
   ###
+    Background shape calculations
+  ###
+  shape = $('.hero-shape span')
+  shape_width = $(window).innerWidth()
+  shape_height = $(window).innerHeight() / 100 * 5
+
+  shape.css "top", -shape_height
+  shape.css "height", shape_height
+  shape.css "border-left-width", shape_width
+  shape.css "border-bottom-width", shape_height
+
+  ###
     Recalculate when window is resized
   ###
   $(window).on 'resize', ->
@@ -103,3 +115,15 @@ $ ->
     else
       object.removeClass "is-stretched-high"
       object.addClass "is-stretched-wide"
+
+    ###
+      Background shape calculations
+    ###
+    shape = $('.hero-shape span')
+    shape_width = $(window).innerWidth()
+    shape_height = $(window).innerHeight() / 100 * 5
+
+    shape.css "top", -shape_height
+    shape.css "height", shape_height
+    shape.css "border-left-width", shape_width
+    shape.css "border-bottom-width", shape_height
