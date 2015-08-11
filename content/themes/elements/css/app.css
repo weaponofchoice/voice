@@ -1696,16 +1696,17 @@ section.hero .hero-shape {
         text-align: center; }
         section.hero .section-body .right * {
           color: black; }
-        section.hero .section-body .right h1, section.hero .section-body .right h2 {
-          font-size: 14vw; }
-        section.hero .section-body .right h2 {
-          font-size: 24px; }
 
   section.hero,
   section.hero .hero-shape,
   section.hero .hero-shape span {
     background-color: #f9f9f9;
     border-color: #f9f9f9; } }
+@media only screen and (max-width: 31.25em) {
+  section.hero .section-body h1, section.hero .section-body h2 {
+    font-size: 14vw; }
+  section.hero .section-body h2 {
+    font-size: 24px; } }
 section.text {
   text-align: center; }
   section.text .section-body {

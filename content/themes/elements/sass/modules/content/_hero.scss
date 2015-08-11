@@ -31,20 +31,6 @@ section.hero{
       margin-bottom: .5em;
     }
   }
-
-  // &:after{
-  //   @include transform( rotate(-5deg) );
-  //
-  //   content: ' ';
-  //   bottom: 0px;
-  //   left: -50px;
-  //   position: absolute;
-  //
-  //   width: 300%;
-  //   height: 300px;
-  //
-  //   background-color: $white;
-  // }
 }
 
 section.hero .section-body{
@@ -117,14 +103,6 @@ section.hero .hero-shape{
         *{
           color: $black;
         }
-
-        h1{
-          font-size: 14vw;
-        }
-
-        h2{
-          font-size: 24px;
-        }
       }
     }
   }
@@ -135,5 +113,19 @@ section.hero .hero-shape{
   section.hero .hero-shape span{
     background-color: $grey-light;
     border-color: $grey-light;
+  }
+}
+
+@media #{$small-only}{
+  section.hero{
+    .section-body{
+      h1{
+        font-size: 14vw;
+      }
+
+      h2{
+        font-size: 24px;
+      }
+    }
   }
 }
