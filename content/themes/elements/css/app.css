@@ -1319,7 +1319,7 @@ ul {
 
 @font-face {
   font-family: trademarker;
-  src: url(../fonts/trademarker.otf); }
+  src: url(../fonts/trademarker.OTF); }
 h1, h2, h3, p, a {
   font-family: 'Gotham A', 'Gotham B';
   font-weight: 400;
