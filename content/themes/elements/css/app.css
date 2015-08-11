@@ -1646,6 +1646,9 @@ section.hero .section-body {
   section.hero .section-body .right {
     width: 50%;
     float: left; }
+  section.hero .section-body .left {
+    background-position: 9999px;
+    background-repeat: no-repeat; }
 
 section.hero .hero-shape {
   bottom: 0;
@@ -1686,22 +1689,23 @@ section.hero .hero-shape {
       right: 0;
       left: 0;
       position: relative;
+      width: 100%;
       display: block; }
       section.hero .section-body .left,
       section.hero .section-body .right {
         width: 100%;
         height: auto;
+        padding: 0 10%;
         float: none; }
+      section.hero .section-body .left {
+        background-position: center center; }
+        section.hero .section-body .left img {
+          margin-bottom: -30%; }
       section.hero .section-body .right {
+        padding-top: 30%;
         text-align: center; }
         section.hero .section-body .right * {
-          color: black; }
-
-  section.hero,
-  section.hero .hero-shape,
-  section.hero .hero-shape span {
-    background-color: #f9f9f9;
-    border-color: #f9f9f9; } }
+          color: black; } }
 section.text {
   text-align: center; }
   section.text .section-body {

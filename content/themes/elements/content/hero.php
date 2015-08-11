@@ -24,7 +24,7 @@ echo '<section class="hero has-no-pad">';
   if( $b_image || $b_title || $b_text ):
     echo '<div class="section-body">';
 
-      echo '<div class="left">';
+      echo '<div class="left" style="background-image: url(' . $banner['sizes']['large'] . ')">';
         // Logo
         if( $b_image ):
           echo '<img src="' . $b_image['sizes']['medium'] . '" width="' . $b_image['width'] . '" height="' .   $b_image['height'] . '">';
