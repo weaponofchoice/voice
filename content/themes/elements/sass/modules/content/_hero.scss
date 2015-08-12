@@ -41,6 +41,11 @@ section.hero .section-body{
     width: 50%;
     float: left;
   }
+
+  .left{
+    background-position: 9999px;
+    background-repeat: no-repeat;
+  }
 }
 
 // Hero shape
@@ -88,16 +93,28 @@ section.hero .hero-shape{
       left: 0;
       position: relative;
 
+      width: 100%;
       display: block;
 
       .left,
       .right{
         width: 100%;
         height: auto;
+        padding: 0 10%;
         float: none;
       }
 
+      .left{
+        background-position: center center;
+
+        img{
+          margin-bottom: -30%;
+        }
+      }
+
       .right{
+        padding-top: 30%;
+
         text-align: center;
 
         *{
@@ -105,13 +122,5 @@ section.hero .hero-shape{
         }
       }
     }
-  }
-
-  // Grey background
-  section.hero,
-  section.hero .hero-shape,
-  section.hero .hero-shape span{
-    background-color: $grey-light;
-    border-color: $grey-light;
   }
 }
