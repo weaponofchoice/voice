@@ -8,7 +8,7 @@
 <!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-  <title>The Voice of Holland</title>
+  <title>The Voice Perfumes</title>
 
   <link rel="canonical" href="<?php echo home_url(); ?>">
 
