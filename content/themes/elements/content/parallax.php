@@ -10,7 +10,7 @@ if(! $detect->isMobile() ):
   echo
   '<section class="parallax has-no-pad-sides has-no-pad-top is-fullwidth" id="' . $id . '">
     <div class="section-banner">
-      <div class="bcg"
+      <div class="bcg retina"
         style="background-image: url(' . $b_image['sizes']['large'] . ')"
         data-center="background-position: 50% 0px;"
         data-bottom-top="background-position: 50% 50px;"
