@@ -33,8 +33,13 @@ section.grid ul li{
     }
   }
 
-  h3{
+  h3,
+  p{
     margin-bottom: 1em;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
   }
 }
 

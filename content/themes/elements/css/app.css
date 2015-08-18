@@ -1411,7 +1411,7 @@ header {
   -moz-justify-content: space-between;
   justify-content: space-between;
   left: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1100;
   width: 100%;
   padding-top: 35px;
@@ -1424,6 +1424,7 @@ header {
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
+      top: 35px;
       position: fixed;
       width: 250px; }
 
@@ -1767,8 +1768,12 @@ section.grid ul li {
       display: block; }
     section.grid ul li a.trigger-modal div {
       text-align: center; }
-  section.grid ul li h3 {
+  section.grid ul li h3,
+  section.grid ul li p,
+  section.grid ul li a {
     margin-bottom: 1em; }
+  section.grid ul li p:last-child, section.grid ul li a:last-child {
+    margin-bottom: 0; }
 
 section.grid ul li .modal {
   padding: 30px;
@@ -2174,17 +2179,9 @@ section.has-extra-pad-bottom,
 .section-footer.has-extra-pad-bottom {
   padding-bottom: 7.5rem; }
 
-header.shrunk {
-  background-color: white; }
-  header.shrunk .link-logo img {
-    width: 80px;
-    top: 10px; }
-  header.shrunk a {
-    color: black; }
+header.shrunk .link-logo img {
+  width: 80px; }
 
-@media only screen and (max-width: 62.5em) {
-  header.shrunk {
-    background-color: transparent; } }
 @media only screen and (max-width: 31.25em) {
   header.shrunk .link-logo img {
     top: 15px;
