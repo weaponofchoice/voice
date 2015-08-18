@@ -156,6 +156,20 @@ section.grid ul.isotope-masonry{
   }
 }
 
+@media #{$medium-only}{
+  section.grid ul li a.trigger-modal{
+    @include flex;
+    @include align-items( center );
+
+    padding: 0;
+
+    div{
+      padding-left: 20px;
+      text-align: left;
+    }
+  }
+}
+
 // Hide hover state when modal is hidden
 @media #{$small-only}{
   section.grid ul li{
