@@ -9,10 +9,14 @@ header.shrunk{
   }
 }
 
-@media #{$small-only}{
+@media #{$medium-down}{
   header.shrunk{
     background-color: transparent;
+  }
+}
 
+@media #{$small-only}{
+  header.shrunk{
     .link-logo{
       img{
         top: 15px;

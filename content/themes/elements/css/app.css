@@ -1686,7 +1686,7 @@ section.hero .hero-shape {
   section.hero {
     position: relative;
     height: auto !important;
-    padding-bottom: 50px !important; }
+    padding-bottom: 180px !important; }
     section.hero .hero-banner {
       display: none; }
     section.hero .section-body {
@@ -2153,13 +2153,14 @@ header.shrunk {
     width: 80px;
     top: 10px; }
 
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 62.5em) {
   header.shrunk {
-    background-color: transparent; }
-    header.shrunk .link-logo img {
-      top: 15px;
-      position: relative;
-      width: 100px; } }
+    background-color: transparent; } }
+@media only screen and (max-width: 31.25em) {
+  header.shrunk .link-logo img {
+    top: 15px;
+    position: relative;
+    width: 100px; } }
 h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
   font-style: italic; }
 h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined {
