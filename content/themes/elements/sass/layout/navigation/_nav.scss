@@ -29,7 +29,7 @@ nav ul{
   }
 }
 
-@media #{$small-only}{
+@media all and (max-width: 730px){
   nav{
     display: none;
   }
