@@ -1428,8 +1428,19 @@ header {
       width: 250px; }
 
 @media only screen and (max-width: 62.5em) {
-  header .link-logo img {
-    width: 180px; } }
+  header {
+    position: absolute; }
+    header .link-logo {
+      width: 100px; }
+      header .link-logo img {
+        top: 15px;
+        position: relative;
+        width: 180px; } }
+@media only screen and (max-width: 31.25em) {
+  header {
+    padding: 0; }
+    header .link-logo {
+      margin: auto; } }
 footer {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -1521,6 +1532,14 @@ nav ul {
       text-decoration: none; }
 
 @media only screen and (max-width: 62.5em) {
+  nav {
+    width: 80%; }
+    nav ul li {
+      padding-right: 0;
+      padding-left: 3em; }
+      nav ul li a {
+        color: white; } }
+@media only screen and (max-width: 31.25em) {
   nav {
     display: none; } }
 .modal {
@@ -2135,9 +2154,12 @@ header.shrunk {
     top: 10px; }
 
 @media only screen and (max-width: 31.25em) {
-  header .link-logo img {
-    width: 80px;
-    top: 15px; } }
+  header.shrunk {
+    background-color: transparent; }
+    header.shrunk .link-logo img {
+      top: 15px;
+      position: relative;
+      width: 100px; } }
 h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
   font-style: italic; }
 h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined {

@@ -15,14 +15,24 @@ nav ul{
   }
 }
 
-// Current item
-// nav ul{
-//   li.current{
-//     text-decoration: underline;
-//   }
-// }
-
 @media #{$medium-down}{
+  nav{
+    width: 80%;
+
+    ul{
+      li{
+        padding-right: 0;
+        padding-left: 3em;
+
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media #{$small-only}{
   nav{
     display: none;
   }

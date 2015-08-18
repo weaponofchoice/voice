@@ -10,8 +10,16 @@ header.shrunk{
 }
 
 @media #{$small-only}{
-  header .link-logo img{
-    width: 80px;
-    top: 15px;
+  header.shrunk{
+    background-color: transparent;
+
+    .link-logo{
+      img{
+        top: 15px;
+        position: relative;
+
+        width: 100px;
+      }
+    }
   }
 }
