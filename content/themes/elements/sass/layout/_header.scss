@@ -15,12 +15,12 @@ header{
     width: 50px;
 
     img{
-      @include transition( .3s );
+      @include transition( .4s );
 
       top: 35px;
       position: fixed;
-      
-      width: 250px;
+
+      width: 200px;
     }
   }
 }
