@@ -160,10 +160,14 @@ section.grid ul.isotope-masonry{
   section.grid ul li a.trigger-modal{
     @include flex;
     @include align-items( center );
+    @include justify-content( center );
 
-    padding: 0;
+    img{
+      margin: 0;
+    }
 
     div{
+      max-width: 450px;
       padding-left: 20px;
       text-align: left;
     }
@@ -175,6 +179,8 @@ section.grid ul.isotope-masonry{
   section.grid ul li{
     a.trigger-modal{
       cursor: default;
+
+      padding: 0;
 
       &:hover{
         background-color: transparent;

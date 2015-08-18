@@ -15,7 +15,7 @@ footer{
   padding-right: $side-margin;
 }
 
-@media #{$small-only}{
+@media #{$medium-down}{
   header{
     padding-left: $side-margin-small;
     padding-right: $side-margin-small;
