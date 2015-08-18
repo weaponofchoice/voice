@@ -25,10 +25,27 @@ header{
 
 @media #{$medium-down}{
   header{
+    position: absolute;
+
     .link-logo{
+      width: 100px;
+
       img{
+        top: 15px;
+        position: relative;
+
         width: 180px;
       }
+    }
+  }
+}
+
+@media #{$small-only}{
+  header{
+    padding: 0;
+    
+    .link-logo{
+      margin: auto;
     }
   }
 }

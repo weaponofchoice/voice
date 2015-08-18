@@ -10,19 +10,26 @@ nav ul{
     padding-right: 3em;
 
     a{
+      color: $white;
       text-decoration: none;
     }
   }
 }
 
-// Current item
-// nav ul{
-//   li.current{
-//     text-decoration: underline;
-//   }
-// }
-
 @media #{$medium-down}{
+  nav{
+    width: 80%;
+
+    ul{
+      li{
+        padding-right: 0;
+        padding-left: 3em;
+      }
+    }
+  }
+}
+
+@media #{$small-only}{
   nav{
     display: none;
   }

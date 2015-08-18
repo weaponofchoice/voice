@@ -7,11 +7,27 @@ header.shrunk{
       top: 10px;
     }
   }
+
+  a{
+    color: $black;
+  }
+}
+
+@media #{$medium-down}{
+  header.shrunk{
+    background-color: transparent;
+  }
 }
 
 @media #{$small-only}{
-  header .link-logo img{
-    width: 80px;
-    top: 15px;
+  header.shrunk{
+    .link-logo{
+      img{
+        top: 15px;
+        position: relative;
+
+        width: 100px;
+      }
+    }
   }
 }

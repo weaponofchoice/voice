@@ -22,7 +22,7 @@ if(! $detect->isMobile() ):
 
     echo
     '<div class="section-body">
-      <ul class="s-grid-1 m-grid-3">';
+      <ul class="s-grid-1 l-grid-3">';
       if( have_rows('parallax_c_data_items') ):
         while( have_rows('parallax_c_data_items') ): the_row();
           $icon = get_sub_field( 'item_icon' );
