@@ -22,9 +22,9 @@ echo '<section class="hero has-no-pad">';
 
   // Hero content container
   if( $b_image || $b_title || $b_text ):
-    echo '<div class="section-body">';
+    echo '<div class="section-body" style="background-image: url(' . $banner['sizes']['large'] . ')">';
 
-      echo '<div class="left" style="background-image: url(' . $banner['sizes']['large'] . ')">';
+      echo '<div class="left">';
         // Logo
         if( $b_image ):
           echo '<img src="' . $b_image['sizes']['medium'] . '" width="' . $b_image['width'] . '" height="' .   $b_image['height'] . '">';

@@ -36,15 +36,13 @@ section.hero{
 section.hero .section-body{
   width: 80%;
 
+  background-position: 9999px;
+  background-repeat: no-repeat;
+
   .left,
   .right{
     width: 50%;
     float: left;
-  }
-
-  .left{
-    background-position: 9999px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -86,6 +84,8 @@ section.hero .hero-shape{
     }
 
     .section-body{
+      @include flex;
+      @include flex-direction( column-reverse );
       @include show( 0s !important);
       @include transform( translate(0,0) );
 
@@ -94,7 +94,8 @@ section.hero .hero-shape{
       position: relative;
 
       width: 100%;
-      display: block;
+
+      background-position: center center;
 
       .left,
       .right{
@@ -105,8 +106,6 @@ section.hero .hero-shape{
       }
 
       .left{
-        background-position: center center;
-
         img{
           margin-bottom: -30%;
         }
@@ -118,7 +117,7 @@ section.hero .hero-shape{
         text-align: center;
 
         *{
-          color: $black;
+          color: $white;
         }
       }
     }
