@@ -10,6 +10,7 @@ nav ul{
     padding-right: 3em;
 
     a{
+      color: $white;
       text-decoration: none;
     }
   }
@@ -23,10 +24,6 @@ nav ul{
       li{
         padding-right: 0;
         padding-left: 3em;
-
-        a{
-          color: $white;
-        }
       }
     }
   }

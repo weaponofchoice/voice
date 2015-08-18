@@ -27,6 +27,11 @@ section.hero{
 
     margin: auto;
 
+    h1,
+    h2{
+      color: $white;
+    }
+
     h1{
       margin-bottom: .5em;
     }
@@ -115,10 +120,6 @@ section.hero .hero-shape{
         padding-top: 30%;
 
         text-align: center;
-
-        *{
-          color: $white;
-        }
       }
     }
   }
