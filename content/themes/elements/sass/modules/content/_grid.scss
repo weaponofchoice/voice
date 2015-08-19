@@ -36,13 +36,17 @@ section.grid ul li{
     }
   }
 
-  h3,
-  p{
-    margin-bottom: 1em;
+  h3{
+    max-width: 250px;
+    margin: 1em auto;
   }
 
-  p:last-child{
-    margin-bottom: 0;
+  p{
+    margin-bottom: 1em;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -85,7 +89,7 @@ section.grid ul li .modal{
   }
 }
 
-// Read more
+// Read more functionality
 .read-more{
   padding: 10px;
   margin: 20px 0 10px;
@@ -200,6 +204,22 @@ section.grid ul.isotope-masonry{
 
     img{
       margin-bottom: 0;
+    }
+  }
+}
+
+@media #{$medium-down}{
+  section.grid ul li a.trigger-modal{
+    div{
+      max-height: none;
+
+      h3{
+        max-width: none;
+      }
+    }
+
+    .read-more{
+      display: none;
     }
   }
 }

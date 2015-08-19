@@ -1773,12 +1773,13 @@ section.grid ul li {
       max-height: 10em;
       overflow: hidden;
       text-align: center; }
-  section.grid ul li h3,
-  section.grid ul li p,
-  section.grid ul li a {
+  section.grid ul li h3 {
+    max-width: 250px;
+    margin: 1em auto; }
+  section.grid ul li p, section.grid ul li a {
     margin-bottom: 1em; }
-  section.grid ul li p:last-child, section.grid ul li a:last-child {
-    margin-bottom: 0; }
+    section.grid ul li p:last-child, section.grid ul li a:last-child {
+      margin-bottom: 0; }
 
 section.grid ul li .modal {
   padding: 30px;
@@ -1954,6 +1955,13 @@ section.grid ul.isotope-masonry li:nth-child(n) {
   section.grid ul.isotope-masonry li:nth-child(n) img {
     margin-bottom: 0; }
 
+@media only screen and (max-width: 62.5em) {
+  section.grid ul li a.trigger-modal div {
+    max-height: none; }
+    section.grid ul li a.trigger-modal div h3 {
+      max-width: none; }
+  section.grid ul li a.trigger-modal .read-more {
+    display: none; } }
 @media only screen and (min-width: 31.313em) and (max-width: 62.5em) {
   section.grid ul li a.trigger-modal {
     display: -webkit-box;
