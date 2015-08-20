@@ -111,21 +111,21 @@ section.grid ul li .modal{
 
 section.grid:nth-child(odd){
   a.trigger-modal .read-more:after{
-    @include gradient-linear(transparent, $white);
+    @include gradient-linear(rgba(255,255,255,0), $white);
   }
 
   a.trigger-modal:hover .read-more:after{
-    @include gradient-linear(transparent, $grey);
+    @include gradient-linear(rgba(255,255,255,0), $grey);
   }
 }
 
 section.grid:nth-child(even){
   a.trigger-modal .read-more:after{
-    @include gradient-linear(transparent, $grey-light);
+    @include gradient-linear(rgba(255,255,255,0), $grey-light);
   }
 
   a.trigger-modal:hover .read-more:after{
-    @include gradient-linear(transparent, $grey);
+    @include gradient-linear(rgba(255,255,255,0), $grey);
   }
 }
 
