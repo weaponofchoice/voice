@@ -1753,6 +1753,9 @@ section.text {
     section.text .section-body a {
       margin-bottom: 1em; }
 
+@media only screen and (max-width: 31.25em) {
+  section.text {
+    text-align: left; } }
 section.grid ul {
   width: 100%; }
 
