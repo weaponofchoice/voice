@@ -1,0 +1,11 @@
+body.ie{
+  section.hero{
+    .section-body .right{
+      @include transform( translateY(-50%) );
+
+      top: 50%;
+      right: 0;
+      position: absolute;
+    }
+  }
+}
