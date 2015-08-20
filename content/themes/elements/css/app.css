@@ -2455,6 +2455,8 @@ body.is-mobile.is-loading > * {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
 
+body.ie header nav {
+  float: right; }
 body.ie section.hero .section-body .right {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);

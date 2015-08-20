@@ -1,4 +1,10 @@
 body.ie{
+  header{
+    nav{
+      float: right;
+    }
+  }
+
   section.hero{
     .section-body .right{
       @include transform( translateY(-50%) );
