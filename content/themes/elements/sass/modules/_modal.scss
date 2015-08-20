@@ -7,7 +7,8 @@
   z-index: 9999;
 
   height: 90%;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
 
   background-color: $white;
@@ -62,7 +63,7 @@
   }
 }
 
-@media #{$small-only}{
+@media all and (max-width: 550px){
   .modal,
   .overlay{
     display: none;
