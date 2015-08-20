@@ -1996,7 +1996,9 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     cursor: default;
     padding: 0; }
     section.grid ul li a.trigger-modal:hover {
-      background-color: transparent; } }
+      background-color: transparent; }
+    section.grid ul li a.trigger-modal div {
+      text-align: left; } }
 section.parallax .section-banner,
 .bcg {
   height: 0;
