@@ -12,6 +12,15 @@ nav ul{
     a{
       color: $white;
       text-decoration: none;
+
+      h3{
+        @include transition( .3s );
+      }
+
+      &:hover h3{
+        @include transition( .3s );
+        @include transform( translateY(-5px) );
+      }
     }
   }
 }
@@ -29,7 +38,7 @@ nav ul{
   }
 }
 
-@media #{$small-only}{
+@media all and (max-width: 730px){
   nav{
     display: none;
   }

@@ -2,6 +2,7 @@
 
   <!-- Footer -->
   <?php
+  $logo = get_field( 'footer_logo', 'option' );
   $phone = get_field( 'footer_phone', 'option' );
   $fax = get_field( 'footer_fax', 'option' );
   $email = get_field( 'footer_email', 'option' );
@@ -10,7 +11,7 @@
   ?>
   <footer id="footer" class="row">
     <div class="s-4 m-2 columns">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/logo-jtg.png">
+      <img src="<?php echo $logo['sizes']['medium']; ?>">
       <p><?php echo $phone; ?></p>
       <p><?php echo $fax; ?></p>
       <p><?php echo $email; ?></p>

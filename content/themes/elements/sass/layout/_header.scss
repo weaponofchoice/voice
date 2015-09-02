@@ -4,7 +4,7 @@ header{
   @include justify-content( space-between );
 
   left: 0;
-  position: fixed;
+  position: absolute;
   z-index: $zIndex-header;
 
   width: 100%;
@@ -15,10 +15,12 @@ header{
     width: 50px;
 
     img{
-      @include transition( .3s );
+      @include transition( .4s );
 
+      top: 35px;
       position: fixed;
-      width: 250px;
+
+      width: 200px;
     }
   }
 }
@@ -43,7 +45,7 @@ header{
 @media #{$small-only}{
   header{
     padding: 0;
-    
+
     .link-logo{
       margin: auto;
     }
