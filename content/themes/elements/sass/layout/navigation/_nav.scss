@@ -12,6 +12,15 @@ nav ul{
     a{
       color: $white;
       text-decoration: none;
+
+      h3{
+        @include transition( .3s );
+      }
+
+      &:hover h3{
+        @include transition( .3s );
+        @include transform( translateY(-5px) );
+      }
     }
   }
 }

@@ -1533,6 +1533,23 @@ nav ul {
     nav ul li a {
       color: white;
       text-decoration: none; }
+      nav ul li a h3 {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      nav ul li a:hover h3 {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -moz-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px); }
 
 @media only screen and (max-width: 62.5em) {
   nav {
