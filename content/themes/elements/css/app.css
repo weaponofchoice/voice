@@ -1675,7 +1675,8 @@ section.hero {
     margin: auto; }
     section.hero .section-body h1, section.hero .section-body h2,
     section.hero .section-body h2 {
-      color: white; }
+      color: white;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
     section.hero .section-body h1, section.hero .section-body h2 {
       margin-bottom: .5em; }
 
@@ -2047,7 +2048,8 @@ section.parallax .section-banner h1, section.parallax .section-banner h2 {
   left: 0;
   position: absolute;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
 
 section.parallax .section-body {
   background-color: #f9f9f9; }
@@ -2333,6 +2335,8 @@ h1.is-black, h2.is-black, h3.is-black, p.is-black, a.is-black {
   color: black; }
 h1.is-white, h2.is-white, h3.is-white, p.is-white, a.is-white {
   color: white; }
+h1.has-shadow, h2.has-shadow, h3.has-shadow, p.has-shadow, a.has-shadow {
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
 
 p.is-small, a.is-small {
   font-size: 15px; }
