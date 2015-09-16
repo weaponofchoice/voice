@@ -15,6 +15,12 @@ footer{
   padding-right: $side-margin;
 }
 
+body,
+section.hero .hero-banner{
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 @media #{$medium-down}{
   header{
     padding-left: $side-margin-small;
