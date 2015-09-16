@@ -1,45 +1,24 @@
 footer{
   @include flex;
-  @include align-items( flex-end );
+  @include align-items( center );
+  @include justify-content( space-between );
 
   z-index: $zIndex-footer;
 
-  padding: 50px;
+  height: 100px;
+  padding: 30px;
 
   background: $black;
-  text-align: center;
 
   img{
-    max-width: 250px;
-    margin-bottom: 30px;
+    height: 100%;
+    float: left;
   }
 
-  div{
-    text-align: left;
-
-    h3{
-      margin-bottom: 1em;
-
-      color: $white;
-    }
-
-    p{
-      color: $white;
-    }
-  }
-}
-
-@media #{$small-only}{
-  footer{
-    display: block;
-    padding: 50px 30px;
-
-    div{
-      margin-bottom: 30px;
-
-      h3{
-        margin-bottom: 0;
-      }
-    }
+  p{
+    float: right;
+    color: $white;
+    font-size: 12px;
+    padding-left: 30px;
   }
 }

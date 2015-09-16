@@ -9,23 +9,9 @@
   $office = get_field( 'footer_office', 'option' );
   $warehouse = get_field( 'footer_warehouse', 'option' );
   ?>
-  <footer id="footer" class="row">
-    <div class="s-4 m-2 columns">
-      <img src="<?php echo $logo['sizes']['medium']; ?>">
-      <p><?php echo $phone; ?></p>
-      <p><?php echo $fax; ?></p>
-      <p><?php echo $email; ?></p>
-    </div>
-
-    <div class="s-4 m-1 columns">
-      <h3>Office</h3>
-      <p><?php echo $office; ?></p>
-    </div>
-
-    <div class="s-4 m-1 columns">
-      <h3>Warehouse</h3>
-      <p><?php echo $warehouse; ?></p>
-    </div>
+  <footer id="footer">
+    <img src="<?php echo $logo['sizes']['medium']; ?>">
+    <p>&copy; The Voice and The Voice Kids are a registered trademark by Talpa content B.V., and licensed by Talpa Global B.V</p>
   </footer>
 
   <!-- Scripts -->
