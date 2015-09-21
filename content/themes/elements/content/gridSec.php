@@ -45,9 +45,8 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
               <img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
               <div>
                 <h3>' . $title . '</h3>
-                ' . $text . '
               </div>
-              <p class="read-more"><span></span>read more</p>
+              <p class="read-more">read more</p>
             </a>
 
             <div class="modal">
