@@ -2,7 +2,7 @@
 
   <section class="form">
     <div class="section-body">
-      <?php echo do_shortcode('[contact-form-7 id="123" title="Contact"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 title="Contact"]'); ?>
     </div>
   </section>
 
