@@ -1,5 +1,11 @@
   </main>
 
+  <section class="form">
+    <div class="section-body">
+      <?php echo do_shortcode('[contact-form-7 id="123" title="Contact"]'); ?>
+    </div>
+  </section>
+
   <!-- Footer -->
   <?php
   $logo = get_field( 'footer_logo', 'option' );

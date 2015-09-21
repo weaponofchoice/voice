@@ -1321,7 +1321,9 @@ ul {
 @font-face {
   font-family: trademarker;
   src: url(../fonts/trademarker.OTF); }
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, div.wpcf7-response-output, input[type="text"],
+input[type="email"],
+textarea {
   font-family: 'Gotham A', 'Gotham B';
   font-weight: 400;
   font-style: normal;
@@ -1341,7 +1343,9 @@ h2 {
 h3 {
   font-size: 18px; }
 
-p, a {
+p, a, div.wpcf7-response-output, input[type="text"],
+input[type="email"],
+textarea {
   font-size: 14px;
   line-height: 1.4; }
 
@@ -1375,6 +1379,11 @@ section,
 footer {
   padding-left: 3.75rem;
   padding-right: 3.75rem; }
+
+body,
+section.hero .hero-banner {
+  max-width: 2000px;
+  margin: 0 auto; }
 
 @media only screen and (max-width: 62.5em) {
   header {
@@ -1469,7 +1478,9 @@ footer {
   footer img {
     height: 100%;
     float: left; }
-  footer p, footer a {
+  footer p, footer a, footer div.wpcf7-response-output, footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
     float: right;
     color: white;
     font-size: 12px;
@@ -1764,6 +1775,10 @@ section.text {
     section.text .section-body h2,
     section.text .section-body p,
     section.text .section-body a,
+    section.text .section-body div.wpcf7-response-output,
+    section.text .section-body input[type="text"],
+    section.text .section-body input[type="email"],
+    section.text .section-body textarea,
     section.text .section-body a {
       margin-bottom: 1em; }
 
@@ -1794,9 +1809,13 @@ section.grid ul li {
       section.grid ul li a.trigger-modal div h3 {
         max-width: 250px;
         margin: 1em auto; }
-      section.grid ul li a.trigger-modal div p, section.grid ul li a.trigger-modal div a {
+      section.grid ul li a.trigger-modal div p, section.grid ul li a.trigger-modal div a, section.grid ul li a.trigger-modal div div.wpcf7-response-output, section.grid ul li a.trigger-modal div input[type="text"],
+      section.grid ul li a.trigger-modal div input[type="email"],
+      section.grid ul li a.trigger-modal div textarea {
         margin-bottom: 1em; }
-        section.grid ul li a.trigger-modal div p:last-child, section.grid ul li a.trigger-modal div a:last-child {
+        section.grid ul li a.trigger-modal div p:last-child, section.grid ul li a.trigger-modal div a:last-child, section.grid ul li a.trigger-modal div div.wpcf7-response-output:last-child, section.grid ul li a.trigger-modal div input[type="text"]:last-child,
+        section.grid ul li a.trigger-modal div input[type="email"]:last-child,
+        section.grid ul li a.trigger-modal div textarea:last-child {
           margin-bottom: 0; }
 
 section.grid ul li .modal {
@@ -1820,10 +1839,14 @@ section.grid ul li .modal {
     text-align: left; }
     section.grid ul li .modal .modal-info h3 {
       margin-bottom: 1em; }
-    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a {
+    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a, section.grid ul li .modal .modal-info div.wpcf7-response-output, section.grid ul li .modal .modal-info input[type="text"],
+    section.grid ul li .modal .modal-info input[type="email"],
+    section.grid ul li .modal .modal-info textarea {
       padding-right: 60px;
       margin-bottom: 1em; }
-      section.grid ul li .modal .modal-info p:last-child, section.grid ul li .modal .modal-info a:last-child {
+      section.grid ul li .modal .modal-info p:last-child, section.grid ul li .modal .modal-info a:last-child, section.grid ul li .modal .modal-info div.wpcf7-response-output:last-child, section.grid ul li .modal .modal-info input[type="text"]:last-child,
+      section.grid ul li .modal .modal-info input[type="email"]:last-child,
+      section.grid ul li .modal .modal-info textarea:last-child {
         margin-bottom: 0; }
 
 .read-more {
@@ -1925,7 +1948,9 @@ section.grid:nth-child(even) a.trigger-modal:hover .read-more:after {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center; }
-    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a {
+    section.grid ul li .modal .modal-info p, section.grid ul li .modal .modal-info a, section.grid ul li .modal .modal-info div.wpcf7-response-output, section.grid ul li .modal .modal-info input[type="text"],
+    section.grid ul li .modal .modal-info input[type="email"],
+    section.grid ul li .modal .modal-info textarea {
       max-width: 600px;
       margin: auto;
       padding-right: 0; } }
@@ -2056,13 +2081,118 @@ section.parallax .section-body ul li {
     margin-left: -30px; }
   section.parallax .section-body ul li img,
   section.parallax .section-body ul li p,
-  section.parallax .section-body ul li a {
+  section.parallax .section-body ul li a,
+  section.parallax .section-body ul li div.wpcf7-response-output,
+  section.parallax .section-body ul li input[type="text"],
+  section.parallax .section-body ul li input[type="email"],
+  section.parallax .section-body ul li textarea {
     display: inline-block;
     vertical-align: middle; }
 
 @media only screen and (max-width: 62.5em) {
   .bcg {
     background-attachment: inherit; } }
+section.form .section-body {
+  max-width: 600px;
+  margin: auto; }
+  section.form .section-body h2 {
+    margin-bottom: 1em;
+    text-align: center; }
+  section.form .section-body p, section.form .section-body a, section.form .section-body div.wpcf7-response-output, section.form .section-body input[type="text"],
+  section.form .section-body input[type="email"],
+  section.form .section-body textarea {
+    margin-bottom: 15px; }
+
+form .form-row {
+  width: 100%;
+  margin-bottom: 15px; }
+  form .form-row label {
+    width: 20%;
+    display: inline-block;
+    font-weight: bold; }
+  form .form-row span {
+    width: calc(80% - 30px);
+    margin-left: 30px;
+    display: inline-block; }
+form .form-row.form-submit {
+  margin-bottom: 0;
+  text-align: center; }
+  form .form-row.form-submit input[type="submit"] {
+    font-family: trademarker;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 10px 80px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: thin solid black;
+    border-radius: 5px !important;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    margin-top: 15px; }
+    form .form-row.form-submit input[type="submit"]:hover {
+      background-color: black;
+      color: white; }
+
+.form-row span[role="alert"] {
+  display: none !important; }
+
+.form-row input[aria-invalid="true"] {
+  border: thin solid red !important; }
+
+div.wpcf7-response-output {
+  width: 100%;
+  height: 50px;
+  padding: 0 1em !important;
+  margin: 30px 0 !important;
+  background-color: red;
+  border: none !important;
+  color: white;
+  text-align: center;
+  line-height: 50px; }
+
+.wpcf7-mail-sent-ok {
+  color: black !important;
+  background-color: #e6e6e6 !important; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 0 1em;
+  line-height: 40px;
+  outline: none;
+  border: thin solid black;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+textarea {
+  height: 200px; }
+
+label[for="message"] {
+  vertical-align: top;
+  margin-top: .6px; }
+
+@media only screen and (max-width: 31.25em) {
+  form .form-row label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left; }
+  form .form-row span {
+    width: 100%;
+    margin-left: 0; }
+  form .form-row.form-submit input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 30px; } }
 /*
  * Show and Hide class functions
  */
@@ -2309,32 +2439,58 @@ header.shrunk .link-logo img {
     top: 15px;
     position: relative;
     width: 100px; } }
-h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic {
+h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic, div.is-italic.wpcf7-response-output, input.is-italic[type="text"],
+input.is-italic[type="email"],
+textarea.is-italic {
   font-style: italic; }
-h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined {
+h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined, div.is-underlined.wpcf7-response-output, input.is-underlined[type="text"],
+input.is-underlined[type="email"],
+textarea.is-underlined {
   text-decoration: underline; }
-h1.is-capitalized, h2.is-capitalized, h3.is-capitalized, p.is-capitalized, a.is-capitalized {
+h1.is-capitalized, h2.is-capitalized, h3.is-capitalized, p.is-capitalized, a.is-capitalized, div.is-capitalized.wpcf7-response-output, input.is-capitalized[type="text"],
+input.is-capitalized[type="email"],
+textarea.is-capitalized {
   text-transform: capitalize; }
-h1.is-uppercase, h2.is-uppercase, h3.is-uppercase, p.is-uppercase, a.is-uppercase {
+h1.is-uppercase, h2.is-uppercase, h3.is-uppercase, p.is-uppercase, a.is-uppercase, div.is-uppercase.wpcf7-response-output, input.is-uppercase[type="text"],
+input.is-uppercase[type="email"],
+textarea.is-uppercase {
   text-transform: uppercase; }
-h1.is-lowercase, h2.is-lowercase, h3.is-lowercase, p.is-lowercase, a.is-lowercase {
+h1.is-lowercase, h2.is-lowercase, h3.is-lowercase, p.is-lowercase, a.is-lowercase, div.is-lowercase.wpcf7-response-output, input.is-lowercase[type="text"],
+input.is-lowercase[type="email"],
+textarea.is-lowercase {
   text-transform: lowercase; }
-h1.is-bold, h2.is-bold, h3.is-bold, p.is-bold, a.is-bold {
+h1.is-bold, h2.is-bold, h3.is-bold, p.is-bold, a.is-bold, div.is-bold.wpcf7-response-output, input.is-bold[type="text"],
+input.is-bold[type="email"],
+textarea.is-bold {
   font-weight: 700; }
-h1.is-aligned-center, h2.is-aligned-center, h3.is-aligned-center, p.is-aligned-center, a.is-aligned-center {
+h1.is-aligned-center, h2.is-aligned-center, h3.is-aligned-center, p.is-aligned-center, a.is-aligned-center, div.is-aligned-center.wpcf7-response-output, input.is-aligned-center[type="text"],
+input.is-aligned-center[type="email"],
+textarea.is-aligned-center {
   text-align: center; }
-h1.is-aligned-left, h2.is-aligned-left, h3.is-aligned-left, p.is-aligned-left, a.is-aligned-left {
+h1.is-aligned-left, h2.is-aligned-left, h3.is-aligned-left, p.is-aligned-left, a.is-aligned-left, div.is-aligned-left.wpcf7-response-output, input.is-aligned-left[type="text"],
+input.is-aligned-left[type="email"],
+textarea.is-aligned-left {
   text-align: left; }
-h1.is-aligned-right, h2.is-aligned-right, h3.is-aligned-right, p.is-aligned-right, a.is-aligned-right {
+h1.is-aligned-right, h2.is-aligned-right, h3.is-aligned-right, p.is-aligned-right, a.is-aligned-right, div.is-aligned-right.wpcf7-response-output, input.is-aligned-right[type="text"],
+input.is-aligned-right[type="email"],
+textarea.is-aligned-right {
   text-align: right; }
-h1.is-black, h2.is-black, h3.is-black, p.is-black, a.is-black {
+h1.is-black, h2.is-black, h3.is-black, p.is-black, a.is-black, div.is-black.wpcf7-response-output, input.is-black[type="text"],
+input.is-black[type="email"],
+textarea.is-black {
   color: black; }
-h1.is-white, h2.is-white, h3.is-white, p.is-white, a.is-white {
+h1.is-white, h2.is-white, h3.is-white, p.is-white, a.is-white, div.is-white.wpcf7-response-output, input.is-white[type="text"],
+input.is-white[type="email"],
+textarea.is-white {
   color: white; }
-h1.has-shadow, h2.has-shadow, h3.has-shadow, p.has-shadow, a.has-shadow {
+h1.has-shadow, h2.has-shadow, h3.has-shadow, p.has-shadow, a.has-shadow, div.has-shadow.wpcf7-response-output, input.has-shadow[type="text"],
+input.has-shadow[type="email"],
+textarea.has-shadow {
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
 
-p.is-small, a.is-small {
+p.is-small, a.is-small, div.is-small.wpcf7-response-output, input.is-small[type="text"],
+input.is-small[type="email"],
+textarea.is-small {
   font-size: 15px; }
 
 .is-stretched-wrapper {

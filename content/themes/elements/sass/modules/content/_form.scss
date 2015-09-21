@@ -1,0 +1,149 @@
+section.form{
+  .section-body{
+    max-width: 600px;
+    margin: auto;
+
+    h2{
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    p{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+form{
+  .form-row{
+    width: 100%;
+    margin-bottom: 15px;
+
+    label{
+      width: 20%;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    span{
+      width: calc(80% - 30px);
+      margin-left: 30px;
+      display: inline-block;
+    }
+  }
+
+  .form-row.form-submit{
+    margin-bottom: 0;
+
+    text-align: center;
+
+    input[type="submit"]{
+      @include trademarker;
+      @include transition( .3s );
+
+      display: inline-block;
+      padding: 10px 80px;
+
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      border: thin solid $black;
+      border-radius: 5px !important;
+      font-size: 20px;
+
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+
+      display: inline-block;
+      margin-top: 15px;
+
+      &:hover{
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Errors
+.form-row span[role="alert"]{
+  display: none !important;
+}
+
+.form-row input[aria-invalid="true"]{
+  border: thin solid red !important;
+}
+
+div.wpcf7-response-output{
+  @extend p;
+
+  width: 100%;
+  height: 50px;
+  padding: 0 1em !important;
+  margin: 30px 0 !important;
+
+  background-color: red;
+  border: none !important;
+  color: $white;
+  text-align: center;
+  line-height: 50px;
+}
+
+// Succes message
+.wpcf7-mail-sent-ok{
+  color: $black !important;
+  background-color: $grey-dark !important;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  @extend p;
+
+  width: 100%;
+  height: 40px;
+  padding: 0 1em;
+
+  line-height: 40px;
+  outline: none;
+  border: thin solid $black;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+textarea{
+  height: 200px;
+}
+
+label[for="message"]{
+  vertical-align: top;
+  margin-top: .6px;
+}
+
+@media #{$small-only}{
+  form{
+    .form-row{
+      label{
+        width: 100%;
+        margin-bottom: 5px;
+
+        text-align: left;
+      }
+
+      span{
+        width: 100%;
+        margin-left: 0;
+      }
+
+      &.form-submit{
+        input[type="submit"]{
+          display: block;
+          margin: auto;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
