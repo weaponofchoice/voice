@@ -40,6 +40,7 @@ section.grid ul li{
       }
 
       p{
+        display: none;
         margin-bottom: 1em;
 
         &:last-child{
@@ -234,6 +235,10 @@ section.grid ul.isotope-masonry{
       max-width: 450px;
       padding-left: 20px;
       text-align: left;
+
+      p{
+        display: block;
+      }
     }
   }
 }
@@ -252,6 +257,10 @@ section.grid ul.isotope-masonry{
 
       div{
         text-align: left;
+
+        p{
+          display: block;
+        }
       }
     }
   }

@@ -1812,6 +1812,7 @@ section.grid ul li {
       section.grid ul li a.trigger-modal div p, section.grid ul li a.trigger-modal div a, section.grid ul li a.trigger-modal div div.wpcf7-response-output, section.grid ul li a.trigger-modal div input[type="text"],
       section.grid ul li a.trigger-modal div input[type="email"],
       section.grid ul li a.trigger-modal div textarea {
+        display: none;
         margin-bottom: 1em; }
         section.grid ul li a.trigger-modal div p:last-child, section.grid ul li a.trigger-modal div a:last-child, section.grid ul li a.trigger-modal div div.wpcf7-response-output:last-child, section.grid ul li a.trigger-modal div input[type="text"]:last-child,
         section.grid ul li a.trigger-modal div input[type="email"]:last-child,
@@ -2026,7 +2027,11 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     section.grid ul li a.trigger-modal div {
       max-width: 450px;
       padding-left: 20px;
-      text-align: left; } }
+      text-align: left; }
+      section.grid ul li a.trigger-modal div p, section.grid ul li a.trigger-modal div a, section.grid ul li a.trigger-modal div div.wpcf7-response-output, section.grid ul li a.trigger-modal div input[type="text"],
+      section.grid ul li a.trigger-modal div input[type="email"],
+      section.grid ul li a.trigger-modal div textarea {
+        display: block; } }
 @media only screen and (max-width: 31.25em) {
   section.grid ul li a.trigger-modal {
     cursor: default;
@@ -2034,7 +2039,11 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     section.grid ul li a.trigger-modal:hover {
       background-color: transparent; }
     section.grid ul li a.trigger-modal div {
-      text-align: left; } }
+      text-align: left; }
+      section.grid ul li a.trigger-modal div p, section.grid ul li a.trigger-modal div a, section.grid ul li a.trigger-modal div div.wpcf7-response-output, section.grid ul li a.trigger-modal div input[type="text"],
+      section.grid ul li a.trigger-modal div input[type="email"],
+      section.grid ul li a.trigger-modal div textarea {
+        display: block; } }
 section.parallax .section-banner,
 .bcg {
   height: 0;
