@@ -1484,7 +1484,8 @@ footer {
     float: right;
     color: white;
     font-size: 12px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    line-height: 40px; }
 
 a.trigger-menu {
   width: 35px;
