@@ -17,7 +17,7 @@ if(! $detect->isMobile() ):
         data-top-bottom="background-position: 50% -50px;"
         data-anchor-target="#' . $id . '">
       </div>
-      <h1 class="is-white">' . $c_title . '</h1>
+      <div class="banner-title"><h1 class="is-white">' . $c_title . '</h1></div>
     </div>';
 
     echo
