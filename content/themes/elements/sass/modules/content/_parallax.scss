@@ -18,19 +18,29 @@ section.parallax .section-banner,
 }
 
 // Banner title
+section.parallax .section-banner .banner-title{
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
 section.parallax .section-banner h1{
-  @include transform( translateY(-50%) );
+  @include transform( translate(-50%, -50%) );
 
   top: 50%;
   right: 0;
-  left: 0;
+  left: 50%;
   position: absolute;
-  
+
+  width: 100%;
   max-width: 1000px;
-  margin: auto;
   padding: 0 50px;
 
-  text-align: center;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 // Data item
