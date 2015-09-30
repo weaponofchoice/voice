@@ -43,21 +43,36 @@ function w3_flush_page_custom( $post_id ) {
 
 // Change the paypal icon
 add_filter('woocommerce_paypal_icon', 'custom_woocommerce_paypal_icon');
- 
+
 function custom_woocommerce_paypal_icon( $url ) {
   $url = get_bloginfo('template_url')."/img/pay-paypal.svg";
   return $url;
 }
 
+// Add Google Analytics code to footer
+add_action('wp_head', 'add_googleanalytics');
+function add_googleanalytics() { ?>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62289835-8', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+<?php }
+
 /* Cleaner image captions */
 add_filter( 'img_caption_shortcode', 'cleaner_caption', 10, 3 );
 
 function cleaner_caption( $output, $attr, $content ) {
-  
+
   // We're not worried abut captions in feeds, so just return the output here
   if ( is_feed() )
     return $output;
-  
+
   // Set up the default arguments
   $defaults = array(
     'id' => '',
@@ -65,30 +80,30 @@ function cleaner_caption( $output, $attr, $content ) {
     'width' => '',
     'caption' => ''
   );
-  
+
   // Merge the defaults with user input
   $attr = shortcode_atts( $defaults, $attr );
-  
+
   // If the width is less than 1 or there is no caption, return the content wrapped between the [caption]< tags
   if ( 1 > $attr['width'] || empty( $attr['caption'] ) )
     return $content;
-  
+
   // Set up the attributes for the caption <div>
   $attributes = ( !empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
   $attributes .= ' class="wp-caption ' . esc_attr( $attr['align'] ) . '"';
-  
+
   // Open the caption <div>
   $output = '<div' . $attributes .'>';
-  
+
   // Allow shortcodes for the content the caption was created for
   $output .= do_shortcode( $content );
-  
+
   // Append the caption text
   $output .= '<p class="wp-caption-text">' . $attr['caption'] . '</p>';
-  
+
   // Close the caption </div>
   $output .= '</div>';
-  
+
   // Return the formatted, clean caption
   return $output;
 }
