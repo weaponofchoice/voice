@@ -2187,11 +2187,11 @@ textarea {
   -webkit-border-radius: 0; }
 
 textarea {
-  height: 200px; }
+  height: 150px; }
 
-label[for="message"] {
+label[for="clientMessage"] {
   vertical-align: top;
-  margin-top: .6px; }
+  margin-top: 6px; }
 
 @media only screen and (max-width: 31.25em) {
   form .form-row label {
