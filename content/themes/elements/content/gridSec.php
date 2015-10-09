@@ -42,7 +42,8 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
           echo
           '<li>
             <a class="trigger-modal">
-              <img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
+              <div class="flex-enabled"><img src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '"></div>
+              <img class="flex-disabled" src="' . $thumb['sizes']['medium'] . '" width="' . $thumb['width'] . '" height="' . $thumb['height'] . '">
               <div>
                 <h3>' . $title . '</h3>
                 ' . $text . '

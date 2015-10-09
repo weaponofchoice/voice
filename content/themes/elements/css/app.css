@@ -1799,6 +1799,10 @@ section.grid ul li {
     text-decoration: none !important; }
     section.grid ul li a.trigger-modal:hover {
       background-color: #f2f2f2; }
+    section.grid ul li a.trigger-modal .flex-enabled {
+      display: none; }
+    section.grid ul li a.trigger-modal .flex-disabled {
+      display: block; }
     section.grid ul li a.trigger-modal > img {
       max-width: 120px;
       margin: 0 auto;
@@ -2023,6 +2027,10 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+    section.grid ul li a.trigger-modal .flex-enabled {
+      display: block; }
+    section.grid ul li a.trigger-modal .flex-disabled {
+      display: none; }
     section.grid ul li a.trigger-modal img {
       margin: 0; }
     section.grid ul li a.trigger-modal div {
