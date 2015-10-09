@@ -22,6 +22,16 @@ section.grid ul li{
       background-color: $grey;
     }
 
+    // superhack
+    .flex-enabled{
+      max-width: 120px;
+      display: none;
+    }
+
+    .flex-disabled{
+      display: block;
+    }
+
     > img{
       max-width: 120px;
       margin: 0 auto;
@@ -226,6 +236,14 @@ section.grid ul.isotope-masonry{
     @include flex;
     @include align-items( center );
     @include justify-content( center );
+
+    .flex-enabled{
+      display: block;
+    }
+
+    .flex-disabled{
+      display: none;
+    }
 
     img{
       margin: 0;
