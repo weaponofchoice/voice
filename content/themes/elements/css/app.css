@@ -1800,6 +1800,7 @@ section.grid ul li {
     section.grid ul li a.trigger-modal:hover {
       background-color: #f2f2f2; }
     section.grid ul li a.trigger-modal .flex-enabled {
+      max-width: 120px;
       display: none; }
     section.grid ul li a.trigger-modal .flex-disabled {
       display: block; }
