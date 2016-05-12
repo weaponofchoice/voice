@@ -10,7 +10,7 @@ nav ul{
     padding-right: 3em;
 
     a{
-      color: $white;
+      color: $black;
       text-decoration: none;
 
       h3{
@@ -20,6 +20,16 @@ nav ul{
       &:hover h3{
         @include transition( .3s );
         @include transform( translateY(-5px) );
+      }
+    }
+  }
+}
+
+body.home{
+  nav ul{
+    li{
+      a{
+        color: $white;
       }
     }
   }

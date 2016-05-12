@@ -1436,7 +1436,10 @@ header {
       transition: 0.4s;
       top: 35px;
       position: fixed;
-      width: 200px; }
+      width: 80px; }
+
+body.home header .link-logo img {
+  width: 200px; }
 
 @media only screen and (max-width: 62.5em) {
   header {
@@ -1538,7 +1541,7 @@ nav ul {
     display: inline-block;
     padding-right: 3em; }
     nav ul li a {
-      color: white;
+      color: black;
       text-decoration: none; }
       nav ul li a h3 {
         -webkit-transition: 0.3s;
@@ -1557,6 +1560,9 @@ nav ul {
         -ms-transform: translateY(-5px);
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px); }
+
+body.home nav ul li a {
+  color: white; }
 
 @media only screen and (max-width: 62.5em) {
   nav {
@@ -2453,7 +2459,7 @@ section.has-extra-pad-bottom,
   padding-bottom: 7.5rem; }
 
 header.shrunk .link-logo img {
-  width: 80px; }
+  width: 80px !important; }
 
 @media only screen and (max-width: 31.25em) {
   header.shrunk .link-logo img {

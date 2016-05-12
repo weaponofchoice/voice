@@ -49,5 +49,6 @@
     ?>
 
     <li><a href="#footer"><h3 class="is-bold">Contact</h3></a></li>
+    <li><a href="<?php echo home_url(); ?>/news"><h3 class="is-bold">News</h3></a></li>
   </ul>
 </nav>

@@ -20,8 +20,14 @@ header{
       top: 35px;
       position: fixed;
 
-      width: 200px;
+      width: 80px;
     }
+  }
+}
+
+body.home{
+  header .link-logo img{
+    width: 200px;
   }
 }
 
