@@ -68,5 +68,22 @@
   endif;
   ?>
 
+  <?php
+  if( is_home() ):
+
+    $categories = get_categories();
+    ?>
+
+    <aside>
+      <p>Categories:</p>
+      <nav>
+        <?php foreach($categories as $cat): ?>
+          <li><a href="<?php echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->name; ?></a></li>
+        <?php endforeach; ?>
+      </nav>
+    </aside>
+
+  <?php endif; ?>
+
   <!-- Main content -->
   <main role="main">

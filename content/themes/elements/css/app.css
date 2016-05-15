@@ -1532,24 +1532,24 @@ a.trigger-menu:hover i:after {
 a.trigger-menu:focus i:before {
   -webkit-animation: activebefore .4s linear; }
 
-nav {
+header nav {
   width: 50%; }
 
-nav ul {
+header nav ul {
   display: inline; }
-  nav ul li {
+  header nav ul li {
     display: inline-block;
     padding-right: 3em; }
-    nav ul li a {
+    header nav ul li a {
       color: black;
       text-decoration: none; }
-      nav ul li a h3 {
+      header nav ul li a h3 {
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-      nav ul li a:hover h3 {
+      header nav ul li a:hover h3 {
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
@@ -1561,17 +1561,17 @@ nav ul {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px); }
 
-body.home nav ul li a {
+body.home header nav ul li a {
   color: white; }
 
 @media only screen and (max-width: 62.5em) {
-  nav {
+  header nav {
     width: 80%; }
-    nav ul li {
+    header nav ul li {
       padding-right: 0;
       padding-left: 3em; } }
 @media all and (max-width: 730px) {
-  nav {
+  header nav {
     display: none; } }
 .modal {
   top: 0;
