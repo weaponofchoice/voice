@@ -1575,6 +1575,38 @@ body.home header nav ul li a {
 @media all and (max-width: 730px) {
   header nav {
     display: none; } }
+aside nav {
+  margin-bottom: 50px; }
+  aside nav p, aside nav a, aside nav div.wpcf7-response-output, aside nav input[type="text"],
+  aside nav input[type="email"],
+  aside nav textarea,
+  aside nav li {
+    margin-bottom: 15px; }
+  aside nav li a {
+    text-decoration: none; }
+    aside nav li a:hover, aside nav li a:focus {
+      border-bottom: thin solid black; }
+aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
+aside ul > input[type="email"],
+aside ul > textarea,
+aside ul li {
+  margin-bottom: 15px; }
+aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
+aside ul li > input[type="email"],
+aside ul li > textarea {
+  margin-bottom: 5px; }
+aside ul li time img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  display: inline-block; }
+aside ul li time p, aside ul li time a, aside ul li time div.wpcf7-response-output, aside ul li time input[type="text"],
+aside ul li time input[type="email"],
+aside ul li time textarea {
+  display: inline-block;
+  vertical-align: super;
+  color: #bababa; }
+
 .modal {
   top: 0;
   bottom: 0;

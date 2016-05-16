@@ -1,0 +1,48 @@
+aside{
+  nav{
+    margin-bottom: 50px;
+
+    p,
+    li{
+      margin-bottom: 15px;
+    }
+
+    li a{
+      text-decoration: none;
+
+      &:hover,
+      &:focus{
+        border-bottom: thin solid $black;
+      }
+    }
+  }
+
+  ul{
+    > p,
+    li{
+      margin-bottom: 15px;
+    }
+
+    li{
+      > p{
+        margin-bottom: 5px;
+      }
+
+      time{
+        img{
+          width: 20px;
+          height: auto;
+          margin-right: 10px;
+          display: inline-block;
+        }
+
+        p{
+          display: inline-block;
+          vertical-align: super;
+
+          color: $grey-text;
+        }
+      }
+    }
+  }
+}
