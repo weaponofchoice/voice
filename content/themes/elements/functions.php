@@ -34,6 +34,12 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+// Customize excerpt
+function wpdocs_excerpt_more( $more ) {
+  return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
 // Purge Custom Post-types from cache after update
 add_action( 'edit_post', 'w3_flush_page_custom', 10, 1 );
 
