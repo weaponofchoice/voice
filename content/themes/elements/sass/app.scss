@@ -21,15 +21,16 @@
   "layout/_layout",
   "layout/_main",
   "layout/_header",
-  "layout/_footer",
-
-  "layout/navigation/_menu",
-  "layout/navigation/_nav",
-  "layout/navigation/_aside";
+  "layout/_footer";
 
 // MODULE
 @import
   "modules/_modal",
+
+  "modules/navigation/_menu",
+  "modules/navigation/_nav",
+  "modules/navigation/_aside",
+  "modules/navigation/_button",
 
   "modules/content/_section",
   "modules/content/_hero",
