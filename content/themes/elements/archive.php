@@ -9,7 +9,6 @@ if( have_posts() ):
     endwhile;
 
   elements_posts_end();
-
 else:
   get_template_part( 'content', 'none' );
 endif;

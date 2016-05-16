@@ -89,7 +89,7 @@
 
       $query = new WP_Query($args);
       ?>
-      <ul>
+      <ul class="posts posts-previews">
         <p>Recent posts:</p>
 
         <?php if( $query->have_posts() ): ?>
