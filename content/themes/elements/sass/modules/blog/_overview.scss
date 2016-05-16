@@ -7,10 +7,6 @@ body.archive{
       @include flexbox;
 
       margin-bottom: 100px;
-
-      time{
-        padding-right: $side-margin;
-      }
     }
   }
 }

@@ -14,13 +14,16 @@ $thumb = get_the_post_thumbnail( $post->ID, 'medium' );
 ?>
 
 <article>
-  <time datetime="<?php echo $date; ?>">
-    <div>
-      <p><?php echo $date_day; ?></p>
-      <p><?php echo substr($date_month, 0, 3); ?></p>
-    </div>
+  <div class="post-time">
+    <time datetime="<?php echo $date; ?>">
+      <div>
+        <p><?php echo $date_day; ?></p>
+        <p><?php echo substr($date_month, 0, 3); ?></p>
+      </div>
+    </time>
+
     <p><?php echo $date_year; ?></p>
-  </time>
+  </div>
 
   <div class="post-content">
     <figure><?php echo $thumb; ?></figure>

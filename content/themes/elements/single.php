@@ -6,29 +6,39 @@ if( have_posts() ):
 
     // Content (variables)
     $title = get_the_title();
-    $subtitle = get_field( 'post_subtitle' );
+    $content = wpautop( get_the_content() );
     $date = get_the_date();
-    $date_day = get_the_modified_date('j');
-    $date_month = get_the_modified_date('F');
-    $date_year = get_the_modified_date('Y');
+    $date_day = get_the_date('j');
+    $date_month = get_the_date('F');
+    $date_year = get_the_date('Y');
     $categories = get_categories();
     ?>
 
     <article>
       <header>
-        <time datetime="<?php echo $date; ?>">
-          <div>
-            <p><?php echo $date_day; ?></p>
-            <p><?php echo $date_month; ?></p>
-          </div>
+        <div class="post-time">
+          <time datetime="<?php echo $date; ?>">
+            <div>
+              <p><?php echo $date_day; ?></p>
+              <p><?php echo substr($date_month, 0, 3); ?></p>
+            </div>
+          </time>
+          
           <p><?php echo $date_year; ?></p>
-        </time>
+        </div>
 
-        <p>Back to <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">News Overview</a></p>
+        <div class="post-title">
+          <p>Back to <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">News Overview</a></p>
 
-        <h1 class="is-bold"><?php echo $title; ?></h1>
-        <h2><?php echo $subtitle; ?></h2>
+          <h1 class="is-bold"><?php echo $title; ?></h1>
+        </div>
       </header>
+
+      <section class="text">
+        <div class="section-body">
+          <?php echo $content; ?>
+        </div>
+      </section>
 
       <?php get_elements(); ?>
     </article>

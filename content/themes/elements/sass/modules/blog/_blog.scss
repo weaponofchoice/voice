@@ -5,11 +5,21 @@ body.single-post{
     padding-top: 150px;
     padding-bottom: 50px;
 
+    header,
+    section{
+      padding-right: 0;
+    }
+
+    section{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     > article,
     section.posts{
       float: left;
 
-      width: calc(100% - 400px);
+      width: calc(100% - 450px);
       padding-right: $side-margin / 2;
 
       border-right: thin dotted $black;
@@ -18,41 +28,51 @@ body.single-post{
     aside{
       float: right;
 
-      width: 400px;
+      width: 450px;
       padding-left: $side-margin / 2;
     }
   }
 
   // Timestamp
-  article time{
+  article .post-time{
+    width: 80px;
+    min-width: 80px;
+    margin-right: $side-margin;
     display: inline-block;
 
-    div{
-      padding: 15px 20px;
+    text-align: center;
+
+    time{
+      display: block;
 
       text-align: center;
-      border-radius: 5px;
-      background-color: $black;
 
-      p{
-        color: $white;
-      }
+      div{
+        padding: 15px 20px;
 
-      p:first-child{
-        @extend h2;
-      }
+        text-align: center;
+        border-radius: 5px;
+        background-color: $black;
 
-      p:last-child{
-        font-weight: 600;
-        text-transform: uppercase;
+        p{
+          color: $white;
+        }
+
+        p:first-child{
+          @extend h2;
+        }
+
+        p:last-child{
+          font-weight: 600;
+          text-transform: uppercase;
+        }
       }
     }
 
     > p{
       padding-top: 5px;
-      
+
       font-weight: 600;
-      text-align: center;
     }
   }
 }
