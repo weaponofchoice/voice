@@ -1740,6 +1740,36 @@ aside ul li {
     color: #bababa;
     font-size: 12px; }
 
+button,
+.button,
+input[type="submit"] {
+  font-family: trademarker;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  padding: 10px 80px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: thin solid black;
+  border-radius: 5px !important;
+  font-size: 20px;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+  button:hover,
+  .button:hover,
+  input[type="submit"]:hover {
+    background-color: black;
+    color: white; }
+  button.button-small,
+  .button.button-small,
+  input[type="submit"].button-small {
+    padding: 6px 40px; }
+
 section {
   height: auto;
   overflow: hidden;
@@ -2444,28 +2474,6 @@ form .form-row {
 form .form-row.form-submit {
   margin-bottom: 0;
   text-align: center; }
-  form .form-row.form-submit input[type="submit"] {
-    font-family: trademarker;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    display: inline-block;
-    padding: 10px 80px;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    border: thin solid black;
-    border-radius: 5px !important;
-    font-size: 20px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    display: inline-block;
-    margin-top: 15px; }
-    form .form-row.form-submit input[type="submit"]:hover {
-      background-color: black;
-      color: white; }
 
 .form-row span[role="alert"] {
   display: none !important; }

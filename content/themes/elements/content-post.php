@@ -27,6 +27,6 @@ $thumb = get_the_post_thumbnail( $post->ID, 'medium' );
     <p>Category: <a href="<?php echo $category_link; ?>" class="post-category"><strong><?php echo $category[0]->cat_name; ?></strong></a></p>
     <a class="post-title" href="<?php echo $permalink; ?>"><h2><?php echo $title; ?></h2></a>
 
-    <a class="button" href="<?php echo $permalink; ?>">Read more</a>
+    <a class="button button-small" href="<?php echo $permalink; ?>">Read more</a>
   </div>
 </article>
