@@ -70,4 +70,4 @@
 
   <!-- Main content -->
   <main role="main">
-    <?php if( is_home() || is_single() ){ include_once( 'includes/aside.php' ); }; ?>
+    <?php if( is_home() || is_archive() ||is_single() ){ include_once( 'includes/aside.php' ); }; ?>

@@ -2223,11 +2223,14 @@ label[for="clientMessage"] {
     margin: auto;
     margin-top: 30px; } }
 body.blog main,
+body.archive main,
 body.single-post main {
   padding-top: 150px;
   padding-bottom: 50px; }
   body.blog main > article,
   body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
   body.single-post main > article,
   body.single-post main section.posts {
     float: left;
@@ -2235,6 +2238,7 @@ body.single-post main {
     padding-right: 1.875rem;
     border-right: thin dotted black; }
   body.blog main aside,
+  body.archive main aside,
   body.single-post main aside {
     float: right;
     width: 400px;
