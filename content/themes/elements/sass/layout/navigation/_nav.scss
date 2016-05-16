@@ -9,6 +9,10 @@ header nav ul{
     display: inline-block;
     padding-right: 3em;
 
+    &:last-child{
+      padding-right: 0;
+    }
+
     a{
       color: $black;
       text-decoration: none;

@@ -1,0 +1,12 @@
+body.blog,
+body.archive{
+  section.posts{
+    article{
+      @include flexbox;
+
+      time{
+        padding-right: $side-margin;
+      }
+    }
+  }
+}

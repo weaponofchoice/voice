@@ -1475,15 +1475,10 @@ main {
 
 body > header {
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flex;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Chrome */
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1528,16 +1523,10 @@ body.home > header .link-logo img {
     body > header .link-logo {
       margin: auto; } }
 footer {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flex;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1612,6 +1601,8 @@ header nav ul {
   header nav ul li {
     display: inline-block;
     padding-right: 3em; }
+    header nav ul li:last-child {
+      padding-right: 0; }
     header nav ul li a {
       color: black;
       text-decoration: none; }
@@ -1818,15 +1809,10 @@ section.hero {
       background-position: center center; }
   section.hero .section-body {
     display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flex;
-    /* TWEENER - IE 10 */
     display: -webkit-flex;
-    /* NEW - Chrome */
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1979,17 +1965,15 @@ section.hero .hero-shape {
     section.hero .hero-banner {
       display: none; }
     section.hero .section-body {
-      display: -webkit-box;
-      /* OLD - iOS 6-, Safari 3.1-6 */
-      display: -moz-box;
-      /* OLD - Firefox 19- (buggy but mostly works) */
-      display: -ms-flex;
-      /* TWEENER - IE 10 */
-      display: -webkit-flex;
-      /* NEW - Chrome */
-      display: flex;
-      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      -webkit-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      -webkit-box-direction: reverse;
+      -webkit-box-orient: vertical;
       -webkit-flex-direction: column-reverse;
+      -moz-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
       opacity: 1;
       visibility: visible;
@@ -2290,16 +2274,10 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     display: none; } }
 @media only screen and (min-width: 31.313em) and (max-width: 62.5em) {
   section.grid ul li a.trigger-modal {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flex;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2633,6 +2611,17 @@ body.single-post article time {
     padding-top: 5px;
     font-weight: 600;
     text-align: center; }
+
+body.blog section.posts article,
+body.archive section.posts article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  body.blog section.posts article time,
+  body.archive section.posts article time {
+    padding-right: 3.75rem; }
 
 /*
  * Show and Hide class functions
