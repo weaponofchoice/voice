@@ -1,0 +1,39 @@
+body.single-post{
+  article{
+    header{
+      height: auto;
+      overflow: hidden;
+
+      .post-time,
+      .post-title{
+        float: left;
+      }
+
+      .post-title{
+        width: calc(100% - 140px);
+        max-width: 600px;
+        display: inline-block;
+
+        p{
+          margin-bottom: 15px;
+
+          a{
+            text-decoration: underline;
+          }
+        }
+
+        h1{
+          @extend h2;
+        }
+      }
+    }
+
+    section.text{
+      text-align: left !important;
+
+      .section-body{
+        margin-left: 140px;
+      }
+    }
+  }
+}

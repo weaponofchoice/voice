@@ -1,0 +1,29 @@
+button,
+.button,
+input[type="submit"]{
+  @include trademarker;
+  @include transition( .3s );
+
+  display: inline-block;
+  padding: 10px 80px;
+  margin-top: 15px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: thin solid $black;
+  border-radius: 5px !important;
+  font-size: 20px;
+  text-decoration: none !important;
+
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+
+  &:hover{
+    background-color: $black;
+    color: $white;
+  }
+
+  &.button-small{
+    padding: 6px 40px;
+  }
+}

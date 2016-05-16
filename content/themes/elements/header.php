@@ -35,14 +35,14 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="is-loading">
+<body <?php echo body_class('is-loading'); ?>>
   <!-- Header -->
   <header>
     <a class="link-logo" href="<?php echo home_url(); ?>">
       <img src="<?php echo bloginfo( 'template_directory' ); ?>/img/logo.png">
     </a>
 
-    <?php include( 'includes/nav.php' ); ?>
+    <?php include_once( 'includes/nav.php' ); ?>
 
     <!-- <a class="trigger trigger-menu"><i></i></a> -->
   </header>
@@ -70,3 +70,4 @@
 
   <!-- Main content -->
   <main role="main">
+    <?php if( is_home() || is_archive() ||is_single() ){ include_once( 'includes/aside.php' ); }; ?>

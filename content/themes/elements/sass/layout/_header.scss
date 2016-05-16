@@ -1,5 +1,5 @@
-header{
-  @include flex;
+body > header{
+  @include flexbox;
   @include align-items( center );
   @include justify-content( space-between );
 
@@ -20,13 +20,17 @@ header{
       top: 35px;
       position: fixed;
 
-      width: 200px;
+      width: 80px;
     }
   }
 }
 
+body.home > header .link-logo img{
+  width: 200px;
+}
+
 @media #{$medium-down}{
-  header{
+  body > header{
     position: absolute;
 
     .link-logo{
@@ -43,7 +47,7 @@ header{
 }
 
 @media #{$small-only}{
-  header{
+  body > header{
     padding: 0;
 
     .link-logo{

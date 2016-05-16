@@ -1,0 +1,46 @@
+aside{
+  nav{
+    padding-top: 15px;
+    margin-bottom: 50px;
+
+    p,
+    li{
+      margin-bottom: 15px;
+    }
+  }
+
+  ul{
+    max-width: 300px;
+
+    > p{
+      margin-bottom: 15px;
+    }
+
+    li{
+      margin-bottom: 30px;
+
+      > p{
+        margin-bottom: 5px;
+      }
+
+      time{
+        img{
+          width: 15px;
+          height: auto;
+          margin-right: 10px;
+          display: inline-block;
+        }
+
+        small{
+          @extend %base;
+
+          display: inline-block;
+          vertical-align: top;
+
+          color: $grey-text;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

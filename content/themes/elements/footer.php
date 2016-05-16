@@ -1,10 +1,12 @@
   </main>
 
-  <section class="form">
-    <div class="section-body">
-      <?php echo do_shortcode('[contact-form-7 title="Contact"]'); ?>
-    </div>
-  </section>
+  <?php if( is_front_page() ): ?>
+    <section class="form">
+      <div class="section-body">
+        <?php echo do_shortcode('[contact-form-7 title="Contact"]'); ?>
+      </div>
+    </section>
+  <?php endif; ?>
 
   <!-- Footer -->
   <?php

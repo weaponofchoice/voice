@@ -705,6 +705,11 @@ html {
   position: relative;
   box-sizing: inherit; }
 
+figure {
+  background-color: #f9f9f9; }
+  figure img {
+    display: block; }
+
 img {
   max-width: 100%;
   height: auto;
@@ -1321,9 +1326,23 @@ ul {
 @font-face {
   font-family: trademarker;
   src: url(../fonts/trademarker.OTF); }
-h1, h2, h3, p, a, div.wpcf7-response-output, input[type="text"],
+h1, h2, body.blog article .post-time time div p:first-child, body.blog article .post-time time div a:first-child, body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div input[type="text"]:first-child,
+body.blog article .post-time time div input[type="email"]:first-child,
+body.blog article .post-time time div textarea:first-child,
+body.archive article .post-time time div p:first-child,
+body.archive article .post-time time div a:first-child,
+body.archive article .post-time time div div.wpcf7-response-output:first-child,
+body.archive article .post-time time div input[type="text"]:first-child,
+body.archive article .post-time time div input[type="email"]:first-child,
+body.archive article .post-time time div textarea:first-child,
+body.single-post article .post-time time div p:first-child,
+body.single-post article .post-time time div a:first-child,
+body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input[type="text"]:first-child,
+body.single-post article .post-time time div input[type="email"]:first-child,
+body.single-post article .post-time time div textarea:first-child, body.single-post article header .post-title h1, h3, p, a, div.wpcf7-response-output, input[type="text"],
 input[type="email"],
-textarea {
+textarea, aside ul li time small {
   font-family: 'Gotham A', 'Gotham B';
   font-weight: 400;
   font-style: normal;
@@ -1331,12 +1350,40 @@ textarea {
   font-weight: normal;
   text-rendering: geometricPrecision; }
 
-h1, h2 {
+h1, h2, body.blog article .post-time time div p:first-child, body.blog article .post-time time div a:first-child, body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div input[type="text"]:first-child,
+body.blog article .post-time time div input[type="email"]:first-child,
+body.blog article .post-time time div textarea:first-child,
+body.archive article .post-time time div p:first-child,
+body.archive article .post-time time div a:first-child,
+body.archive article .post-time time div div.wpcf7-response-output:first-child,
+body.archive article .post-time time div input[type="text"]:first-child,
+body.archive article .post-time time div input[type="email"]:first-child,
+body.archive article .post-time time div textarea:first-child,
+body.single-post article .post-time time div p:first-child,
+body.single-post article .post-time time div a:first-child,
+body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input[type="text"]:first-child,
+body.single-post article .post-time time div input[type="email"]:first-child,
+body.single-post article .post-time time div textarea:first-child, body.single-post article header .post-title h1 {
   font-family: trademarker;
   font-size: 80px;
   line-height: 0.9; }
 
-h2 {
+h2, body.blog article .post-time time div p:first-child, body.blog article .post-time time div a:first-child, body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div input[type="text"]:first-child,
+body.blog article .post-time time div input[type="email"]:first-child,
+body.blog article .post-time time div textarea:first-child,
+body.archive article .post-time time div p:first-child,
+body.archive article .post-time time div a:first-child,
+body.archive article .post-time time div div.wpcf7-response-output:first-child,
+body.archive article .post-time time div input[type="text"]:first-child,
+body.archive article .post-time time div input[type="email"]:first-child,
+body.archive article .post-time time div textarea:first-child,
+body.single-post article .post-time time div p:first-child,
+body.single-post article .post-time time div a:first-child,
+body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input[type="text"]:first-child,
+body.single-post article .post-time time div input[type="email"]:first-child,
+body.single-post article .post-time time div textarea:first-child, body.single-post article header .post-title h1, body.single-post article header .post-title h2 {
   font-size: 30px;
   line-height: 1; }
 
@@ -1350,17 +1397,55 @@ textarea {
   line-height: 1.4; }
 
 a {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   color: black;
-  text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   a.link-h1, a.link-h2, a.link-h3, a.link-p {
+    display: block;
     text-decoration: none; }
+    a.link-h1:hover, a.link-h1:focus, a.link-h2:hover, a.link-h2:focus, a.link-h3:hover, a.link-h3:focus, a.link-p:hover, a.link-p:focus {
+      text-decoration: underline; }
+  a:hover, a:focus {
+    text-decoration: underline; }
 
 @media only screen and (max-width: 31.25em) {
-  h1, h2 {
+  h1, h2, body.blog article .post-time time div p:first-child, body.blog article .post-time time div a:first-child, body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div input[type="text"]:first-child,
+  body.blog article .post-time time div input[type="email"]:first-child,
+  body.blog article .post-time time div textarea:first-child,
+  body.archive article .post-time time div p:first-child,
+  body.archive article .post-time time div a:first-child,
+  body.archive article .post-time time div div.wpcf7-response-output:first-child,
+  body.archive article .post-time time div input[type="text"]:first-child,
+  body.archive article .post-time time div input[type="email"]:first-child,
+  body.archive article .post-time time div textarea:first-child,
+  body.single-post article .post-time time div p:first-child,
+  body.single-post article .post-time time div a:first-child,
+  body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+  body.single-post article .post-time time div input[type="text"]:first-child,
+  body.single-post article .post-time time div input[type="email"]:first-child,
+  body.single-post article .post-time time div textarea:first-child, body.single-post article header .post-title h1 {
     font-size: 36px; }
 
-  h2 {
+  h2, body.blog article .post-time time div p:first-child, body.blog article .post-time time div a:first-child, body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div input[type="text"]:first-child,
+  body.blog article .post-time time div input[type="email"]:first-child,
+  body.blog article .post-time time div textarea:first-child,
+  body.archive article .post-time time div p:first-child,
+  body.archive article .post-time time div a:first-child,
+  body.archive article .post-time time div div.wpcf7-response-output:first-child,
+  body.archive article .post-time time div input[type="text"]:first-child,
+  body.archive article .post-time time div input[type="email"]:first-child,
+  body.archive article .post-time time div textarea:first-child,
+  body.single-post article .post-time time div p:first-child,
+  body.single-post article .post-time time div a:first-child,
+  body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+  body.single-post article .post-time time div input[type="text"]:first-child,
+  body.single-post article .post-time time div input[type="email"]:first-child,
+  body.single-post article .post-time time div textarea:first-child, body.single-post article header .post-title h1, body.single-post article header .post-title h2 {
     font-size: 24px; }
 
   h3 {
@@ -1376,7 +1461,8 @@ header {
   padding-right: 3.75rem; }
 
 section,
-footer {
+footer,
+aside {
   padding-left: 3.75rem;
   padding-right: 3.75rem; }
 
@@ -1391,7 +1477,8 @@ section.hero .hero-banner {
     padding-right: 1.875rem; }
 
   section,
-  footer {
+  footer,
+  aside {
     padding-left: 1.875rem;
     padding-right: 1.875rem; } }
 main {
@@ -1401,17 +1488,12 @@ main {
   overflow: hidden;
   background: white; }
 
-header {
+body > header {
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flex;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Chrome */
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1426,9 +1508,9 @@ header {
   width: 100%;
   padding-top: 35px;
   padding-bottom: 35px; }
-  header .link-logo {
+  body > header .link-logo {
     width: 50px; }
-    header .link-logo img {
+    body > header .link-logo img {
       -webkit-transition: 0.4s;
       -moz-transition: 0.4s;
       -ms-transition: 0.4s;
@@ -1436,33 +1518,30 @@ header {
       transition: 0.4s;
       top: 35px;
       position: fixed;
-      width: 200px; }
+      width: 80px; }
+
+body.home > header .link-logo img {
+  width: 200px; }
 
 @media only screen and (max-width: 62.5em) {
-  header {
+  body > header {
     position: absolute; }
-    header .link-logo {
+    body > header .link-logo {
       width: 100px; }
-      header .link-logo img {
+      body > header .link-logo img {
         top: 15px;
         position: relative;
         width: 180px; } }
 @media only screen and (max-width: 31.25em) {
-  header {
+  body > header {
     padding: 0; }
-    header .link-logo {
+    body > header .link-logo {
       margin: auto; } }
 footer {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flex;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1487,86 +1566,6 @@ footer {
     padding-left: 30px;
     line-height: 40px; }
 
-a.trigger-menu {
-  width: 35px;
-  height: 35px;
-  display: block;
-  position: relative; }
-  a.trigger-menu i {
-    width: 100%;
-    height: 3px;
-    display: block;
-    top: calc(50% - 1.5px);
-    background: black; }
-    a.trigger-menu i:before, a.trigger-menu i:after {
-      content: " ";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: black;
-      transition: .2s; }
-    a.trigger-menu i:before {
-      margin-top: -8px; }
-    a.trigger-menu i:after {
-      margin-top: 8px; }
-
-a.trigger-menu:hover i:before, a.trigger-menu:hover i:after {
-  transition: .2s; }
-a.trigger-menu:hover i:before {
-  margin-top: -11px; }
-a.trigger-menu:hover i:after {
-  margin-top: 11px; }
-
-@keyframes activebefore {
-  50% {
-    margin-top: 0; }
-  100% {
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); } }
-a.trigger-menu:focus i:before {
-  -webkit-animation: activebefore .4s linear; }
-
-nav {
-  width: 50%; }
-
-nav ul {
-  display: inline; }
-  nav ul li {
-    display: inline-block;
-    padding-right: 3em; }
-    nav ul li a {
-      color: white;
-      text-decoration: none; }
-      nav ul li a h3 {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-      nav ul li a:hover h3 {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-        -moz-transform: translateY(-5px);
-        -o-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px); }
-
-@media only screen and (max-width: 62.5em) {
-  nav {
-    width: 80%; }
-    nav ul li {
-      padding-right: 0;
-      padding-left: 3em; } }
-@media all and (max-width: 730px) {
-  nav {
-    display: none; } }
 .modal {
   top: 0;
   bottom: 0;
@@ -1625,6 +1624,154 @@ nav ul {
   .modal,
   .overlay {
     display: none; } }
+a.trigger-menu {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: relative; }
+  a.trigger-menu i {
+    width: 100%;
+    height: 3px;
+    display: block;
+    top: calc(50% - 1.5px);
+    background: black; }
+    a.trigger-menu i:before, a.trigger-menu i:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      transition: .2s; }
+    a.trigger-menu i:before {
+      margin-top: -8px; }
+    a.trigger-menu i:after {
+      margin-top: 8px; }
+
+a.trigger-menu:hover i:before, a.trigger-menu:hover i:after {
+  transition: .2s; }
+a.trigger-menu:hover i:before {
+  margin-top: -11px; }
+a.trigger-menu:hover i:after {
+  margin-top: 11px; }
+
+@keyframes activebefore {
+  50% {
+    margin-top: 0; }
+  100% {
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); } }
+a.trigger-menu:focus i:before {
+  -webkit-animation: activebefore .4s linear; }
+
+header nav {
+  width: 50%; }
+
+header nav ul {
+  display: inline; }
+  header nav ul li {
+    display: inline-block;
+    padding-right: 3em; }
+    header nav ul li:last-child {
+      padding-right: 0; }
+    header nav ul li a {
+      color: black;
+      text-decoration: none; }
+      header nav ul li a h3 {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      header nav ul li a:hover {
+        text-decoration: none !important; }
+        header nav ul li a:hover h3 {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -moz-transform: translateY(-5px);
+          -o-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
+
+body.home header nav ul li a {
+  color: white; }
+
+@media only screen and (max-width: 62.5em) {
+  header nav {
+    width: 80%; }
+    header nav ul li {
+      padding-right: 0;
+      padding-left: 3em; } }
+@media all and (max-width: 730px) {
+  header nav {
+    display: none; } }
+aside nav {
+  padding-top: 15px;
+  margin-bottom: 50px; }
+  aside nav p, aside nav a, aside nav div.wpcf7-response-output, aside nav input[type="text"],
+  aside nav input[type="email"],
+  aside nav textarea,
+  aside nav li {
+    margin-bottom: 15px; }
+aside ul {
+  max-width: 300px; }
+  aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
+  aside ul > input[type="email"],
+  aside ul > textarea {
+    margin-bottom: 15px; }
+  aside ul li {
+    margin-bottom: 30px; }
+    aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
+    aside ul li > input[type="email"],
+    aside ul li > textarea {
+      margin-bottom: 5px; }
+    aside ul li time img {
+      width: 15px;
+      height: auto;
+      margin-right: 10px;
+      display: inline-block; }
+    aside ul li time small {
+      display: inline-block;
+      vertical-align: top;
+      color: #bababa;
+      font-size: 12px; }
+
+button,
+.button,
+input[type="submit"] {
+  font-family: trademarker;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  padding: 10px 80px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: thin solid black;
+  border-radius: 5px !important;
+  font-size: 20px;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+  button:hover,
+  .button:hover,
+  input[type="submit"]:hover {
+    background-color: black;
+    color: white; }
+  button.button-small,
+  .button.button-small,
+  input[type="submit"].button-small {
+    padding: 6px 40px; }
+
 section {
   height: auto;
   overflow: hidden;
@@ -1642,7 +1789,35 @@ main section:last-child {
 
 .section-header {
   max-width: 600px; }
-  .section-header h2 {
+  .section-header h2, .section-header body.blog article .post-time time div p:first-child, body.blog article .post-time time div .section-header p:first-child, .section-header body.blog article .post-time time div a:first-child, body.blog article .post-time time div .section-header a:first-child, .section-header body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div .section-header div.wpcf7-response-output:first-child, .section-header body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div .section-header input[type="text"]:first-child,
+  .section-header body.blog article .post-time time div input[type="email"]:first-child,
+  body.blog article .post-time time div .section-header input[type="email"]:first-child,
+  .section-header body.blog article .post-time time div textarea:first-child,
+  body.blog article .post-time time div .section-header textarea:first-child,
+  .section-header body.archive article .post-time time div p:first-child,
+  body.archive article .post-time time div .section-header p:first-child,
+  .section-header body.archive article .post-time time div a:first-child,
+  body.archive article .post-time time div .section-header a:first-child,
+  .section-header body.archive article .post-time time div div.wpcf7-response-output:first-child,
+  body.archive article .post-time time div .section-header div.wpcf7-response-output:first-child,
+  .section-header body.archive article .post-time time div input[type="text"]:first-child,
+  body.archive article .post-time time div .section-header input[type="text"]:first-child,
+  .section-header body.archive article .post-time time div input[type="email"]:first-child,
+  body.archive article .post-time time div .section-header input[type="email"]:first-child,
+  .section-header body.archive article .post-time time div textarea:first-child,
+  body.archive article .post-time time div .section-header textarea:first-child,
+  .section-header body.single-post article .post-time time div p:first-child,
+  body.single-post article .post-time time div .section-header p:first-child,
+  .section-header body.single-post article .post-time time div a:first-child,
+  body.single-post article .post-time time div .section-header a:first-child,
+  .section-header body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+  body.single-post article .post-time time div .section-header div.wpcf7-response-output:first-child,
+  .section-header body.single-post article .post-time time div input[type="text"]:first-child,
+  body.single-post article .post-time time div .section-header input[type="text"]:first-child,
+  .section-header body.single-post article .post-time time div input[type="email"]:first-child,
+  body.single-post article .post-time time div .section-header input[type="email"]:first-child,
+  .section-header body.single-post article .post-time time div textarea:first-child,
+  body.single-post article .post-time time div .section-header textarea:first-child, .section-header body.single-post article header .post-title h1, body.single-post article header .post-title .section-header h1, .section-header body.single-post article header .post-title h2, body.single-post article header .post-title .section-header h2 {
     margin-bottom: 0.9375rem; }
 
 section.hero {
@@ -1658,15 +1833,10 @@ section.hero {
       background-position: center center; }
   section.hero .section-body {
     display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flex;
-    /* TWEENER - IE 10 */
     display: -webkit-flex;
-    /* NEW - Chrome */
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1680,11 +1850,107 @@ section.hero {
     position: absolute;
     z-index: 997;
     margin: auto; }
-    section.hero .section-body h1, section.hero .section-body h2,
-    section.hero .section-body h2 {
+    section.hero .section-body h1, section.hero .section-body h2, section.hero .section-body body.blog article .post-time time div p:first-child, body.blog article .post-time time div section.hero .section-body p:first-child, section.hero .section-body body.blog article .post-time time div a:first-child, body.blog article .post-time time div section.hero .section-body a:first-child, section.hero .section-body body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child, section.hero .section-body body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.blog article .post-time time div input[type="email"]:first-child,
+    body.blog article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.blog article .post-time time div textarea:first-child,
+    body.blog article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.archive article .post-time time div p:first-child,
+    body.archive article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.archive article .post-time time div a:first-child,
+    body.archive article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.archive article .post-time time div div.wpcf7-response-output:first-child,
+    body.archive article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="text"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="email"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.archive article .post-time time div textarea:first-child,
+    body.archive article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.single-post article .post-time time div p:first-child,
+    body.single-post article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.single-post article .post-time time div a:first-child,
+    body.single-post article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+    body.single-post article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="text"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="email"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div textarea:first-child,
+    body.single-post article .post-time time div section.hero .section-body textarea:first-child, section.hero .section-body body.single-post article header .post-title h1, body.single-post article header .post-title section.hero .section-body h1,
+    section.hero .section-body h2,
+    section.hero .section-body body.blog article .post-time time div p:first-child,
+    body.blog article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.blog article .post-time time div a:first-child,
+    body.blog article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.blog article .post-time time div div.wpcf7-response-output:first-child,
+    body.blog article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.blog article .post-time time div input[type="text"]:first-child,
+    body.blog article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.blog article .post-time time div input[type="email"]:first-child,
+    body.blog article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.blog article .post-time time div textarea:first-child,
+    body.blog article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.archive article .post-time time div p:first-child,
+    body.archive article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.archive article .post-time time div a:first-child,
+    body.archive article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.archive article .post-time time div div.wpcf7-response-output:first-child,
+    body.archive article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="text"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="email"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.archive article .post-time time div textarea:first-child,
+    body.archive article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.single-post article .post-time time div p:first-child,
+    body.single-post article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.single-post article .post-time time div a:first-child,
+    body.single-post article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+    body.single-post article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="text"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="email"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div textarea:first-child,
+    body.single-post article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.single-post article header .post-title h1,
+    body.single-post article header .post-title section.hero .section-body h1,
+    section.hero .section-body body.single-post article header .post-title h2,
+    body.single-post article header .post-title section.hero .section-body h2 {
       color: white;
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
-    section.hero .section-body h1, section.hero .section-body h2 {
+    section.hero .section-body h1, section.hero .section-body h2, section.hero .section-body body.blog article .post-time time div p:first-child, body.blog article .post-time time div section.hero .section-body p:first-child, section.hero .section-body body.blog article .post-time time div a:first-child, body.blog article .post-time time div section.hero .section-body a:first-child, section.hero .section-body body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child, section.hero .section-body body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.blog article .post-time time div input[type="email"]:first-child,
+    body.blog article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.blog article .post-time time div textarea:first-child,
+    body.blog article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.archive article .post-time time div p:first-child,
+    body.archive article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.archive article .post-time time div a:first-child,
+    body.archive article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.archive article .post-time time div div.wpcf7-response-output:first-child,
+    body.archive article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="text"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.archive article .post-time time div input[type="email"]:first-child,
+    body.archive article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.archive article .post-time time div textarea:first-child,
+    body.archive article .post-time time div section.hero .section-body textarea:first-child,
+    section.hero .section-body body.single-post article .post-time time div p:first-child,
+    body.single-post article .post-time time div section.hero .section-body p:first-child,
+    section.hero .section-body body.single-post article .post-time time div a:first-child,
+    body.single-post article .post-time time div section.hero .section-body a:first-child,
+    section.hero .section-body body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+    body.single-post article .post-time time div section.hero .section-body div.wpcf7-response-output:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="text"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="text"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div input[type="email"]:first-child,
+    body.single-post article .post-time time div section.hero .section-body input[type="email"]:first-child,
+    section.hero .section-body body.single-post article .post-time time div textarea:first-child,
+    body.single-post article .post-time time div section.hero .section-body textarea:first-child, section.hero .section-body body.single-post article header .post-title h1, body.single-post article header .post-title section.hero .section-body h1 {
       margin-bottom: .5em; }
 
 section.hero .section-body {
@@ -1727,17 +1993,15 @@ section.hero .hero-shape {
     section.hero .hero-banner {
       display: none; }
     section.hero .section-body {
-      display: -webkit-box;
-      /* OLD - iOS 6-, Safari 3.1-6 */
-      display: -moz-box;
-      /* OLD - Firefox 19- (buggy but mostly works) */
-      display: -ms-flex;
-      /* TWEENER - IE 10 */
-      display: -webkit-flex;
-      /* NEW - Chrome */
-      display: flex;
-      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      -webkit-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      -webkit-box-direction: reverse;
+      -webkit-box-orient: vertical;
       -webkit-flex-direction: column-reverse;
+      -moz-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
       opacity: 1;
       visibility: visible;
@@ -1773,7 +2037,35 @@ section.text {
   section.text .section-body {
     max-width: 600px;
     margin: auto; }
-    section.text .section-body h2,
+    section.text .section-body h2, section.text .section-body body.blog article .post-time time div p:first-child, body.blog article .post-time time div section.text .section-body p:first-child, section.text .section-body body.blog article .post-time time div a:first-child, body.blog article .post-time time div section.text .section-body a:first-child, section.text .section-body body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div section.text .section-body div.wpcf7-response-output:first-child, section.text .section-body body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div section.text .section-body input[type="text"]:first-child,
+    section.text .section-body body.blog article .post-time time div input[type="email"]:first-child,
+    body.blog article .post-time time div section.text .section-body input[type="email"]:first-child,
+    section.text .section-body body.blog article .post-time time div textarea:first-child,
+    body.blog article .post-time time div section.text .section-body textarea:first-child,
+    section.text .section-body body.archive article .post-time time div p:first-child,
+    body.archive article .post-time time div section.text .section-body p:first-child,
+    section.text .section-body body.archive article .post-time time div a:first-child,
+    body.archive article .post-time time div section.text .section-body a:first-child,
+    section.text .section-body body.archive article .post-time time div div.wpcf7-response-output:first-child,
+    body.archive article .post-time time div section.text .section-body div.wpcf7-response-output:first-child,
+    section.text .section-body body.archive article .post-time time div input[type="text"]:first-child,
+    body.archive article .post-time time div section.text .section-body input[type="text"]:first-child,
+    section.text .section-body body.archive article .post-time time div input[type="email"]:first-child,
+    body.archive article .post-time time div section.text .section-body input[type="email"]:first-child,
+    section.text .section-body body.archive article .post-time time div textarea:first-child,
+    body.archive article .post-time time div section.text .section-body textarea:first-child,
+    section.text .section-body body.single-post article .post-time time div p:first-child,
+    body.single-post article .post-time time div section.text .section-body p:first-child,
+    section.text .section-body body.single-post article .post-time time div a:first-child,
+    body.single-post article .post-time time div section.text .section-body a:first-child,
+    section.text .section-body body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+    body.single-post article .post-time time div section.text .section-body div.wpcf7-response-output:first-child,
+    section.text .section-body body.single-post article .post-time time div input[type="text"]:first-child,
+    body.single-post article .post-time time div section.text .section-body input[type="text"]:first-child,
+    section.text .section-body body.single-post article .post-time time div input[type="email"]:first-child,
+    body.single-post article .post-time time div section.text .section-body input[type="email"]:first-child,
+    section.text .section-body body.single-post article .post-time time div textarea:first-child,
+    body.single-post article .post-time time div section.text .section-body textarea:first-child, section.text .section-body body.single-post article header .post-title h1, body.single-post article header .post-title section.text .section-body h1, section.text .section-body body.single-post article header .post-title h2, body.single-post article header .post-title section.text .section-body h2,
     section.text .section-body p,
     section.text .section-body a,
     section.text .section-body div.wpcf7-response-output,
@@ -2010,16 +2302,10 @@ section.grid ul.isotope-masonry li:nth-child(n) {
     display: none; } }
 @media only screen and (min-width: 31.313em) and (max-width: 62.5em) {
   section.grid ul li a.trigger-modal {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flex;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2078,7 +2364,35 @@ section.parallax .section-banner .banner-title {
   height: 100%;
   text-align: center; }
 
-section.parallax .section-banner h1, section.parallax .section-banner h2 {
+section.parallax .section-banner h1, section.parallax .section-banner h2, section.parallax .section-banner body.blog article .post-time time div p:first-child, body.blog article .post-time time div section.parallax .section-banner p:first-child, section.parallax .section-banner body.blog article .post-time time div a:first-child, body.blog article .post-time time div section.parallax .section-banner a:first-child, section.parallax .section-banner body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div section.parallax .section-banner div.wpcf7-response-output:first-child, section.parallax .section-banner body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div section.parallax .section-banner input[type="text"]:first-child,
+section.parallax .section-banner body.blog article .post-time time div input[type="email"]:first-child,
+body.blog article .post-time time div section.parallax .section-banner input[type="email"]:first-child,
+section.parallax .section-banner body.blog article .post-time time div textarea:first-child,
+body.blog article .post-time time div section.parallax .section-banner textarea:first-child,
+section.parallax .section-banner body.archive article .post-time time div p:first-child,
+body.archive article .post-time time div section.parallax .section-banner p:first-child,
+section.parallax .section-banner body.archive article .post-time time div a:first-child,
+body.archive article .post-time time div section.parallax .section-banner a:first-child,
+section.parallax .section-banner body.archive article .post-time time div div.wpcf7-response-output:first-child,
+body.archive article .post-time time div section.parallax .section-banner div.wpcf7-response-output:first-child,
+section.parallax .section-banner body.archive article .post-time time div input[type="text"]:first-child,
+body.archive article .post-time time div section.parallax .section-banner input[type="text"]:first-child,
+section.parallax .section-banner body.archive article .post-time time div input[type="email"]:first-child,
+body.archive article .post-time time div section.parallax .section-banner input[type="email"]:first-child,
+section.parallax .section-banner body.archive article .post-time time div textarea:first-child,
+body.archive article .post-time time div section.parallax .section-banner textarea:first-child,
+section.parallax .section-banner body.single-post article .post-time time div p:first-child,
+body.single-post article .post-time time div section.parallax .section-banner p:first-child,
+section.parallax .section-banner body.single-post article .post-time time div a:first-child,
+body.single-post article .post-time time div section.parallax .section-banner a:first-child,
+section.parallax .section-banner body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+body.single-post article .post-time time div section.parallax .section-banner div.wpcf7-response-output:first-child,
+section.parallax .section-banner body.single-post article .post-time time div input[type="text"]:first-child,
+body.single-post article .post-time time div section.parallax .section-banner input[type="text"]:first-child,
+section.parallax .section-banner body.single-post article .post-time time div input[type="email"]:first-child,
+body.single-post article .post-time time div section.parallax .section-banner input[type="email"]:first-child,
+section.parallax .section-banner body.single-post article .post-time time div textarea:first-child,
+body.single-post article .post-time time div section.parallax .section-banner textarea:first-child, section.parallax .section-banner body.single-post article header .post-title h1, body.single-post article header .post-title section.parallax .section-banner h1 {
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -2116,7 +2430,35 @@ section.parallax .section-body ul li {
 section.form .section-body {
   max-width: 600px;
   margin: auto; }
-  section.form .section-body h2 {
+  section.form .section-body h2, section.form .section-body body.blog article .post-time time div p:first-child, body.blog article .post-time time div section.form .section-body p:first-child, section.form .section-body body.blog article .post-time time div a:first-child, body.blog article .post-time time div section.form .section-body a:first-child, section.form .section-body body.blog article .post-time time div div.wpcf7-response-output:first-child, body.blog article .post-time time div section.form .section-body div.wpcf7-response-output:first-child, section.form .section-body body.blog article .post-time time div input[type="text"]:first-child, body.blog article .post-time time div section.form .section-body input[type="text"]:first-child,
+  section.form .section-body body.blog article .post-time time div input[type="email"]:first-child,
+  body.blog article .post-time time div section.form .section-body input[type="email"]:first-child,
+  section.form .section-body body.blog article .post-time time div textarea:first-child,
+  body.blog article .post-time time div section.form .section-body textarea:first-child,
+  section.form .section-body body.archive article .post-time time div p:first-child,
+  body.archive article .post-time time div section.form .section-body p:first-child,
+  section.form .section-body body.archive article .post-time time div a:first-child,
+  body.archive article .post-time time div section.form .section-body a:first-child,
+  section.form .section-body body.archive article .post-time time div div.wpcf7-response-output:first-child,
+  body.archive article .post-time time div section.form .section-body div.wpcf7-response-output:first-child,
+  section.form .section-body body.archive article .post-time time div input[type="text"]:first-child,
+  body.archive article .post-time time div section.form .section-body input[type="text"]:first-child,
+  section.form .section-body body.archive article .post-time time div input[type="email"]:first-child,
+  body.archive article .post-time time div section.form .section-body input[type="email"]:first-child,
+  section.form .section-body body.archive article .post-time time div textarea:first-child,
+  body.archive article .post-time time div section.form .section-body textarea:first-child,
+  section.form .section-body body.single-post article .post-time time div p:first-child,
+  body.single-post article .post-time time div section.form .section-body p:first-child,
+  section.form .section-body body.single-post article .post-time time div a:first-child,
+  body.single-post article .post-time time div section.form .section-body a:first-child,
+  section.form .section-body body.single-post article .post-time time div div.wpcf7-response-output:first-child,
+  body.single-post article .post-time time div section.form .section-body div.wpcf7-response-output:first-child,
+  section.form .section-body body.single-post article .post-time time div input[type="text"]:first-child,
+  body.single-post article .post-time time div section.form .section-body input[type="text"]:first-child,
+  section.form .section-body body.single-post article .post-time time div input[type="email"]:first-child,
+  body.single-post article .post-time time div section.form .section-body input[type="email"]:first-child,
+  section.form .section-body body.single-post article .post-time time div textarea:first-child,
+  body.single-post article .post-time time div section.form .section-body textarea:first-child, section.form .section-body body.single-post article header .post-title h1, body.single-post article header .post-title section.form .section-body h1, section.form .section-body body.single-post article header .post-title h2, body.single-post article header .post-title section.form .section-body h2 {
     margin-bottom: 1em;
     text-align: center; }
   section.form .section-body p, section.form .section-body a, section.form .section-body div.wpcf7-response-output, section.form .section-body input[type="text"],
@@ -2138,28 +2480,6 @@ form .form-row {
 form .form-row.form-submit {
   margin-bottom: 0;
   text-align: center; }
-  form .form-row.form-submit input[type="submit"] {
-    font-family: trademarker;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    display: inline-block;
-    padding: 10px 80px;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    border: thin solid black;
-    border-radius: 5px !important;
-    font-size: 20px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    display: inline-block;
-    margin-top: 15px; }
-    form .form-row.form-submit input[type="submit"]:hover {
-      background-color: black;
-      color: white; }
 
 .form-row span[role="alert"] {
   display: none !important; }
@@ -2214,6 +2534,149 @@ label[for="clientMessage"] {
     display: block;
     margin: auto;
     margin-top: 30px; } }
+body.blog main,
+body.archive main,
+body.single-post main {
+  padding-top: 150px;
+  padding-bottom: 50px; }
+  body.blog main header,
+  body.blog main section,
+  body.archive main header,
+  body.archive main section,
+  body.single-post main header,
+  body.single-post main section {
+    padding-right: 0; }
+  body.blog main section,
+  body.archive main section,
+  body.single-post main section {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    float: left;
+    width: calc(100% - 450px);
+    padding-right: 1.875rem;
+    border-right: thin dotted black; }
+  body.blog main aside,
+  body.archive main aside,
+  body.single-post main aside {
+    float: right;
+    width: 450px;
+    padding-left: 1.875rem; }
+body.blog article .post-time,
+body.archive article .post-time,
+body.single-post article .post-time {
+  width: 80px;
+  min-width: 80px;
+  margin-right: 3.75rem;
+  display: inline-block;
+  text-align: center; }
+  body.blog article .post-time time,
+  body.archive article .post-time time,
+  body.single-post article .post-time time {
+    display: block;
+    text-align: center; }
+    body.blog article .post-time time div,
+    body.archive article .post-time time div,
+    body.single-post article .post-time time div {
+      padding: 15px 20px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: black; }
+      body.blog article .post-time time div p, body.blog article .post-time time div a, body.blog article .post-time time div div.wpcf7-response-output, body.blog article .post-time time div input[type="text"],
+      body.blog article .post-time time div input[type="email"],
+      body.blog article .post-time time div textarea,
+      body.archive article .post-time time div p,
+      body.archive article .post-time time div a,
+      body.archive article .post-time time div div.wpcf7-response-output,
+      body.archive article .post-time time div input[type="text"],
+      body.archive article .post-time time div input[type="email"],
+      body.archive article .post-time time div textarea,
+      body.single-post article .post-time time div p,
+      body.single-post article .post-time time div a,
+      body.single-post article .post-time time div div.wpcf7-response-output,
+      body.single-post article .post-time time div input[type="text"],
+      body.single-post article .post-time time div input[type="email"],
+      body.single-post article .post-time time div textarea {
+        color: white; }
+      body.blog article .post-time time div p:last-child, body.blog article .post-time time div a:last-child, body.blog article .post-time time div div.wpcf7-response-output:last-child, body.blog article .post-time time div input[type="text"]:last-child,
+      body.blog article .post-time time div input[type="email"]:last-child,
+      body.blog article .post-time time div textarea:last-child,
+      body.archive article .post-time time div p:last-child,
+      body.archive article .post-time time div a:last-child,
+      body.archive article .post-time time div div.wpcf7-response-output:last-child,
+      body.archive article .post-time time div input[type="text"]:last-child,
+      body.archive article .post-time time div input[type="email"]:last-child,
+      body.archive article .post-time time div textarea:last-child,
+      body.single-post article .post-time time div p:last-child,
+      body.single-post article .post-time time div a:last-child,
+      body.single-post article .post-time time div div.wpcf7-response-output:last-child,
+      body.single-post article .post-time time div input[type="text"]:last-child,
+      body.single-post article .post-time time div input[type="email"]:last-child,
+      body.single-post article .post-time time div textarea:last-child {
+        font-weight: 600;
+        text-transform: uppercase; }
+  body.blog article .post-time > p, body.blog article .post-time > a, body.blog article .post-time > div.wpcf7-response-output, body.blog article .post-time > input[type="text"],
+  body.blog article .post-time > input[type="email"],
+  body.blog article .post-time > textarea,
+  body.archive article .post-time > p,
+  body.archive article .post-time > a,
+  body.archive article .post-time > div.wpcf7-response-output,
+  body.archive article .post-time > input[type="text"],
+  body.archive article .post-time > input[type="email"],
+  body.archive article .post-time > textarea,
+  body.single-post article .post-time > p,
+  body.single-post article .post-time > a,
+  body.single-post article .post-time > div.wpcf7-response-output,
+  body.single-post article .post-time > input[type="text"],
+  body.single-post article .post-time > input[type="email"],
+  body.single-post article .post-time > textarea {
+    padding-top: 5px;
+    font-weight: 600; }
+
+body.blog section.posts,
+body.archive section.posts {
+  padding-top: 0; }
+  body.blog section.posts article,
+  body.archive section.posts article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px; }
+
+body.blog section.posts article .post-content > *,
+body.archive section.posts article .post-content > * {
+  margin-bottom: 15px; }
+
+body.single-post article header {
+  height: auto;
+  overflow: hidden; }
+  body.single-post article header .post-time,
+  body.single-post article header .post-title {
+    float: left; }
+  body.single-post article header .post-title {
+    width: calc(100% - 140px);
+    max-width: 600px;
+    display: inline-block; }
+    body.single-post article header .post-title p, body.single-post article header .post-title a, body.single-post article header .post-title div.wpcf7-response-output, body.single-post article header .post-title input[type="text"],
+    body.single-post article header .post-title input[type="email"],
+    body.single-post article header .post-title textarea {
+      margin-bottom: 15px; }
+      body.single-post article header .post-title p a, body.single-post article header .post-title a a, body.single-post article header .post-title div.wpcf7-response-output a, body.single-post article header .post-title input[type="text"] a,
+      body.single-post article header .post-title input[type="email"] a,
+      body.single-post article header .post-title textarea a {
+        text-decoration: underline; }
+body.single-post article section.text {
+  text-align: left !important; }
+  body.single-post article section.text .section-body {
+    margin-left: 140px; }
+
 /*
  * Show and Hide class functions
  */
@@ -2453,60 +2916,228 @@ section.has-extra-pad-bottom,
   padding-bottom: 7.5rem; }
 
 header.shrunk .link-logo img {
-  width: 80px; }
+  width: 80px !important; }
 
 @media only screen and (max-width: 31.25em) {
   header.shrunk .link-logo img {
     top: 15px;
     position: relative;
     width: 100px; } }
-h1.is-italic, h2.is-italic, h3.is-italic, p.is-italic, a.is-italic, div.is-italic.wpcf7-response-output, input.is-italic[type="text"],
+h1.is-italic, h2.is-italic, body.blog article .post-time time div p.is-italic:first-child, body.blog article .post-time time div a.is-italic:first-child, body.blog article .post-time time div div.is-italic.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-italic[type="text"]:first-child,
+body.blog article .post-time time div input.is-italic[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-italic:first-child,
+body.archive article .post-time time div p.is-italic:first-child,
+body.archive article .post-time time div a.is-italic:first-child,
+body.archive article .post-time time div div.is-italic.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-italic[type="text"]:first-child,
+body.archive article .post-time time div input.is-italic[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-italic:first-child,
+body.single-post article .post-time time div p.is-italic:first-child,
+body.single-post article .post-time time div a.is-italic:first-child,
+body.single-post article .post-time time div div.is-italic.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-italic[type="text"]:first-child,
+body.single-post article .post-time time div input.is-italic[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-italic:first-child, body.single-post article header .post-title h1.is-italic, h3.is-italic, p.is-italic, a.is-italic, div.is-italic.wpcf7-response-output, input.is-italic[type="text"],
 input.is-italic[type="email"],
-textarea.is-italic {
+textarea.is-italic, aside ul li time small.is-italic {
   font-style: italic; }
-h1.is-underlined, h2.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined, div.is-underlined.wpcf7-response-output, input.is-underlined[type="text"],
+h1.is-underlined, h2.is-underlined, body.blog article .post-time time div p.is-underlined:first-child, body.blog article .post-time time div a.is-underlined:first-child, body.blog article .post-time time div div.is-underlined.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-underlined[type="text"]:first-child,
+body.blog article .post-time time div input.is-underlined[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-underlined:first-child,
+body.archive article .post-time time div p.is-underlined:first-child,
+body.archive article .post-time time div a.is-underlined:first-child,
+body.archive article .post-time time div div.is-underlined.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-underlined[type="text"]:first-child,
+body.archive article .post-time time div input.is-underlined[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-underlined:first-child,
+body.single-post article .post-time time div p.is-underlined:first-child,
+body.single-post article .post-time time div a.is-underlined:first-child,
+body.single-post article .post-time time div div.is-underlined.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-underlined[type="text"]:first-child,
+body.single-post article .post-time time div input.is-underlined[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-underlined:first-child, body.single-post article header .post-title h1.is-underlined, h3.is-underlined, p.is-underlined, a.is-underlined, div.is-underlined.wpcf7-response-output, input.is-underlined[type="text"],
 input.is-underlined[type="email"],
-textarea.is-underlined {
+textarea.is-underlined, aside ul li time small.is-underlined {
   text-decoration: underline; }
-h1.is-capitalized, h2.is-capitalized, h3.is-capitalized, p.is-capitalized, a.is-capitalized, div.is-capitalized.wpcf7-response-output, input.is-capitalized[type="text"],
+h1.is-capitalized, h2.is-capitalized, body.blog article .post-time time div p.is-capitalized:first-child, body.blog article .post-time time div a.is-capitalized:first-child, body.blog article .post-time time div div.is-capitalized.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-capitalized[type="text"]:first-child,
+body.blog article .post-time time div input.is-capitalized[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-capitalized:first-child,
+body.archive article .post-time time div p.is-capitalized:first-child,
+body.archive article .post-time time div a.is-capitalized:first-child,
+body.archive article .post-time time div div.is-capitalized.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-capitalized[type="text"]:first-child,
+body.archive article .post-time time div input.is-capitalized[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-capitalized:first-child,
+body.single-post article .post-time time div p.is-capitalized:first-child,
+body.single-post article .post-time time div a.is-capitalized:first-child,
+body.single-post article .post-time time div div.is-capitalized.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-capitalized[type="text"]:first-child,
+body.single-post article .post-time time div input.is-capitalized[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-capitalized:first-child, body.single-post article header .post-title h1.is-capitalized, h3.is-capitalized, p.is-capitalized, a.is-capitalized, div.is-capitalized.wpcf7-response-output, input.is-capitalized[type="text"],
 input.is-capitalized[type="email"],
-textarea.is-capitalized {
+textarea.is-capitalized, aside ul li time small.is-capitalized {
   text-transform: capitalize; }
-h1.is-uppercase, h2.is-uppercase, h3.is-uppercase, p.is-uppercase, a.is-uppercase, div.is-uppercase.wpcf7-response-output, input.is-uppercase[type="text"],
+h1.is-uppercase, h2.is-uppercase, body.blog article .post-time time div p.is-uppercase:first-child, body.blog article .post-time time div a.is-uppercase:first-child, body.blog article .post-time time div div.is-uppercase.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-uppercase[type="text"]:first-child,
+body.blog article .post-time time div input.is-uppercase[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-uppercase:first-child,
+body.archive article .post-time time div p.is-uppercase:first-child,
+body.archive article .post-time time div a.is-uppercase:first-child,
+body.archive article .post-time time div div.is-uppercase.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-uppercase[type="text"]:first-child,
+body.archive article .post-time time div input.is-uppercase[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-uppercase:first-child,
+body.single-post article .post-time time div p.is-uppercase:first-child,
+body.single-post article .post-time time div a.is-uppercase:first-child,
+body.single-post article .post-time time div div.is-uppercase.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-uppercase[type="text"]:first-child,
+body.single-post article .post-time time div input.is-uppercase[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-uppercase:first-child, body.single-post article header .post-title h1.is-uppercase, h3.is-uppercase, p.is-uppercase, a.is-uppercase, div.is-uppercase.wpcf7-response-output, input.is-uppercase[type="text"],
 input.is-uppercase[type="email"],
-textarea.is-uppercase {
+textarea.is-uppercase, aside ul li time small.is-uppercase {
   text-transform: uppercase; }
-h1.is-lowercase, h2.is-lowercase, h3.is-lowercase, p.is-lowercase, a.is-lowercase, div.is-lowercase.wpcf7-response-output, input.is-lowercase[type="text"],
+h1.is-lowercase, h2.is-lowercase, body.blog article .post-time time div p.is-lowercase:first-child, body.blog article .post-time time div a.is-lowercase:first-child, body.blog article .post-time time div div.is-lowercase.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-lowercase[type="text"]:first-child,
+body.blog article .post-time time div input.is-lowercase[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-lowercase:first-child,
+body.archive article .post-time time div p.is-lowercase:first-child,
+body.archive article .post-time time div a.is-lowercase:first-child,
+body.archive article .post-time time div div.is-lowercase.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-lowercase[type="text"]:first-child,
+body.archive article .post-time time div input.is-lowercase[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-lowercase:first-child,
+body.single-post article .post-time time div p.is-lowercase:first-child,
+body.single-post article .post-time time div a.is-lowercase:first-child,
+body.single-post article .post-time time div div.is-lowercase.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-lowercase[type="text"]:first-child,
+body.single-post article .post-time time div input.is-lowercase[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-lowercase:first-child, body.single-post article header .post-title h1.is-lowercase, h3.is-lowercase, p.is-lowercase, a.is-lowercase, div.is-lowercase.wpcf7-response-output, input.is-lowercase[type="text"],
 input.is-lowercase[type="email"],
-textarea.is-lowercase {
+textarea.is-lowercase, aside ul li time small.is-lowercase {
   text-transform: lowercase; }
-h1.is-bold, h2.is-bold, h3.is-bold, p.is-bold, a.is-bold, div.is-bold.wpcf7-response-output, input.is-bold[type="text"],
+h1.is-bold, h2.is-bold, body.blog article .post-time time div p.is-bold:first-child, body.blog article .post-time time div a.is-bold:first-child, body.blog article .post-time time div div.is-bold.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-bold[type="text"]:first-child,
+body.blog article .post-time time div input.is-bold[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-bold:first-child,
+body.archive article .post-time time div p.is-bold:first-child,
+body.archive article .post-time time div a.is-bold:first-child,
+body.archive article .post-time time div div.is-bold.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-bold[type="text"]:first-child,
+body.archive article .post-time time div input.is-bold[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-bold:first-child,
+body.single-post article .post-time time div p.is-bold:first-child,
+body.single-post article .post-time time div a.is-bold:first-child,
+body.single-post article .post-time time div div.is-bold.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-bold[type="text"]:first-child,
+body.single-post article .post-time time div input.is-bold[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-bold:first-child, body.single-post article header .post-title h1.is-bold, h3.is-bold, p.is-bold, a.is-bold, div.is-bold.wpcf7-response-output, input.is-bold[type="text"],
 input.is-bold[type="email"],
-textarea.is-bold {
+textarea.is-bold, aside ul li time small.is-bold {
   font-weight: 700; }
-h1.is-aligned-center, h2.is-aligned-center, h3.is-aligned-center, p.is-aligned-center, a.is-aligned-center, div.is-aligned-center.wpcf7-response-output, input.is-aligned-center[type="text"],
+h1.is-aligned-center, h2.is-aligned-center, body.blog article .post-time time div p.is-aligned-center:first-child, body.blog article .post-time time div a.is-aligned-center:first-child, body.blog article .post-time time div div.is-aligned-center.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-aligned-center[type="text"]:first-child,
+body.blog article .post-time time div input.is-aligned-center[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-aligned-center:first-child,
+body.archive article .post-time time div p.is-aligned-center:first-child,
+body.archive article .post-time time div a.is-aligned-center:first-child,
+body.archive article .post-time time div div.is-aligned-center.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-aligned-center[type="text"]:first-child,
+body.archive article .post-time time div input.is-aligned-center[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-aligned-center:first-child,
+body.single-post article .post-time time div p.is-aligned-center:first-child,
+body.single-post article .post-time time div a.is-aligned-center:first-child,
+body.single-post article .post-time time div div.is-aligned-center.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-aligned-center[type="text"]:first-child,
+body.single-post article .post-time time div input.is-aligned-center[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-aligned-center:first-child, body.single-post article header .post-title h1.is-aligned-center, h3.is-aligned-center, p.is-aligned-center, a.is-aligned-center, div.is-aligned-center.wpcf7-response-output, input.is-aligned-center[type="text"],
 input.is-aligned-center[type="email"],
-textarea.is-aligned-center {
+textarea.is-aligned-center, aside ul li time small.is-aligned-center {
   text-align: center; }
-h1.is-aligned-left, h2.is-aligned-left, h3.is-aligned-left, p.is-aligned-left, a.is-aligned-left, div.is-aligned-left.wpcf7-response-output, input.is-aligned-left[type="text"],
+h1.is-aligned-left, h2.is-aligned-left, body.blog article .post-time time div p.is-aligned-left:first-child, body.blog article .post-time time div a.is-aligned-left:first-child, body.blog article .post-time time div div.is-aligned-left.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-aligned-left[type="text"]:first-child,
+body.blog article .post-time time div input.is-aligned-left[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-aligned-left:first-child,
+body.archive article .post-time time div p.is-aligned-left:first-child,
+body.archive article .post-time time div a.is-aligned-left:first-child,
+body.archive article .post-time time div div.is-aligned-left.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-aligned-left[type="text"]:first-child,
+body.archive article .post-time time div input.is-aligned-left[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-aligned-left:first-child,
+body.single-post article .post-time time div p.is-aligned-left:first-child,
+body.single-post article .post-time time div a.is-aligned-left:first-child,
+body.single-post article .post-time time div div.is-aligned-left.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-aligned-left[type="text"]:first-child,
+body.single-post article .post-time time div input.is-aligned-left[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-aligned-left:first-child, body.single-post article header .post-title h1.is-aligned-left, h3.is-aligned-left, p.is-aligned-left, a.is-aligned-left, div.is-aligned-left.wpcf7-response-output, input.is-aligned-left[type="text"],
 input.is-aligned-left[type="email"],
-textarea.is-aligned-left {
+textarea.is-aligned-left, aside ul li time small.is-aligned-left {
   text-align: left; }
-h1.is-aligned-right, h2.is-aligned-right, h3.is-aligned-right, p.is-aligned-right, a.is-aligned-right, div.is-aligned-right.wpcf7-response-output, input.is-aligned-right[type="text"],
+h1.is-aligned-right, h2.is-aligned-right, body.blog article .post-time time div p.is-aligned-right:first-child, body.blog article .post-time time div a.is-aligned-right:first-child, body.blog article .post-time time div div.is-aligned-right.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-aligned-right[type="text"]:first-child,
+body.blog article .post-time time div input.is-aligned-right[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-aligned-right:first-child,
+body.archive article .post-time time div p.is-aligned-right:first-child,
+body.archive article .post-time time div a.is-aligned-right:first-child,
+body.archive article .post-time time div div.is-aligned-right.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-aligned-right[type="text"]:first-child,
+body.archive article .post-time time div input.is-aligned-right[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-aligned-right:first-child,
+body.single-post article .post-time time div p.is-aligned-right:first-child,
+body.single-post article .post-time time div a.is-aligned-right:first-child,
+body.single-post article .post-time time div div.is-aligned-right.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-aligned-right[type="text"]:first-child,
+body.single-post article .post-time time div input.is-aligned-right[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-aligned-right:first-child, body.single-post article header .post-title h1.is-aligned-right, h3.is-aligned-right, p.is-aligned-right, a.is-aligned-right, div.is-aligned-right.wpcf7-response-output, input.is-aligned-right[type="text"],
 input.is-aligned-right[type="email"],
-textarea.is-aligned-right {
+textarea.is-aligned-right, aside ul li time small.is-aligned-right {
   text-align: right; }
-h1.is-black, h2.is-black, h3.is-black, p.is-black, a.is-black, div.is-black.wpcf7-response-output, input.is-black[type="text"],
+h1.is-black, h2.is-black, body.blog article .post-time time div p.is-black:first-child, body.blog article .post-time time div a.is-black:first-child, body.blog article .post-time time div div.is-black.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-black[type="text"]:first-child,
+body.blog article .post-time time div input.is-black[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-black:first-child,
+body.archive article .post-time time div p.is-black:first-child,
+body.archive article .post-time time div a.is-black:first-child,
+body.archive article .post-time time div div.is-black.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-black[type="text"]:first-child,
+body.archive article .post-time time div input.is-black[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-black:first-child,
+body.single-post article .post-time time div p.is-black:first-child,
+body.single-post article .post-time time div a.is-black:first-child,
+body.single-post article .post-time time div div.is-black.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-black[type="text"]:first-child,
+body.single-post article .post-time time div input.is-black[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-black:first-child, body.single-post article header .post-title h1.is-black, h3.is-black, p.is-black, a.is-black, div.is-black.wpcf7-response-output, input.is-black[type="text"],
 input.is-black[type="email"],
-textarea.is-black {
+textarea.is-black, aside ul li time small.is-black {
   color: black; }
-h1.is-white, h2.is-white, h3.is-white, p.is-white, a.is-white, div.is-white.wpcf7-response-output, input.is-white[type="text"],
+h1.is-white, h2.is-white, body.blog article .post-time time div p.is-white:first-child, body.blog article .post-time time div a.is-white:first-child, body.blog article .post-time time div div.is-white.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-white[type="text"]:first-child,
+body.blog article .post-time time div input.is-white[type="email"]:first-child,
+body.blog article .post-time time div textarea.is-white:first-child,
+body.archive article .post-time time div p.is-white:first-child,
+body.archive article .post-time time div a.is-white:first-child,
+body.archive article .post-time time div div.is-white.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.is-white[type="text"]:first-child,
+body.archive article .post-time time div input.is-white[type="email"]:first-child,
+body.archive article .post-time time div textarea.is-white:first-child,
+body.single-post article .post-time time div p.is-white:first-child,
+body.single-post article .post-time time div a.is-white:first-child,
+body.single-post article .post-time time div div.is-white.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.is-white[type="text"]:first-child,
+body.single-post article .post-time time div input.is-white[type="email"]:first-child,
+body.single-post article .post-time time div textarea.is-white:first-child, body.single-post article header .post-title h1.is-white, h3.is-white, p.is-white, a.is-white, div.is-white.wpcf7-response-output, input.is-white[type="text"],
 input.is-white[type="email"],
-textarea.is-white {
+textarea.is-white, aside ul li time small.is-white {
   color: white; }
-h1.has-shadow, h2.has-shadow, h3.has-shadow, p.has-shadow, a.has-shadow, div.has-shadow.wpcf7-response-output, input.has-shadow[type="text"],
+h1.has-shadow, h2.has-shadow, body.blog article .post-time time div p.has-shadow:first-child, body.blog article .post-time time div a.has-shadow:first-child, body.blog article .post-time time div div.has-shadow.wpcf7-response-output:first-child, body.blog article .post-time time div input.has-shadow[type="text"]:first-child,
+body.blog article .post-time time div input.has-shadow[type="email"]:first-child,
+body.blog article .post-time time div textarea.has-shadow:first-child,
+body.archive article .post-time time div p.has-shadow:first-child,
+body.archive article .post-time time div a.has-shadow:first-child,
+body.archive article .post-time time div div.has-shadow.wpcf7-response-output:first-child,
+body.archive article .post-time time div input.has-shadow[type="text"]:first-child,
+body.archive article .post-time time div input.has-shadow[type="email"]:first-child,
+body.archive article .post-time time div textarea.has-shadow:first-child,
+body.single-post article .post-time time div p.has-shadow:first-child,
+body.single-post article .post-time time div a.has-shadow:first-child,
+body.single-post article .post-time time div div.has-shadow.wpcf7-response-output:first-child,
+body.single-post article .post-time time div input.has-shadow[type="text"]:first-child,
+body.single-post article .post-time time div input.has-shadow[type="email"]:first-child,
+body.single-post article .post-time time div textarea.has-shadow:first-child, body.single-post article header .post-title h1.has-shadow, h3.has-shadow, p.has-shadow, a.has-shadow, div.has-shadow.wpcf7-response-output, input.has-shadow[type="text"],
 input.has-shadow[type="email"],
-textarea.has-shadow {
+textarea.has-shadow, aside ul li time small.has-shadow {
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
 
 p.is-small, a.is-small, div.is-small.wpcf7-response-output, input.is-small[type="text"],

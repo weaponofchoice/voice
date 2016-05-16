@@ -16,7 +16,7 @@ section.hero{
   }
 
   .section-body{
-    @include flex;
+    @include flexbox;
     @include align-items( center );
     @include transform( translateX(-50%) );
 

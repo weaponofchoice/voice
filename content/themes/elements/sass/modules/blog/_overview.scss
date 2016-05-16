@@ -1,0 +1,21 @@
+body.blog,
+body.archive{
+  section.posts{
+    padding-top: 0;
+
+    article{
+      @include flexbox;
+
+      margin-bottom: 100px;
+    }
+  }
+}
+
+body.blog,
+body.archive{
+  section.posts article .post-content{
+    > *{
+      margin-bottom: 15px;
+    }
+  }
+}
