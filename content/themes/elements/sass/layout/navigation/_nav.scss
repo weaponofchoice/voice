@@ -21,9 +21,13 @@ header nav ul{
         @include transition( .3s );
       }
 
-      &:hover h3{
-        @include transition( .3s );
-        @include transform( translateY(-5px) );
+      &:hover{
+        text-decoration: none !important;
+        
+        h3{
+          @include transition( .3s );
+          @include transform( translateY(-5px) );
+        }
       }
     }
   }

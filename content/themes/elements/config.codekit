@@ -66,7 +66,7 @@
 	"\/coffee\/init-isotope.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/init-isotope.coffee",
 		"minifyOutput": 1,
@@ -79,7 +79,7 @@
 	"\/coffee\/init-skrollr.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
 		"minifyOutput": 1,
@@ -92,7 +92,7 @@
 	"\/coffee\/link-heading.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/link-heading.coffee",
 		"minifyOutput": 1,
@@ -131,7 +131,7 @@
 	"\/coffee\/resize.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/resize.coffee",
 		"minifyOutput": 1,
@@ -440,7 +440,7 @@
 		},
 	"\/js\/vendor\/imagesLoaded.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/imagesLoaded.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/imagesLoaded-min.js",
@@ -451,7 +451,7 @@
 		},
 	"\/js\/vendor\/isotope.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/isotope.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/isotope-min.js",
@@ -495,7 +495,7 @@
 		},
 	"\/js\/vendor\/skrollr.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-min.js",
@@ -1251,38 +1251,80 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/pageload.coffee",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/imagesLoaded.js",
 			"position": 4,
-			"type": 1
+			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/isotope.js",
 			"position": 5,
-			"type": 1
+			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/link-heading.coffee",
 			"position": 6,
-			"type": 1
+			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
+			"linkedFileAbbreviatedPath": "\/js\/vendor\/skrollr.js",
 			"position": 7,
-			"type": 1
+			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/pageload.coffee",
 			"position": 8,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/retina.coffee",
+			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
 			"position": 9,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
+			"position": 10,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/init-isotope.coffee",
+			"position": 11,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
+			"position": 12,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
+			"position": 13,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
+			"position": 14,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/retina.coffee",
+			"position": 15,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
+			"position": 16,
 			"type": 1
 			}
 		]

@@ -1392,11 +1392,21 @@ textarea {
   line-height: 1.4; }
 
 a {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   color: black;
-  text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   a.link-h1, a.link-h2, a.link-h3, a.link-p {
+    display: block;
     text-decoration: none; }
+    a.link-h1:hover, a.link-h1:focus, a.link-h2:hover, a.link-h2:focus, a.link-h3:hover, a.link-h3:focus, a.link-p:hover, a.link-p:focus {
+      text-decoration: underline; }
+  a:hover, a:focus {
+    text-decoration: underline; }
 
 @media only screen and (max-width: 31.25em) {
   h1, h2, body.blog article time div p:first-child, body.blog article time div a:first-child, body.blog article time div div.wpcf7-response-output:first-child, body.blog article time div input[type="text"]:first-child,
@@ -1612,17 +1622,19 @@ header nav ul {
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-      header nav ul li a:hover h3 {
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-        -moz-transform: translateY(-5px);
-        -o-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px); }
+      header nav ul li a:hover {
+        text-decoration: none !important; }
+        header nav ul li a:hover h3 {
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -moz-transform: translateY(-5px);
+          -o-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
 
 body.home header nav ul li a {
   color: white; }
@@ -1643,16 +1655,6 @@ aside nav {
   aside nav textarea,
   aside nav li {
     margin-bottom: 15px; }
-  aside nav li a {
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-    text-decoration: none;
-    border-bottom: thin solid transparent; }
-    aside nav li a:hover, aside nav li a:focus {
-      border-bottom: thin solid black; }
 aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
 aside ul > input[type="email"],
 aside ul > textarea,
@@ -1662,22 +1664,6 @@ aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside
 aside ul li > input[type="email"],
 aside ul li > textarea {
   margin-bottom: 5px; }
-  aside ul li > p a, aside ul li > a a, aside ul li > div.wpcf7-response-output a, aside ul li > input[type="text"] a,
-  aside ul li > input[type="email"] a,
-  aside ul li > textarea a {
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-    text-decoration: none;
-    border-bottom: thin solid transparent; }
-    aside ul li > p a:hover, aside ul li > a a:hover, aside ul li > div.wpcf7-response-output a:hover, aside ul li > input[type="text"] a:hover,
-    aside ul li > input[type="email"] a:hover,
-    aside ul li > textarea a:hover, aside ul li > p a:focus, aside ul li > a a:focus, aside ul li > div.wpcf7-response-output a:focus, aside ul li > input[type="text"] a:focus,
-    aside ul li > input[type="email"] a:focus,
-    aside ul li > textarea a:focus {
-      border-bottom: thin solid black; }
 aside ul li time img {
   width: 20px;
   height: auto;
