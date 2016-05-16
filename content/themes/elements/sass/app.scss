@@ -22,8 +22,8 @@
   "layout/_header",
   "layout/_footer",
 
-  "layout/navigation/_menu.scss",
-  "layout/navigation/_nav.scss";
+  "layout/navigation/_menu",
+  "layout/navigation/_nav";
 
 // MODULE
 @import
@@ -34,7 +34,11 @@
   "modules/content/_text",
   "modules/content/_grid",
   "modules/content/_parallax",
-  "modules/content/_form";
+  "modules/content/_form",
+
+  "modules/blog/_blog",
+  "modules/blog/_overview",
+  "modules/blog/_single";
 
 // STATE
 @import

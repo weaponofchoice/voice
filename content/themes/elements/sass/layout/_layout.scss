@@ -10,7 +10,8 @@ header{
 }
 
 section,
-footer{
+footer,
+aside{
   padding-left: $side-margin;
   padding-right: $side-margin;
 }
@@ -28,7 +29,8 @@ section.hero .hero-banner{
   }
 
   section,
-  footer{
+  footer,
+  aside{
     padding-left: $side-margin-small;
     padding-right: $side-margin-small;
   }
