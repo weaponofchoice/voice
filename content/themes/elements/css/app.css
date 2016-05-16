@@ -705,6 +705,11 @@ html {
   position: relative;
   box-sizing: inherit; }
 
+figure {
+  background-color: #f9f9f9; }
+  figure img {
+    display: block; }
+
 img {
   max-width: 100%;
   height: auto;
@@ -2608,10 +2613,15 @@ body.archive section.posts {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 100px; }
     body.blog section.posts article time,
     body.archive section.posts article time {
       padding-right: 3.75rem; }
+
+body.blog section.posts article .post-content > *,
+body.archive section.posts article .post-content > * {
+  margin-bottom: 15px; }
 
 /*
  * Show and Hide class functions

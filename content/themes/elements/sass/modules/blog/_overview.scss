@@ -6,9 +6,20 @@ body.archive{
     article{
       @include flexbox;
 
+      margin-bottom: 100px;
+
       time{
         padding-right: $side-margin;
       }
+    }
+  }
+}
+
+body.blog,
+body.archive{
+  section.posts article .post-content{
+    > *{
+      margin-bottom: 15px;
     }
   }
 }

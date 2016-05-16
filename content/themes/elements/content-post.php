@@ -22,7 +22,7 @@ $thumb = get_the_post_thumbnail( $post->ID, 'medium' );
   </time>
 
   <div class="post-content">
-    <?php echo $thumb; ?>
+    <figure><?php echo $thumb; ?></figure>
 
     <p>Category: <a href="<?php echo $category_link; ?>" class="post-category"><strong><?php echo $category[0]->cat_name; ?></strong></a></p>
     <a class="post-title" href="<?php echo $permalink; ?>"><h2><?php echo $title; ?></h2></a>
