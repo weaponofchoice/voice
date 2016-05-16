@@ -8,23 +8,23 @@ if( have_posts() ):
     $title = get_the_title();
     $subtitle = get_field( 'post_subtitle' );
     $date = get_the_date();
+    $date_day = get_the_modified_date('j');
+    $date_month = get_the_modified_date('F');
+    $date_year = get_the_modified_date('Y');
     $categories = get_categories();
     ?>
 
     <article>
       <header>
-        <div class="post-categories">
-          <?php
-          foreach($categories as $cat):
-            $name = $cat->name;
-            $link = get_category_link( $cat->term_id );
+        <time datetime="<?php echo $date; ?>">
+          <div>
+            <p><?php echo $date_day; ?></p>
+            <p><?php echo $date_month; ?></p>
+          </div>
+          <p><?php echo $date_year; ?></p>
+        </time>
 
-            echo '<a href="' . $link . '">' . $name . '</a><span> / </span>';
-          endforeach;
-          ?>
-        </div>
-
-        <time pubdate><?php echo $date; ?></time>
+        <p>Back to <a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>">News Overview</a></p>
 
         <h1 class="is-bold"><?php echo $title; ?></h1>
         <h2><?php echo $subtitle; ?></h2>
