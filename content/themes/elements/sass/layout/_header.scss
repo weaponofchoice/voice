@@ -1,4 +1,4 @@
-header{
+body > header{
   @include flex;
   @include align-items( center );
   @include justify-content( space-between );
@@ -25,14 +25,12 @@ header{
   }
 }
 
-body.home{
-  header .link-logo img{
-    width: 200px;
-  }
+body.home > header .link-logo img{
+  width: 200px;
 }
 
 @media #{$medium-down}{
-  header{
+  body > header{
     position: absolute;
 
     .link-logo{
@@ -49,7 +47,7 @@ body.home{
 }
 
 @media #{$small-only}{
-  header{
+  body > header{
     padding: 0;
 
     .link-logo{

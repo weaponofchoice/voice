@@ -1401,7 +1401,7 @@ main {
   overflow: hidden;
   background: white; }
 
-header {
+body > header {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -1426,9 +1426,9 @@ header {
   width: 100%;
   padding-top: 35px;
   padding-bottom: 35px; }
-  header .link-logo {
+  body > header .link-logo {
     width: 50px; }
-    header .link-logo img {
+    body > header .link-logo img {
       -webkit-transition: 0.4s;
       -moz-transition: 0.4s;
       -ms-transition: 0.4s;
@@ -1438,22 +1438,22 @@ header {
       position: fixed;
       width: 80px; }
 
-body.home header .link-logo img {
+body.home > header .link-logo img {
   width: 200px; }
 
 @media only screen and (max-width: 62.5em) {
-  header {
+  body > header {
     position: absolute; }
-    header .link-logo {
+    body > header .link-logo {
       width: 100px; }
-      header .link-logo img {
+      body > header .link-logo img {
         top: 15px;
         position: relative;
         width: 180px; } }
 @media only screen and (max-width: 31.25em) {
-  header {
+  body > header {
     padding: 0; }
-    header .link-logo {
+    body > header .link-logo {
       margin: auto; } }
 footer {
   display: -webkit-box;
