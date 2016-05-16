@@ -23,10 +23,15 @@
     <?php if( $query->have_posts() ): ?>
       <?php while( $query->have_posts() ): $query->the_post(); ?>
 
-        <?php $category = get_the_category(); ?>
+        <?php
+        $title = get_the_title();
+        $category = get_the_category();
+        $permalink = get_the_permalink();
+        $date = get_the_date();
+        ?>
         <li>
-          <p><strong><?php echo $category[0]->cat_name; ?>:</strong> <?php the_title(); ?></p>
-          <time><img src="<?php echo get_template_directory_uri(); ?>/img/icon-time.svg" /><p><?php echo get_the_date(); ?></p></time>
+          <p><strong><?php echo $category[0]->cat_name; ?>:</strong> <a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></p>
+          <time><img src="<?php echo get_template_directory_uri(); ?>/img/icon-time.svg" /><p><?php echo $date; ?></p></time>
         </li>
 
       <?php endwhile; ?>

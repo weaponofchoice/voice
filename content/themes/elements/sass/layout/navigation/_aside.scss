@@ -8,7 +8,10 @@ aside{
     }
 
     li a{
+      @include transition( .2s );
+
       text-decoration: none;
+      border-bottom: thin solid transparent;
 
       &:hover,
       &:focus{
@@ -26,6 +29,18 @@ aside{
     li{
       > p{
         margin-bottom: 5px;
+
+        a{
+          @include transition( .2s );
+
+          text-decoration: none;
+          border-bottom: thin solid transparent;
+
+          &:hover,
+          &:focus{
+            border-bottom: thin solid $black;
+          }
+        }
       }
 
       time{

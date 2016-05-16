@@ -1583,7 +1583,13 @@ aside nav {
   aside nav li {
     margin-bottom: 15px; }
   aside nav li a {
-    text-decoration: none; }
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+    border-bottom: thin solid transparent; }
     aside nav li a:hover, aside nav li a:focus {
       border-bottom: thin solid black; }
 aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
@@ -1595,6 +1601,22 @@ aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside
 aside ul li > input[type="email"],
 aside ul li > textarea {
   margin-bottom: 5px; }
+  aside ul li > p a, aside ul li > a a, aside ul li > div.wpcf7-response-output a, aside ul li > input[type="text"] a,
+  aside ul li > input[type="email"] a,
+  aside ul li > textarea a {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: none;
+    border-bottom: thin solid transparent; }
+    aside ul li > p a:hover, aside ul li > a a:hover, aside ul li > div.wpcf7-response-output a:hover, aside ul li > input[type="text"] a:hover,
+    aside ul li > input[type="email"] a:hover,
+    aside ul li > textarea a:hover, aside ul li > p a:focus, aside ul li > a a:focus, aside ul li > div.wpcf7-response-output a:focus, aside ul li > input[type="text"] a:focus,
+    aside ul li > input[type="email"] a:focus,
+    aside ul li > textarea a:focus {
+      border-bottom: thin solid black; }
 aside ul li time img {
   width: 20px;
   height: auto;
