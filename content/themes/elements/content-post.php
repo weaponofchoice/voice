@@ -6,9 +6,9 @@ $category_link = get_category_link( $category[0]->term_id );
 $content = wpautop( get_the_content() );
 $permalink = get_the_permalink();
 $date = get_the_date();
-$date_day = get_the_modified_date('j');
-$date_month = get_the_modified_date('F');
-$date_year = get_the_modified_date('Y');
+$date_day = get_the_date('j');
+$date_month = get_the_date('F');
+$date_year = get_the_date('Y');
 $thumb = get_the_post_thumbnail( $post->ID, 'medium' );
 ?>
 
@@ -16,7 +16,7 @@ $thumb = get_the_post_thumbnail( $post->ID, 'medium' );
   <time datetime="<?php echo $date; ?>">
     <div>
       <p><?php echo $date_day; ?></p>
-      <p><?php echo $date_month; ?></p>
+      <p><?php echo substr($date_month, 0, 3); ?></p>
     </div>
     <p><?php echo $date_year; ?></p>
   </time>
