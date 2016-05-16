@@ -43,12 +43,13 @@ function w3_flush_page_custom( $post_id ) {
   endif;
 }
 
-// Change the paypal icon
-add_filter('woocommerce_paypal_icon', 'custom_woocommerce_paypal_icon');
-
-function custom_woocommerce_paypal_icon( $url ) {
-  $url = get_bloginfo('template_url')."/img/pay-paypal.svg";
-  return $url;
+/**
+ * Hide editor on specific pages
+ */
+add_action( 'admin_init', 'hide_editor' );
+function hide_editor() {
+  // Get the Post ID.
+  remove_post_type_support('page', 'editor');
 }
 
 // Add Google Analytics code to footer
