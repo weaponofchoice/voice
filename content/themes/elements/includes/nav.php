@@ -4,8 +4,8 @@
     $homepage_ID = get_option( 'page_on_front' );
 
     if( have_posts() ):
-      if( have_rows('page', $homepage_ID) ): $i_anchor = 1;
-        while( have_rows('page', $homepage_ID) ): the_row();
+      if( have_rows('elements', $homepage_ID) ): $i_anchor = 1;
+        while( have_rows('elements', $homepage_ID) ): the_row();
 
           if( get_row_layout() == 'text' ):
             $text_menu = get_sub_field( 'text_o_menu' );
