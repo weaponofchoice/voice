@@ -1,6 +1,8 @@
 body.blog,
 body.archive{
   section.posts{
+    padding-top: 0;
+
     article{
       @include flexbox;
 

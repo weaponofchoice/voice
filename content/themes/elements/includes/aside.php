@@ -31,7 +31,7 @@
         ?>
         <li>
           <p><strong><?php echo $category[0]->cat_name; ?>:</strong> <a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></p>
-          <time><img src="<?php echo get_template_directory_uri(); ?>/img/icon-time.svg" /><p><?php echo $date; ?></p></time>
+          <time><img src="<?php echo get_template_directory_uri(); ?>/img/icon-time.svg" /><small><?php echo $date; ?></small></time>
         </li>
 
       <?php endwhile; ?>

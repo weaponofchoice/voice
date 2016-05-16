@@ -1337,7 +1337,7 @@ body.single-post article time div input[type="text"]:first-child,
 body.single-post article time div input[type="email"]:first-child,
 body.single-post article time div textarea:first-child, h3, p, a, div.wpcf7-response-output, input[type="text"],
 input[type="email"],
-textarea {
+textarea, aside ul li time small {
   font-family: 'Gotham A', 'Gotham B';
   font-weight: 400;
   font-style: normal;
@@ -1649,6 +1649,7 @@ body.home header nav ul li a {
   header nav {
     display: none; } }
 aside nav {
+  padding-top: 15px;
   margin-bottom: 50px; }
   aside nav p, aside nav a, aside nav div.wpcf7-response-output, aside nav input[type="text"],
   aside nav input[type="email"],
@@ -1657,24 +1658,24 @@ aside nav {
     margin-bottom: 15px; }
 aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
 aside ul > input[type="email"],
-aside ul > textarea,
-aside ul li {
+aside ul > textarea {
   margin-bottom: 15px; }
-aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
-aside ul li > input[type="email"],
-aside ul li > textarea {
-  margin-bottom: 5px; }
-aside ul li time img {
-  width: 20px;
-  height: auto;
-  margin-right: 10px;
-  display: inline-block; }
-aside ul li time p, aside ul li time a, aside ul li time div.wpcf7-response-output, aside ul li time input[type="text"],
-aside ul li time input[type="email"],
-aside ul li time textarea {
-  display: inline-block;
-  vertical-align: super;
-  color: #bababa; }
+aside ul li {
+  margin-bottom: 30px; }
+  aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
+  aside ul li > input[type="email"],
+  aside ul li > textarea {
+    margin-bottom: 5px; }
+  aside ul li time img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block; }
+  aside ul li time small {
+    display: inline-block;
+    vertical-align: top;
+    color: #bababa;
+    font-size: 12px; }
 
 .modal {
   top: 0;
@@ -2598,16 +2599,19 @@ body.single-post article time {
     font-weight: 600;
     text-align: center; }
 
-body.blog section.posts article,
-body.archive section.posts article {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  body.blog section.posts article time,
-  body.archive section.posts article time {
-    padding-right: 3.75rem; }
+body.blog section.posts,
+body.archive section.posts {
+  padding-top: 0; }
+  body.blog section.posts article,
+  body.archive section.posts article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    body.blog section.posts article time,
+    body.archive section.posts article time {
+      padding-right: 3.75rem; }
 
 /*
  * Show and Hide class functions
@@ -2871,7 +2875,7 @@ body.single-post article time div input.is-italic[type="text"]:first-child,
 body.single-post article time div input.is-italic[type="email"]:first-child,
 body.single-post article time div textarea.is-italic:first-child, h3.is-italic, p.is-italic, a.is-italic, div.is-italic.wpcf7-response-output, input.is-italic[type="text"],
 input.is-italic[type="email"],
-textarea.is-italic {
+textarea.is-italic, aside ul li time small.is-italic {
   font-style: italic; }
 h1.is-underlined, h2.is-underlined, body.blog article time div p.is-underlined:first-child, body.blog article time div a.is-underlined:first-child, body.blog article time div div.is-underlined.wpcf7-response-output:first-child, body.blog article time div input.is-underlined[type="text"]:first-child,
 body.blog article time div input.is-underlined[type="email"]:first-child,
@@ -2889,7 +2893,7 @@ body.single-post article time div input.is-underlined[type="text"]:first-child,
 body.single-post article time div input.is-underlined[type="email"]:first-child,
 body.single-post article time div textarea.is-underlined:first-child, h3.is-underlined, p.is-underlined, a.is-underlined, div.is-underlined.wpcf7-response-output, input.is-underlined[type="text"],
 input.is-underlined[type="email"],
-textarea.is-underlined {
+textarea.is-underlined, aside ul li time small.is-underlined {
   text-decoration: underline; }
 h1.is-capitalized, h2.is-capitalized, body.blog article time div p.is-capitalized:first-child, body.blog article time div a.is-capitalized:first-child, body.blog article time div div.is-capitalized.wpcf7-response-output:first-child, body.blog article time div input.is-capitalized[type="text"]:first-child,
 body.blog article time div input.is-capitalized[type="email"]:first-child,
@@ -2907,7 +2911,7 @@ body.single-post article time div input.is-capitalized[type="text"]:first-child,
 body.single-post article time div input.is-capitalized[type="email"]:first-child,
 body.single-post article time div textarea.is-capitalized:first-child, h3.is-capitalized, p.is-capitalized, a.is-capitalized, div.is-capitalized.wpcf7-response-output, input.is-capitalized[type="text"],
 input.is-capitalized[type="email"],
-textarea.is-capitalized {
+textarea.is-capitalized, aside ul li time small.is-capitalized {
   text-transform: capitalize; }
 h1.is-uppercase, h2.is-uppercase, body.blog article time div p.is-uppercase:first-child, body.blog article time div a.is-uppercase:first-child, body.blog article time div div.is-uppercase.wpcf7-response-output:first-child, body.blog article time div input.is-uppercase[type="text"]:first-child,
 body.blog article time div input.is-uppercase[type="email"]:first-child,
@@ -2925,7 +2929,7 @@ body.single-post article time div input.is-uppercase[type="text"]:first-child,
 body.single-post article time div input.is-uppercase[type="email"]:first-child,
 body.single-post article time div textarea.is-uppercase:first-child, h3.is-uppercase, p.is-uppercase, a.is-uppercase, div.is-uppercase.wpcf7-response-output, input.is-uppercase[type="text"],
 input.is-uppercase[type="email"],
-textarea.is-uppercase {
+textarea.is-uppercase, aside ul li time small.is-uppercase {
   text-transform: uppercase; }
 h1.is-lowercase, h2.is-lowercase, body.blog article time div p.is-lowercase:first-child, body.blog article time div a.is-lowercase:first-child, body.blog article time div div.is-lowercase.wpcf7-response-output:first-child, body.blog article time div input.is-lowercase[type="text"]:first-child,
 body.blog article time div input.is-lowercase[type="email"]:first-child,
@@ -2943,7 +2947,7 @@ body.single-post article time div input.is-lowercase[type="text"]:first-child,
 body.single-post article time div input.is-lowercase[type="email"]:first-child,
 body.single-post article time div textarea.is-lowercase:first-child, h3.is-lowercase, p.is-lowercase, a.is-lowercase, div.is-lowercase.wpcf7-response-output, input.is-lowercase[type="text"],
 input.is-lowercase[type="email"],
-textarea.is-lowercase {
+textarea.is-lowercase, aside ul li time small.is-lowercase {
   text-transform: lowercase; }
 h1.is-bold, h2.is-bold, body.blog article time div p.is-bold:first-child, body.blog article time div a.is-bold:first-child, body.blog article time div div.is-bold.wpcf7-response-output:first-child, body.blog article time div input.is-bold[type="text"]:first-child,
 body.blog article time div input.is-bold[type="email"]:first-child,
@@ -2961,7 +2965,7 @@ body.single-post article time div input.is-bold[type="text"]:first-child,
 body.single-post article time div input.is-bold[type="email"]:first-child,
 body.single-post article time div textarea.is-bold:first-child, h3.is-bold, p.is-bold, a.is-bold, div.is-bold.wpcf7-response-output, input.is-bold[type="text"],
 input.is-bold[type="email"],
-textarea.is-bold {
+textarea.is-bold, aside ul li time small.is-bold {
   font-weight: 700; }
 h1.is-aligned-center, h2.is-aligned-center, body.blog article time div p.is-aligned-center:first-child, body.blog article time div a.is-aligned-center:first-child, body.blog article time div div.is-aligned-center.wpcf7-response-output:first-child, body.blog article time div input.is-aligned-center[type="text"]:first-child,
 body.blog article time div input.is-aligned-center[type="email"]:first-child,
@@ -2979,7 +2983,7 @@ body.single-post article time div input.is-aligned-center[type="text"]:first-chi
 body.single-post article time div input.is-aligned-center[type="email"]:first-child,
 body.single-post article time div textarea.is-aligned-center:first-child, h3.is-aligned-center, p.is-aligned-center, a.is-aligned-center, div.is-aligned-center.wpcf7-response-output, input.is-aligned-center[type="text"],
 input.is-aligned-center[type="email"],
-textarea.is-aligned-center {
+textarea.is-aligned-center, aside ul li time small.is-aligned-center {
   text-align: center; }
 h1.is-aligned-left, h2.is-aligned-left, body.blog article time div p.is-aligned-left:first-child, body.blog article time div a.is-aligned-left:first-child, body.blog article time div div.is-aligned-left.wpcf7-response-output:first-child, body.blog article time div input.is-aligned-left[type="text"]:first-child,
 body.blog article time div input.is-aligned-left[type="email"]:first-child,
@@ -2997,7 +3001,7 @@ body.single-post article time div input.is-aligned-left[type="text"]:first-child
 body.single-post article time div input.is-aligned-left[type="email"]:first-child,
 body.single-post article time div textarea.is-aligned-left:first-child, h3.is-aligned-left, p.is-aligned-left, a.is-aligned-left, div.is-aligned-left.wpcf7-response-output, input.is-aligned-left[type="text"],
 input.is-aligned-left[type="email"],
-textarea.is-aligned-left {
+textarea.is-aligned-left, aside ul li time small.is-aligned-left {
   text-align: left; }
 h1.is-aligned-right, h2.is-aligned-right, body.blog article time div p.is-aligned-right:first-child, body.blog article time div a.is-aligned-right:first-child, body.blog article time div div.is-aligned-right.wpcf7-response-output:first-child, body.blog article time div input.is-aligned-right[type="text"]:first-child,
 body.blog article time div input.is-aligned-right[type="email"]:first-child,
@@ -3015,7 +3019,7 @@ body.single-post article time div input.is-aligned-right[type="text"]:first-chil
 body.single-post article time div input.is-aligned-right[type="email"]:first-child,
 body.single-post article time div textarea.is-aligned-right:first-child, h3.is-aligned-right, p.is-aligned-right, a.is-aligned-right, div.is-aligned-right.wpcf7-response-output, input.is-aligned-right[type="text"],
 input.is-aligned-right[type="email"],
-textarea.is-aligned-right {
+textarea.is-aligned-right, aside ul li time small.is-aligned-right {
   text-align: right; }
 h1.is-black, h2.is-black, body.blog article time div p.is-black:first-child, body.blog article time div a.is-black:first-child, body.blog article time div div.is-black.wpcf7-response-output:first-child, body.blog article time div input.is-black[type="text"]:first-child,
 body.blog article time div input.is-black[type="email"]:first-child,
@@ -3033,7 +3037,7 @@ body.single-post article time div input.is-black[type="text"]:first-child,
 body.single-post article time div input.is-black[type="email"]:first-child,
 body.single-post article time div textarea.is-black:first-child, h3.is-black, p.is-black, a.is-black, div.is-black.wpcf7-response-output, input.is-black[type="text"],
 input.is-black[type="email"],
-textarea.is-black {
+textarea.is-black, aside ul li time small.is-black {
   color: black; }
 h1.is-white, h2.is-white, body.blog article time div p.is-white:first-child, body.blog article time div a.is-white:first-child, body.blog article time div div.is-white.wpcf7-response-output:first-child, body.blog article time div input.is-white[type="text"]:first-child,
 body.blog article time div input.is-white[type="email"]:first-child,
@@ -3051,7 +3055,7 @@ body.single-post article time div input.is-white[type="text"]:first-child,
 body.single-post article time div input.is-white[type="email"]:first-child,
 body.single-post article time div textarea.is-white:first-child, h3.is-white, p.is-white, a.is-white, div.is-white.wpcf7-response-output, input.is-white[type="text"],
 input.is-white[type="email"],
-textarea.is-white {
+textarea.is-white, aside ul li time small.is-white {
   color: white; }
 h1.has-shadow, h2.has-shadow, body.blog article time div p.has-shadow:first-child, body.blog article time div a.has-shadow:first-child, body.blog article time div div.has-shadow.wpcf7-response-output:first-child, body.blog article time div input.has-shadow[type="text"]:first-child,
 body.blog article time div input.has-shadow[type="email"]:first-child,
@@ -3069,7 +3073,7 @@ body.single-post article time div input.has-shadow[type="text"]:first-child,
 body.single-post article time div input.has-shadow[type="email"]:first-child,
 body.single-post article time div textarea.has-shadow:first-child, h3.has-shadow, p.has-shadow, a.has-shadow, div.has-shadow.wpcf7-response-output, input.has-shadow[type="text"],
 input.has-shadow[type="email"],
-textarea.has-shadow {
+textarea.has-shadow, aside ul li time small.has-shadow {
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
 
 p.is-small, a.is-small, div.is-small.wpcf7-response-output, input.is-small[type="text"],
