@@ -1,7 +1,7 @@
 $ ->
   header = $('header')
   scrolled = $(window).scrollTop()
-  console.log scrolled
+
   if scrolled > 120
     header.addClass "shrunk"
   else
@@ -10,7 +10,7 @@ $ ->
   $(window).scroll ->
     header = $('header')
     scrolled = $(window).scrollTop()
-    console.log scrolled
+    
     if scrolled > 120
       header.addClass "shrunk"
     else

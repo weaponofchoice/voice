@@ -2923,6 +2923,11 @@ header.shrunk .link-logo img {
     top: 15px;
     position: relative;
     width: 100px; } }
+aside.is-fixed {
+  top: 0;
+  right: 0;
+  position: fixed; }
+
 h1.is-italic, h2.is-italic, body.blog article .post-time time div p.is-italic:first-child, body.blog article .post-time time div a.is-italic:first-child, body.blog article .post-time time div div.is-italic.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-italic[type="text"]:first-child,
 body.blog article .post-time time div input.is-italic[type="email"]:first-child,
 body.blog article .post-time time div textarea.is-italic:first-child,
