@@ -37,3 +37,35 @@ body.single-post{
     }
   }
 }
+
+@media screen and (max-width: 800px){
+  body.single-post{
+    article{
+      padding-right: $side-margin / 2;
+      padding-left: $side-margin / 2;
+
+      header{
+        padding: 0;
+
+        .post-title{
+          width: 100%;
+        }
+      }
+
+      section{
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      section.text{
+        .section-body{
+          margin-left: 0;
+
+          .columns{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

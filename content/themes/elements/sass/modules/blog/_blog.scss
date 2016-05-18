@@ -76,3 +76,41 @@ body.single-post{
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      aside{
+        display: none;
+      }
+
+      > article,
+      section.posts{
+        width: 100%;
+        padding-right: $side-margin;
+
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      > article,
+      section.posts{
+        padding-right: $side-margin / 2;
+        padding-left: $side-margin / 2;
+      }
+
+      article .post-time{
+        display: none;
+      }
+    }
+  }
+}

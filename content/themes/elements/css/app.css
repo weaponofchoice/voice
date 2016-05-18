@@ -2638,6 +2638,33 @@ body.single-post article .post-time {
     padding-top: 5px;
     font-weight: 600; }
 
+@media screen and (max-width: 1200px) {
+  body.blog main aside,
+  body.archive main aside,
+  body.single-post main aside {
+    display: none; }
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    width: 100%;
+    padding-right: 3.75rem;
+    border-right: none; } }
+@media screen and (max-width: 800px) {
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem; }
+  body.blog main article .post-time,
+  body.archive main article .post-time,
+  body.single-post main article .post-time {
+    display: none; } }
 body.blog section.posts,
 body.archive section.posts {
   padding-top: 0; }
@@ -2677,6 +2704,21 @@ body.single-post article section.text {
   body.single-post article section.text .section-body {
     margin-left: 140px; }
 
+@media screen and (max-width: 800px) {
+  body.single-post article {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem; }
+    body.single-post article header {
+      padding: 0; }
+      body.single-post article header .post-title {
+        width: 100%; }
+    body.single-post article section {
+      padding-right: 0;
+      padding-left: 0; }
+    body.single-post article section.text .section-body {
+      margin-left: 0; }
+      body.single-post article section.text .section-body .columns {
+        padding: 0; } }
 /*
  * Show and Hide class functions
  */
