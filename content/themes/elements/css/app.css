@@ -1541,10 +1541,11 @@ body.home > header .link-logo img {
     body > header .link-logo {
       margin: auto; } }
 footer {
-  -webkit-box-flex: auto;
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1554,20 +1555,18 @@ footer {
   -moz-justify-content: space-between;
   justify-content: space-between;
   z-index: 1100;
-  height: 100px;
+  height: auto;
   padding: 30px;
+  overflow: hidden;
   background: black; }
   footer img {
-    height: 100%;
-    float: left; }
+    width: 30px; }
   footer p, footer a, footer div.wpcf7-response-output, footer input[type="text"],
   footer input[type="email"],
   footer textarea {
-    float: right;
     color: white;
     font-size: 12px;
-    padding-left: 30px;
-    line-height: 40px; }
+    padding-left: 30px; }
 
 .modal {
   top: 0;

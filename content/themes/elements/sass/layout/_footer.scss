@@ -1,25 +1,23 @@
 footer{
-  @include flex;
+  @include flexbox;
   @include align-items( center );
   @include justify-content( space-between );
 
   z-index: $zIndex-footer;
 
-  height: 100px;
+  height: auto;
   padding: 30px;
+  overflow: hidden;
 
   background: $black;
 
   img{
-    height: 100%;
-    float: left;
+    width: 30px;
   }
 
   p{
-    float: right;
     color: $white;
     font-size: 12px;
     padding-left: 30px;
-    line-height: 40px;
   }
 }
