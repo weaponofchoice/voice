@@ -3311,10 +3311,12 @@ body.is-mobile.is-loading > * {
   -o-transition: 0s;
   transition: 0s; }
 
-@media only screen and (max-width: 62.5em) {
-  html, body {
+html.skrollr-mobile {
+  overflow: visible !important; }
+  html.skrollr-mobile body {
     overflow: visible !important; }
 
+@media only screen and (max-width: 62.5em) {
   body.is-loading {
     height: auto !important;
     background: none !important; }

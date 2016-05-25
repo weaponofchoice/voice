@@ -24,11 +24,15 @@ body.is-mobile.is-loading > *{
   @include show( 0s );
 }
 
-@media #{$medium-down}{
-  html,body{
+html.skrollr-mobile{
+  overflow: visible !important;
+
+  body{
     overflow: visible !important;
   }
+}
 
+@media #{$medium-down}{
   body.is-loading{
     height: auto !important;
     background: none !important;
