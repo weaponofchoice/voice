@@ -35,8 +35,6 @@ body.single-post{
 
   // Page header
   header{
-    @include align-items( flex-start );
-
     .link-logo{
       width: 80px;
 
@@ -48,6 +46,7 @@ body.single-post{
 
     nav{
       width: auto;
+      margin-left: auto;
     }
   }
 

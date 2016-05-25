@@ -1,6 +1,6 @@
 body > header{
   @include flexbox;
-  @include align-items( center );
+  @include align-items( flex-start );
   @include justify-content( space-between );
 
   left: 0;
@@ -54,6 +54,10 @@ body.home > header .link-logo img{
 
 @media #{$small-only}{
   body > header{
-    padding: 0;
+    padding: 15px;
+
+    .link-logo{
+      margin: auto;
+    }
   }
 }

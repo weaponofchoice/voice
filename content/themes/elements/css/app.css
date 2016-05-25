@@ -1494,9 +1494,9 @@ body > header {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
@@ -1537,7 +1537,9 @@ body.home > header .link-logo img {
         width: 100%; } }
 @media only screen and (max-width: 31.25em) {
   body > header {
-    padding: 0; } }
+    padding: 15px; }
+    body > header .link-logo {
+      margin: auto; } }
 footer {
   -webkit-box-flex: auto;
   -webkit-flex: auto;
@@ -1708,10 +1710,24 @@ body.home header nav ul li a {
     width: 80%; }
     header nav ul li {
       padding-right: 0;
-      padding-left: 3em; } }
-@media all and (max-width: 730px) {
-  header nav {
-    display: none; } }
+      padding-left: 3em; }
+      header nav ul li h3 {
+        font-size: 14px; } }
+@media all and (max-width: 700px) {
+  body.blog > header nav,
+  body.archive > header nav,
+  body.single-post > header nav {
+    display: none; }
+
+  body.home > header nav li {
+    display: none; }
+  body.home > header nav li:last-child {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 0;
+    margin: auto; } }
 aside nav {
   padding-top: 15px;
   margin-bottom: 50px; }
@@ -1720,28 +1736,26 @@ aside nav {
   aside nav textarea,
   aside nav li {
     margin-bottom: 15px; }
-aside ul {
-  max-width: 300px; }
-  aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
-  aside ul > input[type="email"],
-  aside ul > textarea {
-    margin-bottom: 15px; }
-  aside ul li {
-    margin-bottom: 30px; }
-    aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
-    aside ul li > input[type="email"],
-    aside ul li > textarea {
-      margin-bottom: 5px; }
-    aside ul li time img {
-      width: 15px;
-      height: auto;
-      margin-right: 10px;
-      display: inline-block; }
-    aside ul li time small {
-      display: inline-block;
-      vertical-align: top;
-      color: #bababa;
-      font-size: 12px; }
+aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
+aside ul > input[type="email"],
+aside ul > textarea {
+  margin-bottom: 15px; }
+aside ul li {
+  margin-bottom: 30px; }
+  aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
+  aside ul li > input[type="email"],
+  aside ul li > textarea {
+    margin-bottom: 5px; }
+  aside ul li time img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block; }
+  aside ul li time small {
+    display: inline-block;
+    vertical-align: top;
+    color: #bababa;
+    font-size: 12px; }
 
 button,
 .button,
@@ -2577,25 +2591,20 @@ body.single-post main {
     float: right;
     width: 450px;
     padding-left: 1.875rem; }
-body.blog header,
-body.archive header,
-body.single-post header {
-  -webkit-align-items: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start; }
-  body.blog header .link-logo,
-  body.archive header .link-logo,
-  body.single-post header .link-logo {
-    width: 80px; }
-    body.blog header .link-logo img,
-    body.archive header .link-logo img,
-    body.single-post header .link-logo img {
-      top: 0;
-      position: relative; }
-  body.blog header nav,
-  body.archive header nav,
-  body.single-post header nav {
-    width: auto; }
+body.blog header .link-logo,
+body.archive header .link-logo,
+body.single-post header .link-logo {
+  width: 80px; }
+  body.blog header .link-logo img,
+  body.archive header .link-logo img,
+  body.single-post header .link-logo img {
+    top: 0;
+    position: relative; }
+body.blog header nav,
+body.archive header nav,
+body.single-post header nav {
+  width: auto;
+  margin-left: auto; }
 body.blog article .post-time,
 body.archive article .post-time,
 body.single-post article .post-time {
