@@ -3312,6 +3312,9 @@ body.is-mobile.is-loading > * {
   transition: 0s; }
 
 @media only screen and (max-width: 62.5em) {
+  html, body {
+    overflow: visible !important; }
+
   body.is-loading {
     height: auto !important;
     background: none !important; }
