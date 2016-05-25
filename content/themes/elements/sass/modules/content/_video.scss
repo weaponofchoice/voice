@@ -1,0 +1,16 @@
+section.video{
+  .section-body{
+    .video-container{
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+
+      iframe{
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

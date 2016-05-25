@@ -1,6 +1,6 @@
 body > header{
   @include flexbox;
-  @include align-items( center );
+  @include align-items( flex-start );
   @include justify-content( space-between );
 
   left: 0;
@@ -29,18 +29,24 @@ body.home > header .link-logo img{
   width: 200px;
 }
 
+@media screen and(max-width: 1300px){
+  body > header nav{
+    width: auto;
+  }
+}
+
 @media #{$medium-down}{
   body > header{
     position: absolute;
 
     .link-logo{
-      width: 100px;
+      width: 80px;
 
       img{
-        top: 15px;
+        top: 0;
         position: relative;
 
-        width: 180px;
+        width: 100%;
       }
     }
   }
@@ -48,7 +54,7 @@ body.home > header .link-logo img{
 
 @media #{$small-only}{
   body > header{
-    padding: 0;
+    padding: 15px;
 
     .link-logo{
       margin: auto;

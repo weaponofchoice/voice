@@ -2,7 +2,7 @@ body.blog,
 body.archive,
 body.single-post{
   main{
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 50px;
 
     header,
@@ -30,6 +30,23 @@ body.single-post{
 
       width: 450px;
       padding-left: $side-margin / 2;
+    }
+  }
+
+  // Page header
+  header{
+    .link-logo{
+      width: 80px;
+
+      img{
+        top: 0;
+        position: relative;
+      }
+    }
+
+    nav{
+      width: auto;
+      margin-left: auto;
     }
   }
 
@@ -73,6 +90,44 @@ body.single-post{
       padding-top: 5px;
 
       font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      aside{
+        display: none;
+      }
+
+      > article,
+      section.posts{
+        width: 100%;
+        padding-right: $side-margin;
+
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      > article,
+      section.posts{
+        padding-right: $side-margin / 2;
+        padding-left: $side-margin / 2;
+      }
+
+      article .post-time{
+        display: none;
+      }
     }
   }
 }

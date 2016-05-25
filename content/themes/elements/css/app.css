@@ -1494,9 +1494,9 @@ body > header {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
@@ -1523,25 +1523,29 @@ body > header {
 body.home > header .link-logo img {
   width: 200px; }
 
+@media screen and (max-width: 1300px) {
+  body > header nav {
+    width: auto; } }
 @media only screen and (max-width: 62.5em) {
   body > header {
     position: absolute; }
     body > header .link-logo {
-      width: 100px; }
+      width: 80px; }
       body > header .link-logo img {
-        top: 15px;
+        top: 0;
         position: relative;
-        width: 180px; } }
+        width: 100%; } }
 @media only screen and (max-width: 31.25em) {
   body > header {
-    padding: 0; }
+    padding: 15px; }
     body > header .link-logo {
       margin: auto; } }
 footer {
-  -webkit-box-flex: auto;
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1551,20 +1555,18 @@ footer {
   -moz-justify-content: space-between;
   justify-content: space-between;
   z-index: 1100;
-  height: 100px;
+  height: auto;
   padding: 30px;
+  overflow: hidden;
   background: black; }
   footer img {
-    height: 100%;
-    float: left; }
+    width: 30px; }
   footer p, footer a, footer div.wpcf7-response-output, footer input[type="text"],
   footer input[type="email"],
   footer textarea {
-    float: right;
     color: white;
     font-size: 12px;
-    padding-left: 30px;
-    line-height: 40px; }
+    padding-left: 30px; }
 
 .modal {
   top: 0;
@@ -1707,10 +1709,24 @@ body.home header nav ul li a {
     width: 80%; }
     header nav ul li {
       padding-right: 0;
-      padding-left: 3em; } }
-@media all and (max-width: 730px) {
-  header nav {
-    display: none; } }
+      padding-left: 3em; }
+      header nav ul li h3 {
+        font-size: 14px; } }
+@media all and (max-width: 700px) {
+  body.blog > header nav,
+  body.archive > header nav,
+  body.single-post > header nav {
+    display: none; }
+
+  body.home > header nav li {
+    display: none; }
+  body.home > header nav li:last-child {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 0;
+    margin: auto; } }
 aside nav {
   padding-top: 15px;
   margin-bottom: 50px; }
@@ -1719,28 +1735,26 @@ aside nav {
   aside nav textarea,
   aside nav li {
     margin-bottom: 15px; }
-aside ul {
-  max-width: 300px; }
-  aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
-  aside ul > input[type="email"],
-  aside ul > textarea {
-    margin-bottom: 15px; }
-  aside ul li {
-    margin-bottom: 30px; }
-    aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
-    aside ul li > input[type="email"],
-    aside ul li > textarea {
-      margin-bottom: 5px; }
-    aside ul li time img {
-      width: 15px;
-      height: auto;
-      margin-right: 10px;
-      display: inline-block; }
-    aside ul li time small {
-      display: inline-block;
-      vertical-align: top;
-      color: #bababa;
-      font-size: 12px; }
+aside ul > p, aside ul > a, aside ul > div.wpcf7-response-output, aside ul > input[type="text"],
+aside ul > input[type="email"],
+aside ul > textarea {
+  margin-bottom: 15px; }
+aside ul li {
+  margin-bottom: 30px; }
+  aside ul li > p, aside ul li > a, aside ul li > div.wpcf7-response-output, aside ul li > input[type="text"],
+  aside ul li > input[type="email"],
+  aside ul li > textarea {
+    margin-bottom: 5px; }
+  aside ul li time img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block; }
+  aside ul li time small {
+    display: inline-block;
+    vertical-align: top;
+    color: #bababa;
+    font-size: 12px; }
 
 button,
 .button,
@@ -2534,10 +2548,19 @@ label[for="clientMessage"] {
     display: block;
     margin: auto;
     margin-top: 30px; } }
+section.video .section-body .video-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+  section.video .section-body .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
 body.blog main,
 body.archive main,
 body.single-post main {
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 50px; }
   body.blog main header,
   body.blog main section,
@@ -2567,6 +2590,20 @@ body.single-post main {
     float: right;
     width: 450px;
     padding-left: 1.875rem; }
+body.blog header .link-logo,
+body.archive header .link-logo,
+body.single-post header .link-logo {
+  width: 80px; }
+  body.blog header .link-logo img,
+  body.archive header .link-logo img,
+  body.single-post header .link-logo img {
+    top: 0;
+    position: relative; }
+body.blog header nav,
+body.archive header nav,
+body.single-post header nav {
+  width: auto;
+  margin-left: auto; }
 body.blog article .post-time,
 body.archive article .post-time,
 body.single-post article .post-time {
@@ -2638,6 +2675,33 @@ body.single-post article .post-time {
     padding-top: 5px;
     font-weight: 600; }
 
+@media screen and (max-width: 1200px) {
+  body.blog main aside,
+  body.archive main aside,
+  body.single-post main aside {
+    display: none; }
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    width: 100%;
+    padding-right: 3.75rem;
+    border-right: none; } }
+@media screen and (max-width: 800px) {
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem; }
+  body.blog main article .post-time,
+  body.archive main article .post-time,
+  body.single-post main article .post-time {
+    display: none; } }
 body.blog section.posts,
 body.archive section.posts {
   padding-top: 0; }
@@ -2675,8 +2739,29 @@ body.single-post article header {
 body.single-post article section.text {
   text-align: left !important; }
   body.single-post article section.text .section-body {
-    margin-left: 140px; }
+    max-width: none; }
+body.single-post article section.text,
+body.single-post article section.image,
+body.single-post article section.video {
+  margin-left: 140px; }
 
+@media screen and (max-width: 800px) {
+  body.single-post article {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem; }
+    body.single-post article header {
+      padding: 0; }
+      body.single-post article header .post-title {
+        width: 100%; }
+    body.single-post article section {
+      padding-right: 0;
+      padding-left: 0; }
+    body.single-post article section.text .section-body .columns {
+      padding: 0; }
+    body.single-post article section.text,
+    body.single-post article section.image,
+    body.single-post article section.video {
+      margin-left: 0; } }
 /*
  * Show and Hide class functions
  */
@@ -2923,6 +3008,11 @@ header.shrunk .link-logo img {
     top: 15px;
     position: relative;
     width: 100px; } }
+aside.is-fixed {
+  top: 0;
+  right: 0;
+  position: fixed; }
+
 h1.is-italic, h2.is-italic, body.blog article .post-time time div p.is-italic:first-child, body.blog article .post-time time div a.is-italic:first-child, body.blog article .post-time time div div.is-italic.wpcf7-response-output:first-child, body.blog article .post-time time div input.is-italic[type="text"]:first-child,
 body.blog article .post-time time div input.is-italic[type="email"]:first-child,
 body.blog article .post-time time div textarea.is-italic:first-child,

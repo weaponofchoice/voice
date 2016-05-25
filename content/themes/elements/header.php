@@ -43,8 +43,6 @@
     </a>
 
     <?php include_once( 'includes/nav.php' ); ?>
-
-    <!-- <a class="trigger trigger-menu"><i></i></a> -->
   </header>
 
   <?php
