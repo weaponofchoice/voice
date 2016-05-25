@@ -114,6 +114,19 @@ body.single-post{
   }
 }
 
+@media #{$medium-down}{
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      > article,
+      section.posts{
+        padding-right: $side-margin-small;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 800px){
   body.blog,
   body.archive,

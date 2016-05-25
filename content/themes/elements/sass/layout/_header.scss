@@ -66,6 +66,10 @@ body.home > header .link-logo img{
   body > header{
     padding: 15px;
 
+    .link-home{
+      display: block;
+    }
+    
     .link-logo{
       margin: auto;
     }

@@ -1544,6 +1544,8 @@ body.home > header .link-logo img {
 @media only screen and (max-width: 31.25em) {
   body > header {
     padding: 15px; }
+    body > header .link-home {
+      display: block; }
     body > header .link-logo {
       margin: auto; } }
 footer {
@@ -1721,8 +1723,6 @@ body.home header nav ul li a {
       header nav ul li h3 {
         font-size: 14px; } }
 @media all and (max-width: 700px) {
-  body > header .link-home {
-    display: block; }
   body > header nav {
     right: 0;
     position: absolute; }
@@ -2705,6 +2705,14 @@ body.single-post article .post-time {
     width: 100%;
     padding-right: 3.75rem;
     border-right: none; } }
+@media only screen and (max-width: 62.5em) {
+  body.blog main > article,
+  body.blog main section.posts,
+  body.archive main > article,
+  body.archive main section.posts,
+  body.single-post main > article,
+  body.single-post main section.posts {
+    padding-right: 1.875rem; } }
 @media screen and (max-width: 800px) {
   body.blog main > article,
   body.blog main section.posts,
