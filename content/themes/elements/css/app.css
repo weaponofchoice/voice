@@ -1508,6 +1508,12 @@ body > header {
   width: 100%;
   padding-top: 35px;
   padding-bottom: 35px; }
+  body > header .link-home {
+    display: none;
+    top: 45px;
+    left: 30px;
+    position: absolute;
+    font-weight: 600; }
   body > header .link-logo {
     width: 50px; }
     body > header .link-logo img {
@@ -1701,6 +1707,8 @@ header nav ul {
           -webkit-transform: translateY(-5px);
           transform: translateY(-5px); }
 
+body.home header .link-home {
+  color: white; }
 body.home header nav ul li a {
   color: white; }
 
@@ -1713,14 +1721,22 @@ body.home header nav ul li a {
       header nav ul li h3 {
         font-size: 14px; } }
 @media all and (max-width: 700px) {
-  body.blog > header nav,
-  body.archive > header nav,
-  body.single-post > header nav {
+  body > header .link-home {
+    display: block; }
+  body > header nav {
+    right: 0;
+    position: absolute; }
+  body > header nav li {
     display: none; }
-
-  body.home > header nav li {
-    display: none; }
-  body.home > header nav li:last-child {
+    body > header nav li a:hover {
+      text-decoration: underline !important; }
+      body > header nav li a:hover h3 {
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+  body > header nav li:last-child {
     display: block;
     position: absolute;
     top: 30px;

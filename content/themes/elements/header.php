@@ -38,6 +38,8 @@
 <body <?php echo body_class('is-loading'); ?>>
   <!-- Header -->
   <header>
+    <a class="link-home" href="<?php echo home_url(); ?>">Home</a>
+
     <a class="link-logo" href="<?php echo home_url(); ?>">
       <img src="<?php echo bloginfo( 'template_directory' ); ?>/img/logo.png">
     </a>

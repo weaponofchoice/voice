@@ -34,6 +34,10 @@ header nav ul{
 }
 
 body.home{
+  header .link-home{
+    color: $white;
+  }
+
   header nav ul{
     li{
       a{
@@ -61,17 +65,28 @@ body.home{
 }
 
 @media all and (max-width: 700px){
-  body.blog,
-  body.archive,
-  body.single-post{
-    > header nav{
-      display: none;
+  body > header{
+    .link-home{
+      display: block;
     }
-  }
-  
-  body.home > header{
+
+    nav{
+      right: 0;
+      position: absolute;
+    }
+
     nav li{
       display: none;
+
+      a{
+        &:hover{
+          text-decoration: underline !important;
+
+          h3{
+            @include transform( translateY(0) );
+          }
+        }
+      }
     }
 
     nav li:last-child{

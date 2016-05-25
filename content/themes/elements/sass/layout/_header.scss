@@ -11,6 +11,16 @@ body > header{
   padding-top: 35px;
   padding-bottom: 35px;
 
+  .link-home{
+    display: none;
+
+    top: 45px;
+    left: 30px;
+    position: absolute;
+
+    font-weight: 600;
+  }
+
   .link-logo{
     width: 50px;
 
