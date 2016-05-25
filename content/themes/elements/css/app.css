@@ -3312,14 +3312,17 @@ body.is-mobile.is-loading > * {
   transition: 0s; }
 
 @media only screen and (max-width: 62.5em) {
-  body > * {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: 0s !important;
-    -moz-transition: 0s !important;
-    -ms-transition: 0s !important;
-    -o-transition: 0s !important;
-    transition: 0s !important; } }
+  body {
+    height: auto !important;
+    background: none !important; }
+    body > * {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: 0s !important;
+      -moz-transition: 0s !important;
+      -ms-transition: 0s !important;
+      -o-transition: 0s !important;
+      transition: 0s !important; } }
 .is-fullwidth {
   width: 100%; }
 
