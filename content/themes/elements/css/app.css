@@ -2740,7 +2740,11 @@ body.single-post article header {
 body.single-post article section.text {
   text-align: left !important; }
   body.single-post article section.text .section-body {
-    margin-left: 140px; }
+    max-width: none; }
+body.single-post article section.text,
+body.single-post article section.image,
+body.single-post article section.video {
+  margin-left: 140px; }
 
 @media screen and (max-width: 800px) {
   body.single-post article {
@@ -2753,10 +2757,12 @@ body.single-post article section.text {
     body.single-post article section {
       padding-right: 0;
       padding-left: 0; }
-    body.single-post article section.text .section-body {
-      margin-left: 0; }
-      body.single-post article section.text .section-body .columns {
-        padding: 0; } }
+    body.single-post article section.text .section-body .columns {
+      padding: 0; }
+    body.single-post article section.text,
+    body.single-post article section.image,
+    body.single-post article section.video {
+      margin-left: 0; } }
 /*
  * Show and Hide class functions
  */

@@ -32,8 +32,14 @@ body.single-post{
       text-align: left !important;
 
       .section-body{
-        margin-left: 140px;
+        max-width: none;
       }
+    }
+
+    section.text,
+    section.image,
+    section.video{
+      margin-left: 140px;
     }
   }
 }
@@ -59,12 +65,16 @@ body.single-post{
 
       section.text{
         .section-body{
-          margin-left: 0;
-
           .columns{
             padding: 0;
           }
         }
+      }
+
+      section.text,
+      section.image,
+      section.video{
+        margin-left: 0;
       }
     }
   }
