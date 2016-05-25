@@ -18,3 +18,11 @@ body.is-loading{
 body.is-mobile.is-loading > *{
   @include show( 0s );
 }
+
+@media #{$medium-down}{
+  body{
+    > *{
+      @include show( 0s !important );
+    }
+  }
+}
