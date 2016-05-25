@@ -79,7 +79,7 @@
 	"\/coffee\/init-skrollr.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
 		"minifyOutput": 1,
@@ -506,7 +506,7 @@
 		},
 	"\/js\/vendor\/skrollr.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-min.js",
@@ -1328,68 +1328,56 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/vendor\/skrollr.js",
-			"position": 7,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/pageload.coffee",
-			"position": 8,
+			"position": 7,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/height.coffee",
-			"position": 9,
+			"position": 8,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/header.coffee",
-			"position": 10,
+			"position": 9,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/init-isotope.coffee",
-			"position": 11,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/init-skrollr.coffee",
-			"position": 12,
+			"position": 10,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/hero.coffee",
-			"position": 13,
+			"position": 11,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/js\/aside.js",
-			"position": 14,
+			"position": 12,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/modal.coffee",
-			"position": 15,
+			"position": 13,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/retina.coffee",
-			"position": 16,
+			"position": 14,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
-			"position": 17,
+			"position": 15,
 			"type": 1
 			}
 		]
