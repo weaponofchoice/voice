@@ -3298,6 +3298,10 @@ body.is-loading {
     -o-transition: 0s;
     transition: 0s; }
 
+body.is-mobile.is-loading {
+  height: auto !important;
+  background: none !important; }
+
 body.is-mobile.is-loading > * {
   opacity: 1;
   visibility: visible;
