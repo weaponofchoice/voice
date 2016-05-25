@@ -25,10 +25,10 @@ body.is-mobile.is-loading > *{
 }
 
 @media #{$medium-down}{
-  body{
+  body.is-loading{
     height: auto !important;
     background: none !important;
-    
+
     > *{
       @include show( 0s !important );
     }

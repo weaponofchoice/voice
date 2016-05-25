@@ -3312,10 +3312,10 @@ body.is-mobile.is-loading > * {
   transition: 0s; }
 
 @media only screen and (max-width: 62.5em) {
-  body {
+  body.is-loading {
     height: auto !important;
     background: none !important; }
-    body > * {
+    body.is-loading > * {
       opacity: 1;
       visibility: visible;
       -webkit-transition: 0s !important;
