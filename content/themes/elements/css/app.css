@@ -1523,20 +1523,21 @@ body > header {
 body.home > header .link-logo img {
   width: 200px; }
 
+@media screen and (max-width: 1300px) {
+  body > header nav {
+    width: auto; } }
 @media only screen and (max-width: 62.5em) {
   body > header {
     position: absolute; }
     body > header .link-logo {
-      width: 100px; }
+      width: 80px; }
       body > header .link-logo img {
-        top: 15px;
+        top: 0;
         position: relative;
-        width: 180px; } }
+        width: 100%; } }
 @media only screen and (max-width: 31.25em) {
   body > header {
-    padding: 0; }
-    body > header .link-logo {
-      margin: auto; } }
+    padding: 0; } }
 footer {
   -webkit-box-flex: auto;
   -webkit-flex: auto;
@@ -2546,7 +2547,7 @@ section.video .section-body .video-container {
 body.blog main,
 body.archive main,
 body.single-post main {
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 50px; }
   body.blog main header,
   body.blog main section,
@@ -2576,6 +2577,25 @@ body.single-post main {
     float: right;
     width: 450px;
     padding-left: 1.875rem; }
+body.blog header,
+body.archive header,
+body.single-post header {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start; }
+  body.blog header .link-logo,
+  body.archive header .link-logo,
+  body.single-post header .link-logo {
+    width: 80px; }
+    body.blog header .link-logo img,
+    body.archive header .link-logo img,
+    body.single-post header .link-logo img {
+      top: 0;
+      position: relative; }
+  body.blog header nav,
+  body.archive header nav,
+  body.single-post header nav {
+    width: auto; }
 body.blog article .post-time,
 body.archive article .post-time,
 body.single-post article .post-time {

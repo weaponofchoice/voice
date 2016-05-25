@@ -29,18 +29,24 @@ body.home > header .link-logo img{
   width: 200px;
 }
 
+@media screen and(max-width: 1300px){
+  body > header nav{
+    width: auto;
+  }
+}
+
 @media #{$medium-down}{
   body > header{
     position: absolute;
 
     .link-logo{
-      width: 100px;
+      width: 80px;
 
       img{
-        top: 15px;
+        top: 0;
         position: relative;
 
-        width: 180px;
+        width: 100%;
       }
     }
   }
@@ -49,9 +55,5 @@ body.home > header .link-logo img{
 @media #{$small-only}{
   body > header{
     padding: 0;
-
-    .link-logo{
-      margin: auto;
-    }
   }
 }
