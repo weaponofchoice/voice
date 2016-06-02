@@ -2576,6 +2576,7 @@ section.video .section-body .video-container {
 body.blog main,
 body.archive main,
 body.single-post main {
+  display: block;
   padding-top: 200px;
   padding-bottom: 50px; }
   body.blog main header,
@@ -2736,6 +2737,7 @@ body.archive section.posts {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     margin-bottom: 100px; }
 
 body.blog section.posts article .post-content > *,
