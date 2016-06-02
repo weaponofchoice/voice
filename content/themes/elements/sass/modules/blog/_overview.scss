@@ -6,8 +6,11 @@ body.archive{
     article{
       @include flexbox;
 
-      width: 100%;
       margin-bottom: 100px;
+
+      .post-content{
+        width: 100%;
+      }
     }
   }
 }

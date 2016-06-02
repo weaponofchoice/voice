@@ -2737,8 +2737,10 @@ body.archive section.posts {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     margin-bottom: 100px; }
+    body.blog section.posts article .post-content,
+    body.archive section.posts article .post-content {
+      width: 100%; }
 
 body.blog section.posts article .post-content > *,
 body.archive section.posts article .post-content > * {
