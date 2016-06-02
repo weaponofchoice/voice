@@ -2740,7 +2740,7 @@ body.archive section.posts {
     margin-bottom: 100px; }
     body.blog section.posts article .post-content,
     body.archive section.posts article .post-content {
-      width: 100%; }
+      width: calc(100% - 140px); }
 
 body.blog section.posts article .post-content > *,
 body.archive section.posts article .post-content > * {
