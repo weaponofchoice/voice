@@ -41,6 +41,40 @@ body.single-post{
     section.video{
       margin-left: 140px;
     }
+
+    section.image{
+      img{
+        cursor: zoom-in;
+      }
+
+      .fullscreen{
+        @include hide( .2s );
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 9999999;
+
+        img{
+          width: auto;
+          height: 90%;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          cursor: zoom-out;
+        }
+
+        &.is-active{
+          @include show( .2s );
+        }
+      }
+    }
   }
 }
 
@@ -75,6 +109,12 @@ body.single-post{
       section.image,
       section.video{
         margin-left: 0;
+      }
+
+      section.image{
+        .fullscreen{
+          display: none !important;
+        }
       }
     }
   }

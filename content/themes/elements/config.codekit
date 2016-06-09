@@ -438,6 +438,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/imageZoom.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/imageZoom.js",
+		"outputAbbreviatedPath": "\/js\/min\/imageZoom-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/vendor\/ie.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1376,8 +1387,14 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
+			"linkedFileAbbreviatedPath": "\/js\/imageZoom.js",
 			"position": 15,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/coffee\/resize.coffee",
+			"position": 16,
 			"type": 1
 			}
 		]
@@ -1961,7 +1978,7 @@
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
 	"markdownCriticStyle": 0,
-	"markdownEnableFootnotes": 0,
+	"markdownEnableFootnotes": 1,
 	"markdownEnableLabels": 1,
 	"markdownEnableSmartQuotes": 1,
 	"markdownEscapeLineBreaks": 0,
@@ -2020,7 +2037,7 @@
 	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleResolutionType": 0,
-	"typescriptModuleType": 0,
+	"typescriptModuleType": 2,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
