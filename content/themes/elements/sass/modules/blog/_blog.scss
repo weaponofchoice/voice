@@ -2,6 +2,7 @@ body.blog,
 body.archive,
 body.single-post{
   main{
+    display: block;
     padding-top: 200px;
     padding-bottom: 50px;
 
@@ -109,6 +110,19 @@ body.single-post{
         padding-right: $side-margin;
 
         border-right: none;
+      }
+    }
+  }
+}
+
+@media #{$medium-down}{
+  body.blog,
+  body.archive,
+  body.single-post{
+    main{
+      > article,
+      section.posts{
+        padding-right: $side-margin-small;
       }
     }
   }

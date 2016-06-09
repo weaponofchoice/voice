@@ -15,6 +15,30 @@ body.is-loading{
   }
 }
 
+body.is-mobile.is-loading{
+  height: auto !important;
+  background: none !important;
+}
+
 body.is-mobile.is-loading > *{
   @include show( 0s );
+}
+
+html.skrollr-mobile{
+  overflow: visible !important;
+
+  body{
+    overflow: visible !important;
+  }
+}
+
+@media #{$medium-down}{
+  body.is-loading{
+    height: auto !important;
+    background: none !important;
+
+    > *{
+      @include show( 0s !important );
+    }
+  }
 }

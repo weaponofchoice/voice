@@ -12,13 +12,8 @@ if(! $detect->isMobile() ):
   echo
   '<section class="parallax has-no-pad-sides has-no-pad-top is-fullwidth" id="' . $id . '">
     <div class="section-banner">
-      <div class="bcg retina"
-        style="background-image: url(' . $b_image['sizes']['large'] . ')"
-        data-center="background-position: 50% 0px;"
-        data-bottom-top="background-position: 50% 50px;"
-        data-top-bottom="background-position: 50% -50px;"
-        data-anchor-target="#' . $id . '">
-      </div>
+      <div class="bcg retina" style="background-image: url(' . $b_image['sizes']['large'] . ')"></div>
+
       <div class="banner-title"><h1 class="is-white">' . $c_title . '</h1></div>
     </div>';
 

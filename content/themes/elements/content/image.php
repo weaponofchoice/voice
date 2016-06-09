@@ -20,6 +20,10 @@ echo '<section class="' . $class_section . '">';
 
       echo '<img src="' . $image['url'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '">';
 
+      if( is_single() ){
+        echo '<div class="fullscreen"><img src="' . $image['url'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '"></div>';
+      }
+
     echo '</figure>';
 
   echo '</div>';
