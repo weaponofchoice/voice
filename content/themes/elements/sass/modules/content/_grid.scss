@@ -4,6 +4,18 @@ section.grid{
   }
 }
 
+// Use flexbox for non masonry grid
+section.grid ul:not(.isotope-masonry){
+  @include flexbox;
+  @include flex-flow( row wrap );
+  @include justify-content( center );
+
+  li{
+    @include flex-basis( 25% );
+    @include flex-grow( 1 );
+  }
+}
+
 // Grid item
 section.grid ul li{
   margin-bottom: 50px;
@@ -216,6 +228,16 @@ section.grid ul.isotope-masonry{
 }
 
 @media #{$medium-down}{
+  section.grid ul:not(.isotope-masonry){
+    li{
+      @include flex-basis( 50% );
+
+      > a > div{
+        margin: 0 auto;
+      }
+    }
+  }
+
   section.grid ul li a.trigger-modal{
     div{
       max-height: none;
@@ -263,6 +285,16 @@ section.grid ul.isotope-masonry{
 
 // Hide hover state when modal is hidden
 @media #{$small-only}{
+  section.grid ul:not(.isotope-masonry){
+    li{
+      @include flex-basis( 100% );
+
+      > a > div{
+        margin: 0 auto;
+      }
+    }
+  }
+
   section.grid ul li{
     a.trigger-modal{
       cursor: default;
