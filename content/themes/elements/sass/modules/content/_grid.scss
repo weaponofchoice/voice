@@ -73,6 +73,10 @@ section.grid ul li{
   }
 }
 
+section.grid ul.item-count-2 li a.trigger-modal > img{
+  max-width: none;
+}
+
 // Modal content
 section.grid ul li .modal{
   padding: 30px;

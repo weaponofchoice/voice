@@ -24,13 +24,15 @@ echo '<section class="grid grid-sec' . (( $o_menu == true ) ? ' has-anchor" id="
   endif;
 
   // Grid content
+  $item_count = count(get_sub_field('gridSec_b_item'));
+
   if( have_rows('gridSec_b_item') ):
     echo '<div class="section-body">';
 
     if( $o_b_layout == 'masonry' ){
-      echo '<ul class="s-grid-1 l-grid-3 row isotope isotope-masonry">';
+      echo '<ul class="s-grid-1 l-grid-3 row isotope isotope-masonry item-count-' . $item_count . '">';
     } else {
-      echo '<ul>';
+      echo '<ul class="item-count-' . $item_count . '">';
     }
 
         while( have_rows('gridSec_b_item') ): the_row();

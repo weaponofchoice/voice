@@ -53,8 +53,8 @@
     while( have_posts() ): the_post();
 
       // Loop into ACF groups
-      if( have_rows('page') ):
-        while( have_rows('page') ): the_row();
+      if( have_rows('elements') ):
+        while( have_rows('elements') ): the_row();
 
           if( get_row_layout() == 'hero' ):
             echo '<!-- Hero -->';

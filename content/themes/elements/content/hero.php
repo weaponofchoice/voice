@@ -46,9 +46,6 @@ echo '<section class="hero has-no-pad">';
     echo '</div>';
   endif;
 
-  // Hero background shape
-  echo '<div class="hero-shape"><span></span></div>';
-
 echo '</section>';
 
 // <a href="javascript:;" class="arrow arrow-scroll"><img src="<?php echo bloginfo( 'template_directory' ) . /img/arrow.svg"></a>
