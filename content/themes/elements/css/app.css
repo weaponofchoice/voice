@@ -2173,6 +2173,9 @@ section.grid ul li {
         section.grid ul li a.trigger-modal div textarea:last-child {
           margin-bottom: 0; }
 
+section.grid ul.item-count-2 li a.trigger-modal > img {
+  max-width: none; }
+
 section.grid ul li .modal {
   padding: 30px;
   cursor: default; }
